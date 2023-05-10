@@ -18,7 +18,7 @@ AddCategoricalProperty( [ "IsCartesianCategory", "IsCocartesianCategory" ] );
 
 AddCategoricalProperty( [ "IsStrictCartesianCategory", "IsStrictCocartesianCategory" ] );
 
-CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianCategory  = Concatenation( [
+CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianCategory  = @Concatenation( [
 "DirectProduct",
 "ProjectionInFactorOfDirectProductWithGivenDirectProduct",
 "UniversalMorphismIntoDirectProductWithGivenDirectProduct",

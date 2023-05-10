@@ -13,7 +13,7 @@ AddCategoricalProperty( [ "IsDistributiveCategory", "IsCodistributiveCategory" ]
 
 InstallTrueMethod( IsCocartesianCategory, IsDistributiveCategory );
 
-CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsDistributiveCategory  = Concatenation( [
+CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsDistributiveCategory  = @Concatenation( [
 "LeftCartesianDistributivityExpandingWithGivenObjects",
 "RightCartesianDistributivityExpandingWithGivenObjects",
 ],

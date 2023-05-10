@@ -15,19 +15,19 @@ AddCategoricalProperty( [ "IsBicartesianCategory", "IsBicartesianCategory" ] );
 
 CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsBicartesianCategory =
   SortedList(
-          Concatenation(
+          @Concatenation(
                   CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianCategory,
                   CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCocartesianCategory ) );
 
 CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsBicartesianClosedCategory =
   SortedList(
-          Concatenation(
+          @Concatenation(
                   CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianClosedCategory,
                   CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCocartesianCategory ) );
 
 CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsBicartesianCoclosedCategory =
   SortedList(
-          Concatenation(
+          @Concatenation(
                   CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCocartesianCoclosedCategory,
                   CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianCategory ) );
 
@@ -40,7 +40,7 @@ AddCategoricalProperty( [ "IsFiniteCompleteCategory", "IsFiniteCocompleteCategor
 
 CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsFiniteCompleteCategory =
   SortedList(
-          Concatenation( [
+          @Concatenation( [
                   "Equalizer",
                   "EmbeddingOfEqualizerWithGivenEqualizer",
                   "UniversalMorphismIntoEqualizerWithGivenEqualizer",
@@ -56,7 +56,7 @@ AddCategoricalProperty( [ "IsFiniteCocompleteCategory", "IsFiniteCompleteCategor
 
 CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsFiniteCocompleteCategory =
   SortedList(
-          Concatenation( [
+          @Concatenation( [
                   "Coequalizer",
                   "ProjectionOntoCoequalizerWithGivenCoequalizer",
                   "UniversalMorphismFromCoequalizerWithGivenCoequalizer",
