@@ -7,9 +7,9 @@
 
 
 
-@InstallValueConst( CODISTRIBUTIVE_COCARTESIAN_CATEGORIES_METHOD_NAME_RECORD, rec(
+@InstallValueConst( CODISTRIBUTIVE_COCARTESIAN_CATEGORIES_METHOD_NAME_RECORD, @rec(
 
-LeftCocartesianCodistributivityExpanding = rec(
+LeftCocartesianCodistributivityExpanding = @rec(
   filter_list = [ "category", "object", "list_of_objects" ],
   io_type = [ [ "a", "L" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryCoproduct( cat, a, DirectProduct( cat, L ) )",
@@ -23,7 +23,7 @@ LeftCocartesianCodistributivityExpanding = rec(
   # Test ⥉ CodistributiveCocartesianCategoriesTest
 ),
 
-LeftCocartesianCodistributivityExpandingWithGivenObjects = rec(
+LeftCocartesianCodistributivityExpandingWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "list_of_objects", "object" ],
   io_type = [ [ "s", "a", "L", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -32,7 +32,7 @@ LeftCocartesianCodistributivityExpandingWithGivenObjects = rec(
   # Test ⥉ CodistributiveCocartesianCategoriesTest
 ),
 
-LeftCocartesianCodistributivityFactoring = rec(
+LeftCocartesianCodistributivityFactoring = @rec(
   filter_list = [ "category", "object", "list_of_objects" ],
   io_type = [ [ "a", "L" ], [ "s", "r" ] ],
   output_source_getter_string = "DirectProduct( cat, List( L, summand -> BinaryCoproduct( cat, a, summand ) ) )",
@@ -46,7 +46,7 @@ LeftCocartesianCodistributivityFactoring = rec(
   # Test ⥉ CodistributiveCocartesianCategoriesTest
 ),
 
-LeftCocartesianCodistributivityFactoringWithGivenObjects = rec(
+LeftCocartesianCodistributivityFactoringWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "list_of_objects", "object" ],
   io_type = [ [ "s", "a", "L", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -55,7 +55,7 @@ LeftCocartesianCodistributivityFactoringWithGivenObjects = rec(
   # Test ⥉ CodistributiveCocartesianCategoriesTest
 ),
 
-RightCocartesianCodistributivityExpanding = rec(
+RightCocartesianCodistributivityExpanding = @rec(
   filter_list = [ "category", "list_of_objects", "object" ],
   io_type = [ [ "L", "a" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryCoproduct( cat, DirectProduct( cat, L ), a )",
@@ -69,7 +69,7 @@ RightCocartesianCodistributivityExpanding = rec(
   # Test ⥉ CodistributiveCocartesianCategoriesTest
 ),
 
-RightCocartesianCodistributivityExpandingWithGivenObjects = rec(
+RightCocartesianCodistributivityExpandingWithGivenObjects = @rec(
   filter_list = [ "category", "object", "list_of_objects", "object", "object" ],
   io_type = [ [ "s", "L", "a", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -78,7 +78,7 @@ RightCocartesianCodistributivityExpandingWithGivenObjects = rec(
   # Test ⥉ CodistributiveCocartesianCategoriesTest
 ),
 
-RightCocartesianCodistributivityFactoring = rec(
+RightCocartesianCodistributivityFactoring = @rec(
   filter_list = [ "category", "list_of_objects", "object" ],
   io_type = [ [ "L", "a" ], [ "s", "r" ] ],
   output_source_getter_string = "DirectProduct( cat, List( L, summand -> BinaryCoproduct( cat, summand, a ) ) )",
@@ -92,7 +92,7 @@ RightCocartesianCodistributivityFactoring = rec(
   # Test ⥉ CodistributiveCocartesianCategoriesTest
 ),
 
-RightCocartesianCodistributivityFactoringWithGivenObjects = rec(
+RightCocartesianCodistributivityFactoringWithGivenObjects = @rec(
   filter_list = [ "category", "object", "list_of_objects", "object", "object" ],
   io_type = [ [ "s", "L", "a", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -104,7 +104,7 @@ RightCocartesianCodistributivityFactoringWithGivenObjects = rec(
 ) );
 
 # collect distributive && codistributive operations
-@BindGlobal( "DISTRIBUTIVE_CARTESIAN_AND_CODISTRIBUTIVE_COCARTESIAN_CATEGORIES_METHOD_NAME_RECORD", rec( ) );
+@BindGlobal( "DISTRIBUTIVE_CARTESIAN_AND_CODISTRIBUTIVE_COCARTESIAN_CATEGORIES_METHOD_NAME_RECORD", @rec( ) );
 
 Perform( RecNames( DISTRIBUTIVE_CARTESIAN_CATEGORIES_METHOD_NAME_RECORD ), function ( name )
     

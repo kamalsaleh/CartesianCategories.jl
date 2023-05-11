@@ -4,9 +4,9 @@
 # Implementations
 #
 
-@InstallValueConst( BRAIDED_COCARTESIAN_CATEGORIES_METHOD_NAME_RECORD, rec(
+@InstallValueConst( BRAIDED_COCARTESIAN_CATEGORIES_METHOD_NAME_RECORD, @rec(
 
-CocartesianBraiding = rec(
+CocartesianBraiding = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryCoproduct( cat, a, b )",
@@ -19,7 +19,7 @@ CocartesianBraiding = rec(
   dual_arguments_reversed = false,
 ),
 
-CocartesianBraidingWithGivenCoproducts = rec(
+CocartesianBraidingWithGivenCoproducts = @rec(
   filter_list = [ "category", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -27,7 +27,7 @@ CocartesianBraidingWithGivenCoproducts = rec(
   dual_with_given_objects_reversed = true,
 ),
 
-CocartesianBraidingInverse = rec(
+CocartesianBraidingInverse = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryCoproduct( cat, b, a )",
@@ -40,7 +40,7 @@ CocartesianBraidingInverse = rec(
   dual_arguments_reversed = false,
 ),
 
-CocartesianBraidingInverseWithGivenCoproducts = rec(
+CocartesianBraidingInverseWithGivenCoproducts = @rec(
   filter_list = [ "category", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -51,7 +51,7 @@ CocartesianBraidingInverseWithGivenCoproducts = rec(
 ) );
 
 # collect cartesian && cocartesian operations
-@BindGlobal( "BRAIDED_CARTESIAN_AND_COCARTESIAN_CATEGORIES_METHOD_NAME_RECORD", rec( ) );
+@BindGlobal( "BRAIDED_CARTESIAN_AND_COCARTESIAN_CATEGORIES_METHOD_NAME_RECORD", @rec( ) );
 
 Perform( RecNames( BRAIDED_CARTESIAN_CATEGORIES_METHOD_NAME_RECORD ), function ( name )
     

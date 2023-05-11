@@ -10,7 +10,7 @@
 
 ##
 WriteFileForMonoidalStructure(
-        rec(
+        @rec(
              IsMonoidalCategory = "IsCartesianCategory",
              IsStrictMonoidalCategory = "IsStrictCartesianCategory",
              IsBraidedMonoidalCategory = "IsCartesianCategory",
@@ -90,7 +90,7 @@ WriteFileForMonoidalStructure(
                                ],
              ),
         "CartesianCategories",
-        rec( MonoidalCategoriesTensorProductAndUnit_gd = fail,
+        @rec( MonoidalCategoriesTensorProductAndUnit_gd = fail,
              MonoidalCategoriesTensorProductAndUnitTest_gd = fail,
              MonoidalCategories_gd = "CartesianCategories.gd",
              MonoidalCategoriesTest_gd = "CartesianCategoriesTest.gd",
@@ -122,7 +122,7 @@ WriteFileForMonoidalStructure(
 
 ##
 WriteFileForClosedMonoidalStructure(
-        rec(
+        @rec(
              IsMonoidalCategory = "IsCartesianCategory",
              IsStrictMonoidalCategory = "IsStrictCartesianCategory",
              IsBraidedMonoidalCategory = "IsCartesianCategory",
@@ -373,7 +373,7 @@ WriteFileForClosedMonoidalStructure(
                                ],
              ),
         "CartesianCategories",
-        rec( ClosedMonoidalCategories_gd = "CartesianClosedCategories.gd",
+        @rec( ClosedMonoidalCategories_gd = "CartesianClosedCategories.gd",
              ClosedMonoidalCategoriesTest_gd = "CartesianClosedCategoriesTest.gd",
              RigidSymmetricClosedMonoidalCategories_gd = fail,
              RigidSymmetricClosedMonoidalCategoriesTest_gd = fail,
@@ -395,7 +395,7 @@ WriteFileForClosedMonoidalStructure(
 
 ##
 WriteFileForMonoidalStructure(
-        rec(
+        @rec(
              IsMonoidalCategory = "IsCocartesianCategory",
              IsStrictMonoidalCategory = "IsStrictCocartesianCategory",
              IsBraidedMonoidalCategory = "IsCocartesianCategory",
@@ -475,7 +475,7 @@ WriteFileForMonoidalStructure(
                                ],
              ),
         "CartesianCategories",
-        rec( MonoidalCategoriesTensorProductAndUnit_gd = fail,
+        @rec( MonoidalCategoriesTensorProductAndUnit_gd = fail,
              MonoidalCategoriesTensorProductAndUnitTest_gd = fail,
              MonoidalCategories_gd = "CocartesianCategories.gd",
              MonoidalCategoriesTest_gd = "CocartesianCategoriesTest.gd",
@@ -506,7 +506,7 @@ WriteFileForMonoidalStructure(
 
 ##
 WriteFileForCoclosedMonoidalStructure(
-        rec(
+        @rec(
              IsMonoidalCategory = "IsCocartesianCategory",
              IsStrictMonoidalCategory = "IsStrictCocartesianCategory",
              IsBraidedMonoidalCategory = "IsCocartesianCategory",
@@ -775,7 +775,7 @@ WriteFileForCoclosedMonoidalStructure(
                                ]
              ),
         "CartesianCategories",
-        rec( CoclosedMonoidalCategories_gd = "CocartesianCoclosedCategories.gd",
+        @rec( CoclosedMonoidalCategories_gd = "CocartesianCoclosedCategories.gd",
              CoclosedMonoidalCategoriesTest_gd = "CocartesianCoclosedCategoriesTest.gd",
              RigidSymmetricCoclosedMonoidalCategories_gd = fail,
              RigidSymmetricCoclosedMonoidalCategoriesTest_gd = fail,

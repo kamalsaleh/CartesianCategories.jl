@@ -7,9 +7,9 @@
 
 
 
-@InstallValueConst( CARTESIAN_CLOSED_CATEGORIES_METHOD_NAME_RECORD, rec(
+@InstallValueConst( CARTESIAN_CLOSED_CATEGORIES_METHOD_NAME_RECORD, @rec(
 
-ExponentialOnObjects = rec(
+ExponentialOnObjects = @rec(
   filter_list = [ "category", "object", "object" ],
   input_arguments_names = [ "cat", "a", "b" ],
   return_type = "object",
@@ -18,7 +18,7 @@ ExponentialOnObjects = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-ExponentialOnMorphisms = rec(
+ExponentialOnMorphisms = @rec(
   filter_list = [ "category", "morphism", "morphism" ],
   io_type = [ [ "alpha", "beta" ], [ "s", "r" ] ],
   output_source_getter_string = "ExponentialOnObjects( cat, Range( alpha ), Source( beta ) )",
@@ -32,7 +32,7 @@ ExponentialOnMorphisms = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-ExponentialOnMorphismsWithGivenExponentials = rec(
+ExponentialOnMorphismsWithGivenExponentials = @rec(
   filter_list = [ "category", "object", "morphism", "morphism", "object" ],
   io_type = [ [ "s", "alpha", "beta", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -40,7 +40,7 @@ ExponentialOnMorphismsWithGivenExponentials = rec(
   dual_arguments_reversed = true,
 ),
 
-CartesianEvaluationMorphism = rec(
+CartesianEvaluationMorphism = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "s", "b" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, ExponentialOnObjects( cat, a, b ), a )",
@@ -53,7 +53,7 @@ CartesianEvaluationMorphism = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-CartesianEvaluationMorphismWithGivenSource = rec(
+CartesianEvaluationMorphismWithGivenSource = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "a", "b", "s" ], [ "s", "b" ] ],
   return_type = "morphism",
@@ -62,7 +62,7 @@ CartesianEvaluationMorphismWithGivenSource = rec(
   dual_arguments_reversed = false,
 ),
 
-CartesianCoevaluationMorphism = rec(
+CartesianCoevaluationMorphism = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "a", "r" ] ],
   output_source_getter_string = "a",
@@ -75,7 +75,7 @@ CartesianCoevaluationMorphism = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-CartesianCoevaluationMorphismWithGivenRange = rec(
+CartesianCoevaluationMorphismWithGivenRange = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "a", "b", "r" ], [ "a", "r" ] ],
   return_type = "morphism",
@@ -83,7 +83,7 @@ CartesianCoevaluationMorphismWithGivenRange = rec(
   dual_arguments_reversed = false,
 ),
 
-DirectProductToExponentialAdjunctionMap = rec(
+DirectProductToExponentialAdjunctionMap = @rec(
   filter_list = [ "category", "object", "object", "morphism" ],
   io_type = [ [ "a", "b", "f" ], [ "a", "i" ] ],
   return_type = "morphism",
@@ -92,7 +92,7 @@ DirectProductToExponentialAdjunctionMap = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-DirectProductToExponentialAdjunctionMapWithGivenExponential = rec(
+DirectProductToExponentialAdjunctionMapWithGivenExponential = @rec(
   filter_list = [ "category", "object", "object", "morphism", "object" ],
   io_type = [ [ "a", "b", "f", "i" ], [ "a", "i" ] ],
   return_type = "morphism",
@@ -100,7 +100,7 @@ DirectProductToExponentialAdjunctionMapWithGivenExponential = rec(
   dual_arguments_reversed = false,
 ),
 
-ExponentialToDirectProductAdjunctionMap = rec(
+ExponentialToDirectProductAdjunctionMap = @rec(
   filter_list = [ "category", "object", "object", "morphism" ],
   io_type = [ [ "b", "c", "g" ], [ "t", "c" ] ],
   return_type = "morphism",
@@ -110,7 +110,7 @@ ExponentialToDirectProductAdjunctionMap = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-ExponentialToDirectProductAdjunctionMapWithGivenDirectProduct = rec(
+ExponentialToDirectProductAdjunctionMapWithGivenDirectProduct = @rec(
   filter_list = [ "category", "object", "object", "morphism", "object" ],
   io_type = [ [ "b", "c", "g", "t" ], [ "t", "c" ] ],
   return_type = "morphism",
@@ -119,7 +119,7 @@ ExponentialToDirectProductAdjunctionMapWithGivenDirectProduct = rec(
   dual_arguments_reversed = false,
 ),
 
-CartesianPreComposeMorphism = rec(
+CartesianPreComposeMorphism = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "a", "b", "c" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, ExponentialOnObjects( cat, a, b ), ExponentialOnObjects( cat, b, c ) )",
@@ -133,7 +133,7 @@ CartesianPreComposeMorphism = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-CartesianPreComposeMorphismWithGivenObjects = rec(
+CartesianPreComposeMorphismWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "c", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -141,7 +141,7 @@ CartesianPreComposeMorphismWithGivenObjects = rec(
   dual_arguments_reversed = true,
 ),
 
-CartesianPostComposeMorphism = rec(
+CartesianPostComposeMorphism = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "a", "b", "c" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, ExponentialOnObjects( cat, b, c ), ExponentialOnObjects( cat, a, b ) )",
@@ -155,7 +155,7 @@ CartesianPostComposeMorphism = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-CartesianPostComposeMorphismWithGivenObjects = rec(
+CartesianPostComposeMorphismWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "c", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -163,7 +163,7 @@ CartesianPostComposeMorphismWithGivenObjects = rec(
   dual_arguments_reversed = true,
 ),
 
-CartesianDualOnObjects = rec(
+CartesianDualOnObjects = @rec(
   filter_list = [ "category", "object" ],
   input_arguments_names = [ "cat", "a" ],
   return_type = "object",
@@ -171,7 +171,7 @@ CartesianDualOnObjects = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-CartesianDualOnMorphisms = rec(
+CartesianDualOnMorphisms = @rec(
   filter_list = [ "category", "morphism" ],
   io_type = [ [ "alpha" ], [ "s", "r" ] ],
   output_source_getter_string = "CartesianDualOnObjects( cat, Range( alpha ) )",
@@ -184,7 +184,7 @@ CartesianDualOnMorphisms = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-CartesianDualOnMorphismsWithGivenCartesianDuals = rec(
+CartesianDualOnMorphismsWithGivenCartesianDuals = @rec(
   filter_list = [ "category", "object", "morphism", "object" ],
   io_type = [ [ "s", "alpha", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -192,7 +192,7 @@ CartesianDualOnMorphismsWithGivenCartesianDuals = rec(
   dual_arguments_reversed = true,
 ),
 
-CartesianEvaluationForCartesianDual = rec(
+CartesianEvaluationForCartesianDual = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, CartesianDualOnObjects( cat, a ), a )",
@@ -205,7 +205,7 @@ CartesianEvaluationForCartesianDual = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-CartesianEvaluationForCartesianDualWithGivenDirectProduct = rec(
+CartesianEvaluationForCartesianDualWithGivenDirectProduct = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "s", "a", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -213,7 +213,7 @@ CartesianEvaluationForCartesianDualWithGivenDirectProduct = rec(
   dual_arguments_reversed = true,
 ),
 
-MorphismToCartesianBidual = rec(
+MorphismToCartesianBidual = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "a", "r" ] ],
   output_source_getter_string = "a",
@@ -225,7 +225,7 @@ MorphismToCartesianBidual = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-MorphismToCartesianBidualWithGivenCartesianBidual = rec(
+MorphismToCartesianBidualWithGivenCartesianBidual = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "r" ], [ "a", "r" ] ],
   return_type = "morphism",
@@ -233,7 +233,7 @@ MorphismToCartesianBidualWithGivenCartesianBidual = rec(
   dual_arguments_reversed = false,
 ),
 
-DirectProductExponentialCompatibilityMorphism = rec(
+DirectProductExponentialCompatibilityMorphism = @rec(
   filter_list = [ "category", "list_of_objects" ],
   input_arguments_names = [ "cat", "list" ],
   output_source_getter_string = "BinaryDirectProduct( cat, ExponentialOnObjects( cat, list[1], list[2] ), ExponentialOnObjects( cat, list[3], list[4] ) )",
@@ -248,7 +248,7 @@ DirectProductExponentialCompatibilityMorphism = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-DirectProductExponentialCompatibilityMorphismWithGivenObjects = rec(
+DirectProductExponentialCompatibilityMorphismWithGivenObjects = @rec(
   filter_list = [ "category", "object", "list_of_objects", "object" ],
   input_arguments_names = [ "cat", "source", "list", "range" ],
   output_source_getter_string = "source",
@@ -260,7 +260,7 @@ DirectProductExponentialCompatibilityMorphismWithGivenObjects = rec(
   dual_arguments_reversed = false,
 ),
 
-DirectProductCartesianDualityCompatibilityMorphism = rec(
+DirectProductCartesianDualityCompatibilityMorphism = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, CartesianDualOnObjects( cat, a ), CartesianDualOnObjects( cat, b ) )",
@@ -274,7 +274,7 @@ DirectProductCartesianDualityCompatibilityMorphism = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects = rec(
+DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -282,7 +282,7 @@ DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects = rec(
   dual_with_given_objects_reversed = true,
 ),
 
-MorphismFromDirectProductToExponential = rec(
+MorphismFromDirectProductToExponential = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, CartesianDualOnObjects( cat, a ), b )",
@@ -296,7 +296,7 @@ MorphismFromDirectProductToExponential = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-MorphismFromDirectProductToExponentialWithGivenObjects = rec(
+MorphismFromDirectProductToExponentialWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -304,7 +304,7 @@ MorphismFromDirectProductToExponentialWithGivenObjects = rec(
   dual_arguments_reversed = true,
 ),
 
-IsomorphismFromExponentialIntoTerminalObjectToCartesianDualObject = rec(
+IsomorphismFromExponentialIntoTerminalObjectToCartesianDualObject = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "i", "d" ] ],
   output_source_getter_string = "ExponentialOnObjects( cat, a, TerminalObject( cat ) )",
@@ -316,7 +316,7 @@ IsomorphismFromExponentialIntoTerminalObjectToCartesianDualObject = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject = rec(
+IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "d", "i" ] ],
   output_source_getter_string = "CartesianDualOnObjects( cat, a )",
@@ -328,7 +328,7 @@ IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-UniversalPropertyOfCartesianDual = rec(
+UniversalPropertyOfCartesianDual = @rec(
   filter_list = [ "category", "object", "object", "morphism" ],
   io_type = [ [ "t", "a", "alpha" ], [ "t", "d" ] ],
   return_type = "morphism",
@@ -337,7 +337,7 @@ UniversalPropertyOfCartesianDual = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-CartesianLambdaIntroduction = rec(
+CartesianLambdaIntroduction = @rec(
   filter_list = [ "category", "morphism" ],
   io_type = [ [ "alpha" ], [ "u", "i" ] ],
   return_type = "morphism",
@@ -345,7 +345,7 @@ CartesianLambdaIntroduction = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-CartesianLambdaElimination = rec(
+CartesianLambdaElimination = @rec(
   filter_list = [ "category", "object", "object", "morphism" ],
   io_type = [ [ "a", "b", "alpha" ], [ "a", "b" ] ],
   return_type = "morphism",
@@ -355,7 +355,7 @@ CartesianLambdaElimination = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-IsomorphismFromObjectToExponential = rec(
+IsomorphismFromObjectToExponential = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "a", "r" ] ],
   output_source_getter_string = "a",
@@ -367,7 +367,7 @@ IsomorphismFromObjectToExponential = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-IsomorphismFromObjectToExponentialWithGivenExponential = rec(
+IsomorphismFromObjectToExponentialWithGivenExponential = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "r" ], [ "a", "r" ] ],
   return_type = "morphism",
@@ -375,7 +375,7 @@ IsomorphismFromObjectToExponentialWithGivenExponential = rec(
   dual_arguments_reversed = false,
 ),
 
-IsomorphismFromExponentialToObject = rec(
+IsomorphismFromExponentialToObject = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "s", "a" ] ],
   output_source_getter_string = "ExponentialOnObjects( cat, TerminalObject( cat ), a )",
@@ -387,7 +387,7 @@ IsomorphismFromExponentialToObject = rec(
   # Test ⥉ CartesianClosedCategoriesTest
 ),
 
-IsomorphismFromExponentialToObjectWithGivenExponential = rec(
+IsomorphismFromExponentialToObjectWithGivenExponential = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "s" ], [ "s", "a" ] ],
   return_type = "morphism",

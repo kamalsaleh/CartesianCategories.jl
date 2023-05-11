@@ -41,7 +41,7 @@ end );
 
 ##
 CAP_INTERNAL_ADD_REPLACEMENTS_FOR_METHOD_RECORD(
-  rec(
+  @rec(
     BinaryDirectProduct =
       [ [ "DirectProduct", 1 ] ]
   )

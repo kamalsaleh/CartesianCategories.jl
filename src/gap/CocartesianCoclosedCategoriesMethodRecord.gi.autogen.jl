@@ -7,9 +7,9 @@
 
 
 
-@InstallValueConst( COCARTESIAN_COCLOSED_CATEGORIES_METHOD_NAME_RECORD, rec(
+@InstallValueConst( COCARTESIAN_COCLOSED_CATEGORIES_METHOD_NAME_RECORD, @rec(
 
-CoexponentialOnObjects = rec(
+CoexponentialOnObjects = @rec(
   filter_list = [ "category", "object", "object" ],
   input_arguments_names = [ "cat", "a", "b" ],
   return_type = "object",
@@ -18,7 +18,7 @@ CoexponentialOnObjects = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CoexponentialOnMorphisms = rec(
+CoexponentialOnMorphisms = @rec(
   filter_list = [ "category", "morphism", "morphism" ],
   io_type = [ [ "alpha", "beta" ], [ "s", "r" ] ],
   output_source_getter_string = "CoexponentialOnObjects( cat, Source( alpha ), Range( beta ) )",
@@ -32,7 +32,7 @@ CoexponentialOnMorphisms = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CoexponentialOnMorphismsWithGivenCoexponentials = rec(
+CoexponentialOnMorphismsWithGivenCoexponentials = @rec(
   filter_list = [ "category", "object", "morphism", "morphism", "object" ],
   io_type = [ [ "s", "alpha", "beta", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -40,7 +40,7 @@ CoexponentialOnMorphismsWithGivenCoexponentials = rec(
   dual_arguments_reversed = true,
 ),
 
-CocartesianEvaluationMorphism = rec(
+CocartesianEvaluationMorphism = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "a", "r" ] ],
   output_source_getter_string = "a",
@@ -53,7 +53,7 @@ CocartesianEvaluationMorphism = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianEvaluationMorphismWithGivenRange = rec(
+CocartesianEvaluationMorphismWithGivenRange = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "a", "b", "r" ], [ "a", "r" ] ],
   return_type = "morphism",
@@ -62,7 +62,7 @@ CocartesianEvaluationMorphismWithGivenRange = rec(
   dual_arguments_reversed = false,
 ),
 
-CocartesianCoevaluationMorphism = rec(
+CocartesianCoevaluationMorphism = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "s", "a" ] ],
   output_source_getter_string = "CoexponentialOnObjects( cat, BinaryCoproduct( cat, a, b ), b )",
@@ -75,7 +75,7 @@ CocartesianCoevaluationMorphism = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianCoevaluationMorphismWithGivenSource = rec(
+CocartesianCoevaluationMorphismWithGivenSource = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "a", "b", "s" ], [ "s", "a" ] ],
   return_type = "morphism",
@@ -83,7 +83,7 @@ CocartesianCoevaluationMorphismWithGivenSource = rec(
   dual_arguments_reversed = false,
 ),
 
-CoproductToCoexponentialAdjunctionMap = rec(
+CoproductToCoexponentialAdjunctionMap = @rec(
   filter_list = [ "category", "object", "object", "morphism" ],
   io_type = [ [ "c", "b", "g" ], [ "i", "c" ] ],
   return_type = "morphism",
@@ -92,7 +92,7 @@ CoproductToCoexponentialAdjunctionMap = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CoproductToCoexponentialAdjunctionMapWithGivenCoexponential = rec(
+CoproductToCoexponentialAdjunctionMapWithGivenCoexponential = @rec(
   filter_list = [ "category", "object", "object", "morphism", "object" ],
   io_type = [ [ "c", "b", "g", "i" ], [ "i", "c" ] ],
   return_type = "morphism",
@@ -100,7 +100,7 @@ CoproductToCoexponentialAdjunctionMapWithGivenCoexponential = rec(
   dual_arguments_reversed = false,
 ),
 
-CoexponentialToCoproductAdjunctionMap = rec(
+CoexponentialToCoproductAdjunctionMap = @rec(
   filter_list = [ "category", "object", "object", "morphism" ],
   io_type = [ [ "a", "b", "f", ], [ "a", "t" ] ],
   return_type = "morphism",
@@ -110,7 +110,7 @@ CoexponentialToCoproductAdjunctionMap = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CoexponentialToCoproductAdjunctionMapWithGivenCoproduct = rec(
+CoexponentialToCoproductAdjunctionMapWithGivenCoproduct = @rec(
   filter_list = [ "category", "object", "object", "morphism", "object" ],
   io_type = [ [ "a", "b", "f", "t" ], [ "a", "t" ] ],
   return_type = "morphism",
@@ -119,7 +119,7 @@ CoexponentialToCoproductAdjunctionMapWithGivenCoproduct = rec(
   dual_arguments_reversed = false,
 ),
 
-CocartesianPreCoComposeMorphism = rec(
+CocartesianPreCoComposeMorphism = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "a", "b", "c" ], [ "s", "r" ] ],
   output_source_getter_string = "CoexponentialOnObjects( cat, a, c )",
@@ -133,7 +133,7 @@ CocartesianPreCoComposeMorphism = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianPreCoComposeMorphismWithGivenObjects = rec(
+CocartesianPreCoComposeMorphismWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "c", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -141,7 +141,7 @@ CocartesianPreCoComposeMorphismWithGivenObjects = rec(
   dual_arguments_reversed = true,
 ),
 
-CocartesianPostCoComposeMorphism = rec(
+CocartesianPostCoComposeMorphism = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "a", "b", "c" ], [ "s", "r" ] ],
   output_source_getter_string = "CoexponentialOnObjects( cat, a, c )",
@@ -155,7 +155,7 @@ CocartesianPostCoComposeMorphism = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianPostCoComposeMorphismWithGivenObjects = rec(
+CocartesianPostCoComposeMorphismWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "c", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -163,7 +163,7 @@ CocartesianPostCoComposeMorphismWithGivenObjects = rec(
   dual_arguments_reversed = true,
 ),
 
-CocartesianDualOnObjects = rec(
+CocartesianDualOnObjects = @rec(
   filter_list = [ "category", "object" ],
   input_arguments_names = [ "cat", "a" ],
   return_type = "object",
@@ -171,7 +171,7 @@ CocartesianDualOnObjects = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianDualOnMorphisms = rec(
+CocartesianDualOnMorphisms = @rec(
   filter_list = [ "category", "morphism" ],
   io_type = [ [ "alpha" ], [ "s", "r" ] ],
   output_source_getter_string = "CocartesianDualOnObjects( cat, Range( alpha ) )",
@@ -184,7 +184,7 @@ CocartesianDualOnMorphisms = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianDualOnMorphismsWithGivenCocartesianDuals = rec(
+CocartesianDualOnMorphismsWithGivenCocartesianDuals = @rec(
   filter_list = [ "category", "object", "morphism", "object" ],
   io_type = [ [ "s", "alpha", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -192,7 +192,7 @@ CocartesianDualOnMorphismsWithGivenCocartesianDuals = rec(
   dual_arguments_reversed = true,
 ),
 
-CocartesianEvaluationForCocartesianDual = rec(
+CocartesianEvaluationForCocartesianDual = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "s", "r" ] ],
   output_source_getter_string = "InitialObject( cat )",
@@ -205,7 +205,7 @@ CocartesianEvaluationForCocartesianDual = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianEvaluationForCocartesianDualWithGivenCoproduct = rec(
+CocartesianEvaluationForCocartesianDualWithGivenCoproduct = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "s", "a", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -213,7 +213,7 @@ CocartesianEvaluationForCocartesianDualWithGivenCoproduct = rec(
   dual_arguments_reversed = true,
 ),
 
-MorphismFromCocartesianBidual = rec(
+MorphismFromCocartesianBidual = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "s", "a" ] ],
   output_source_getter_string = "CocartesianDualOnObjects( cat, CocartesianDualOnObjects( cat, a ) )",
@@ -225,7 +225,7 @@ MorphismFromCocartesianBidual = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-MorphismFromCocartesianBidualWithGivenCocartesianBidual = rec(
+MorphismFromCocartesianBidualWithGivenCocartesianBidual = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "s" ], [ "s", "a" ] ],
   return_type = "morphism",
@@ -233,7 +233,7 @@ MorphismFromCocartesianBidualWithGivenCocartesianBidual = rec(
   dual_arguments_reversed = false,
 ),
 
-CoexponentialCoproductCompatibilityMorphism = rec(
+CoexponentialCoproductCompatibilityMorphism = @rec(
   filter_list = [ "category", "list_of_objects" ],
   input_arguments_names = [ "cat", "list" ],
   output_source_getter_string = "CoexponentialOnObjects( cat, BinaryCoproduct( cat, list[1], list[2] ), BinaryCoproduct( cat, list[3], list[4] ) )",
@@ -248,7 +248,7 @@ CoexponentialCoproductCompatibilityMorphism = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CoexponentialCoproductCompatibilityMorphismWithGivenObjects = rec(
+CoexponentialCoproductCompatibilityMorphismWithGivenObjects = @rec(
   filter_list = [ "category", "object", "list_of_objects", "object" ],
   input_arguments_names = [ "cat", "source", "list", "range" ],
   output_source_getter_string = "source",
@@ -260,7 +260,7 @@ CoexponentialCoproductCompatibilityMorphismWithGivenObjects = rec(
   dual_arguments_reversed = false,
 ),
 
-CocartesianDualityCoproductCompatibilityMorphism = rec(
+CocartesianDualityCoproductCompatibilityMorphism = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "s", "r" ] ],
   output_source_getter_string = "CocartesianDualOnObjects( cat, BinaryCoproduct( cat, a, b ) )",
@@ -274,7 +274,7 @@ CocartesianDualityCoproductCompatibilityMorphism = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects = rec(
+CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -282,7 +282,7 @@ CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects = rec(
   dual_with_given_objects_reversed = true,
 ),
 
-MorphismFromCoexponentialToCoproduct = rec(
+MorphismFromCoexponentialToCoproduct = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "s", "r" ] ],
   output_source_getter_string = "CoexponentialOnObjects( cat, a, b )",
@@ -296,7 +296,7 @@ MorphismFromCoexponentialToCoproduct = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-MorphismFromCoexponentialToCoproductWithGivenObjects = rec(
+MorphismFromCoexponentialToCoproductWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -304,7 +304,7 @@ MorphismFromCoexponentialToCoproductWithGivenObjects = rec(
   dual_arguments_reversed = true,
 ),
 
-IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject = rec(
+IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "d", "i" ] ],
   output_source_getter_string = "CocartesianDualOnObjects( cat, a )",
@@ -316,7 +316,7 @@ IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject = rec(
+IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "i", "d" ] ],
   output_source_getter_string = "CoexponentialOnObjects( cat, InitialObject( cat ), a )",
@@ -328,7 +328,7 @@ IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-UniversalPropertyOfCocartesianDual = rec(
+UniversalPropertyOfCocartesianDual = @rec(
   filter_list = [ "category", "object", "object", "morphism" ],
   io_type = [ [ "t", "a", "alpha" ], [ "d", "t" ] ],
   return_type = "morphism",
@@ -337,7 +337,7 @@ UniversalPropertyOfCocartesianDual = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianLambdaIntroduction = rec(
+CocartesianLambdaIntroduction = @rec(
   filter_list = [ "category", "morphism" ],
   io_type = [ [ "alpha" ], [ "u", "i" ] ],
   return_type = "morphism",
@@ -345,7 +345,7 @@ CocartesianLambdaIntroduction = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianLambdaElimination = rec(
+CocartesianLambdaElimination = @rec(
   filter_list = [ "category", "object", "object", "morphism" ],
   io_type = [ [ "a", "b", "alpha" ], [ "a", "b" ] ],
   return_type = "morphism",
@@ -355,7 +355,7 @@ CocartesianLambdaElimination = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-IsomorphismFromObjectToCoexponential = rec(
+IsomorphismFromObjectToCoexponential = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "a", "r" ] ],
   output_source_getter_string = "a",
@@ -367,7 +367,7 @@ IsomorphismFromObjectToCoexponential = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-IsomorphismFromObjectToCoexponentialWithGivenCoexponential = rec(
+IsomorphismFromObjectToCoexponentialWithGivenCoexponential = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "r" ], [ "a", "r" ] ],
   return_type = "morphism",
@@ -375,7 +375,7 @@ IsomorphismFromObjectToCoexponentialWithGivenCoexponential = rec(
   dual_arguments_reversed = false,
 ),
 
-IsomorphismFromCoexponentialToObject = rec(
+IsomorphismFromCoexponentialToObject = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "s", "a" ] ],
   output_source_getter_string = "CoexponentialOnObjects( cat, a, InitialObject( cat ) )",
@@ -387,7 +387,7 @@ IsomorphismFromCoexponentialToObject = rec(
   # Test ⥉ CocartesianCoclosedCategoriesTest
 ),
 
-IsomorphismFromCoexponentialToObjectWithGivenCoexponential = rec(
+IsomorphismFromCoexponentialToObjectWithGivenCoexponential = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "s" ], [ "s", "a" ] ],
   return_type = "morphism",
@@ -398,7 +398,7 @@ IsomorphismFromCoexponentialToObjectWithGivenCoexponential = rec(
 ) );
 
 # collect closed && coclosed operations
-@BindGlobal( "CARTESIAN_CLOSED_AND_COCARTESIAN_COCLOSED_CATEGORIES_METHOD_NAME_RECORD", rec( ) );
+@BindGlobal( "CARTESIAN_CLOSED_AND_COCARTESIAN_COCLOSED_CATEGORIES_METHOD_NAME_RECORD", @rec( ) );
 
 Perform( RecNames( CARTESIAN_CLOSED_CATEGORIES_METHOD_NAME_RECORD ), function ( name )
     

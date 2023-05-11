@@ -7,9 +7,9 @@
 
 
 
-@InstallValueConst( DISTRIBUTIVE_CARTESIAN_CATEGORIES_METHOD_NAME_RECORD, rec(
+@InstallValueConst( DISTRIBUTIVE_CARTESIAN_CATEGORIES_METHOD_NAME_RECORD, @rec(
 
-LeftCartesianDistributivityExpanding = rec(
+LeftCartesianDistributivityExpanding = @rec(
   filter_list = [ "category", "object", "list_of_objects" ],
   io_type = [ [ "a", "L" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, a, Coproduct( cat, L ) )",
@@ -23,7 +23,7 @@ LeftCartesianDistributivityExpanding = rec(
   # Test ⥉ DistributiveCartesianCategoriesTest
 ),
 
-LeftCartesianDistributivityExpandingWithGivenObjects = rec(
+LeftCartesianDistributivityExpandingWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "list_of_objects", "object" ],
   io_type = [ [ "s", "a", "L", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -32,7 +32,7 @@ LeftCartesianDistributivityExpandingWithGivenObjects = rec(
   # Test ⥉ DistributiveCartesianCategoriesTest
 ),
 
-LeftCartesianDistributivityFactoring = rec(
+LeftCartesianDistributivityFactoring = @rec(
   filter_list = [ "category", "object", "list_of_objects" ],
   io_type = [ [ "a", "L" ], [ "s", "r" ] ],
   output_source_getter_string = "Coproduct( cat, List( L, summand -> BinaryDirectProduct( cat, a, summand ) ) )",
@@ -46,7 +46,7 @@ LeftCartesianDistributivityFactoring = rec(
   # Test ⥉ DistributiveCartesianCategoriesTest
 ),
 
-LeftCartesianDistributivityFactoringWithGivenObjects = rec(
+LeftCartesianDistributivityFactoringWithGivenObjects = @rec(
   filter_list = [ "category", "object", "object", "list_of_objects", "object" ],
   io_type = [ [ "s", "a", "L", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -55,7 +55,7 @@ LeftCartesianDistributivityFactoringWithGivenObjects = rec(
   # Test ⥉ DistributiveCartesianCategoriesTest
 ),
 
-RightCartesianDistributivityExpanding = rec(
+RightCartesianDistributivityExpanding = @rec(
   filter_list = [ "category", "list_of_objects", "object" ],
   io_type = [ [ "L", "a" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, Coproduct( cat, L ), a )",
@@ -69,7 +69,7 @@ RightCartesianDistributivityExpanding = rec(
   # Test ⥉ DistributiveCartesianCategoriesTest
 ),
 
-RightCartesianDistributivityExpandingWithGivenObjects = rec(
+RightCartesianDistributivityExpandingWithGivenObjects = @rec(
   filter_list = [ "category", "object", "list_of_objects", "object", "object" ],
   io_type = [ [ "s", "L", "a", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -78,7 +78,7 @@ RightCartesianDistributivityExpandingWithGivenObjects = rec(
   # Test ⥉ DistributiveCartesianCategoriesTest
 ),
 
-RightCartesianDistributivityFactoring = rec(
+RightCartesianDistributivityFactoring = @rec(
   filter_list = [ "category", "list_of_objects", "object" ],
   io_type = [ [ "L", "a" ], [ "s", "r" ] ],
   output_source_getter_string = "Coproduct( cat, List( L, summand -> BinaryDirectProduct( cat, summand, a ) ) )",
@@ -92,7 +92,7 @@ RightCartesianDistributivityFactoring = rec(
   # Test ⥉ DistributiveCartesianCategoriesTest
 ),
 
-RightCartesianDistributivityFactoringWithGivenObjects = rec(
+RightCartesianDistributivityFactoringWithGivenObjects = @rec(
   filter_list = [ "category", "object", "list_of_objects", "object", "object" ],
   io_type = [ [ "s", "L", "a", "r" ], [ "s", "r" ] ],
   return_type = "morphism",

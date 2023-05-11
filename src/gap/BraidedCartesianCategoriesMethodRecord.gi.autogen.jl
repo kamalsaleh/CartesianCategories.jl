@@ -4,9 +4,9 @@
 # Implementations
 #
 
-@InstallValueConst( BRAIDED_CARTESIAN_CATEGORIES_METHOD_NAME_RECORD, rec(
+@InstallValueConst( BRAIDED_CARTESIAN_CATEGORIES_METHOD_NAME_RECORD, @rec(
 
-CartesianBraiding = rec(
+CartesianBraiding = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, a, b )",
@@ -19,7 +19,7 @@ CartesianBraiding = rec(
   dual_arguments_reversed = false,
 ),
 
-CartesianBraidingWithGivenDirectProducts = rec(
+CartesianBraidingWithGivenDirectProducts = @rec(
   filter_list = [ "category", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -27,7 +27,7 @@ CartesianBraidingWithGivenDirectProducts = rec(
   dual_with_given_objects_reversed = true,
 ),
 
-CartesianBraidingInverse = rec(
+CartesianBraidingInverse = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "b" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, b, a )",
@@ -40,7 +40,7 @@ CartesianBraidingInverse = rec(
   dual_arguments_reversed = false,
 ),
 
-CartesianBraidingInverseWithGivenDirectProducts = rec(
+CartesianBraidingInverseWithGivenDirectProducts = @rec(
   filter_list = [ "category", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "r" ], [ "s", "r" ] ],
   return_type = "morphism",

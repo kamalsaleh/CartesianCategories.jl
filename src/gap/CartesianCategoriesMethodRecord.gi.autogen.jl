@@ -4,11 +4,11 @@
 # Implementations
 #
 
-@InstallValueConst( CARTESIAN_CATEGORIES_METHOD_NAME_RECORD, rec(
+@InstallValueConst( CARTESIAN_CATEGORIES_METHOD_NAME_RECORD, @rec(
 
 ## Basic Operations for Cartesian Categories
 
-CartesianDiagonal = rec(
+CartesianDiagonal = @rec(
   filter_list = [ "category", "object", "integer" ],
   io_type = [ [ "a", "n" ], [ "a", "cartesian_power" ] ],
   output_source_getter_string = "a",
@@ -19,7 +19,7 @@ CartesianDiagonal = rec(
   dual_arguments_reversed = false,
 ),
 
-CartesianDiagonalWithGivenCartesianPower = rec(
+CartesianDiagonalWithGivenCartesianPower = @rec(
   filter_list = [ "category", "object", "integer", "object" ],
   io_type = [ [ "a", "n", "cartesian_power" ], [ "a", "cartesian_power" ] ],
   output_source_getter_string = "a",
@@ -29,7 +29,7 @@ CartesianDiagonalWithGivenCartesianPower = rec(
   dual_arguments_reversed = false,
 ),
 
-DirectProductOnMorphisms = rec(
+DirectProductOnMorphisms = @rec(
   filter_list = [ "category", "morphism", "morphism" ],
   io_type = [ [ "alpha", "beta" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, Source( alpha ), Source( beta ) )",
@@ -42,7 +42,7 @@ DirectProductOnMorphisms = rec(
   dual_arguments_reversed = false,
 ),
 
-DirectProductOnMorphismsWithGivenDirectProducts = rec(
+DirectProductOnMorphismsWithGivenDirectProducts = @rec(
   filter_list = [ "category", "object", "morphism", "morphism", "object" ],
   io_type = [ [ "s", "alpha", "beta", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -50,7 +50,7 @@ DirectProductOnMorphismsWithGivenDirectProducts = rec(
   dual_with_given_objects_reversed = true,
 ),
 
-CartesianAssociatorRightToLeft = rec(
+CartesianAssociatorRightToLeft = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "a", "b", "c" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, a, BinaryDirectProduct( cat, b, c ) )",
@@ -63,7 +63,7 @@ CartesianAssociatorRightToLeft = rec(
   dual_arguments_reversed = false,
 ),
 
-CartesianAssociatorRightToLeftWithGivenDirectProducts = rec(
+CartesianAssociatorRightToLeftWithGivenDirectProducts = @rec(
   filter_list = [ "category", "object", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "c", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -71,7 +71,7 @@ CartesianAssociatorRightToLeftWithGivenDirectProducts = rec(
   dual_with_given_objects_reversed = true,
 ),
 
-CartesianAssociatorLeftToRight = rec(
+CartesianAssociatorLeftToRight = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   io_type = [ [ "a", "b", "c" ], [ "s", "r" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, BinaryDirectProduct( cat, a, b ), c )",
@@ -84,7 +84,7 @@ CartesianAssociatorLeftToRight = rec(
   dual_arguments_reversed = false,
 ),
 
-CartesianAssociatorLeftToRightWithGivenDirectProducts = rec(
+CartesianAssociatorLeftToRightWithGivenDirectProducts = @rec(
   filter_list = [ "category", "object", "object", "object", "object", "object" ],
   io_type = [ [ "s", "a", "b", "c", "r" ], [ "s", "r" ] ],
   return_type = "morphism",
@@ -92,7 +92,7 @@ CartesianAssociatorLeftToRightWithGivenDirectProducts = rec(
   dual_with_given_objects_reversed = true,
 ),
 
-CartesianLeftUnitor = rec(
+CartesianLeftUnitor = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "s", "a" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, TerminalObject( cat ), a )",
@@ -103,7 +103,7 @@ CartesianLeftUnitor = rec(
   dual_operation = "CocartesianLeftUnitorInverse",
 ),
 
-CartesianLeftUnitorWithGivenDirectProduct = rec(
+CartesianLeftUnitorWithGivenDirectProduct = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "s" ], [ "s", "a" ] ],
   return_type = "morphism",
@@ -111,7 +111,7 @@ CartesianLeftUnitorWithGivenDirectProduct = rec(
   dual_arguments_reversed = false,
 ),
 
-CartesianLeftUnitorInverse = rec(
+CartesianLeftUnitorInverse = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "a", "r" ] ],
   output_source_getter_string = "a",
@@ -122,7 +122,7 @@ CartesianLeftUnitorInverse = rec(
   dual_operation = "CocartesianLeftUnitor",
 ),
 
-CartesianLeftUnitorInverseWithGivenDirectProduct = rec(
+CartesianLeftUnitorInverseWithGivenDirectProduct = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "r" ], [ "a", "r" ] ],
   return_type = "morphism",
@@ -130,7 +130,7 @@ CartesianLeftUnitorInverseWithGivenDirectProduct = rec(
   dual_arguments_reversed = false,
 ),
 
-CartesianRightUnitor = rec(
+CartesianRightUnitor = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "s", "a" ] ],
   output_source_getter_string = "BinaryDirectProduct( cat, a, TerminalObject( cat ) )",
@@ -141,7 +141,7 @@ CartesianRightUnitor = rec(
   dual_operation = "CocartesianRightUnitorInverse",
 ),
 
-CartesianRightUnitorWithGivenDirectProduct = rec(
+CartesianRightUnitorWithGivenDirectProduct = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "s" ], [ "s", "a" ] ],
   return_type = "morphism",
@@ -149,7 +149,7 @@ CartesianRightUnitorWithGivenDirectProduct = rec(
   dual_arguments_reversed = false,
 ),
 
-CartesianRightUnitorInverse = rec(
+CartesianRightUnitorInverse = @rec(
   filter_list = [ "category", "object" ],
   io_type = [ [ "a" ], [ "a", "r" ] ],
   output_source_getter_string = "a",
@@ -160,7 +160,7 @@ CartesianRightUnitorInverse = rec(
   dual_operation = "CocartesianRightUnitor",
 ),
 
-CartesianRightUnitorInverseWithGivenDirectProduct = rec(
+CartesianRightUnitorInverseWithGivenDirectProduct = @rec(
   filter_list = [ "category", "object", "object" ],
   io_type = [ [ "a", "r" ], [ "a", "r" ] ],
   return_type = "morphism",
