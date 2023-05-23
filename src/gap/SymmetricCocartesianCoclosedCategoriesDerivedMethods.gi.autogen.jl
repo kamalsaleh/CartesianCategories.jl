@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -9,7 +9,7 @@
 
 ##
 AddDerivationToCAP( CoproductToCoexponentialAdjunctionMap,
-                    "CoproductToCoexponentialAdjunctionMap using CocartesianCoevaluationMorphism && Coexponential",
+                    "CoproductToCoexponentialAdjunctionMap using CocartesianCoevaluationMorphism and Coexponential",
                     [ [ PreCompose, 1 ],
                       [ CoexponentialOnMorphisms, 1 ],
                       [ IdentityMorphism, 1 ],
@@ -37,7 +37,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CoproductToCoexponentialAdjunctionMapWithGivenCoexponential,
-                    "CoproductToCoexponentialAdjunctionMapWithGivenCoexponential using CocartesianCoevaluationMorphism && Coexponential",
+                    "CoproductToCoexponentialAdjunctionMapWithGivenCoexponential using CocartesianCoevaluationMorphism and Coexponential",
                     [ [ CocartesianCoevaluationMorphism, 1 ],
                       [ PreCompose, 1 ],
                       [ CoexponentialOnMorphismsWithGivenCoexponentials, 1 ],
@@ -68,7 +68,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CoexponentialToCoproductAdjunctionMap,
-                    "CoexponentialToCoproductAdjunctionMap using CoproductOnMorphisms && CocartesianEvaluationMorphism",
+                    "CoexponentialToCoproductAdjunctionMap using CoproductOnMorphisms and CocartesianEvaluationMorphism",
                     [ [ PreCompose, 1 ],
                       [ CocartesianEvaluationMorphism, 1 ],
                       [ CoproductOnMorphisms, 1 ],
@@ -115,7 +115,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( MorphismFromCocartesianBidualWithGivenCocartesianBidual,
-                    "MorphismFromCocartesianBidualWithGivenCocartesianBidual using the braiding && the universal property of the codual",
+                    "MorphismFromCocartesianBidualWithGivenCocartesianBidual using the braiding and the universal property of the codual",
                     [ [ PreCompose, 1 ],
                       [ CocartesianEvaluationForCocartesianDual, 1 ],
                       [ CocartesianBraiding, 1 ],
@@ -148,7 +148,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( MorphismFromCocartesianBidualWithGivenCocartesianBidual,
-                    "MorphismFromCocartesianBidualWithGivenCocartesianBidual using CocartesianEvaluation, Coexponential, && CocartesianCoevaluation",
+                    "MorphismFromCocartesianBidualWithGivenCocartesianBidual using CocartesianEvaluation, Coexponential, and CocartesianCoevaluation",
                     [ [ CocartesianDualOnObjects, 1 ],
                       [ InitialObject, 1 ],
                       [ PreComposeList, 1 ],
@@ -223,7 +223,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CocartesianDualOnMorphismsWithGivenCocartesianDuals,
-                    "CocartesianDualOnMorphismsWithGivenCocartesianDuals using CoexponentialOnMorphisms && IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject",
+                    "CocartesianDualOnMorphismsWithGivenCocartesianDuals using CoexponentialOnMorphisms and IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject",
                     [ [ PreComposeList, 1 ],
                       [ IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject, 1 ],
                       [ CoexponentialOnMorphisms, 1 ],
@@ -264,7 +264,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CocartesianEvaluationForCocartesianDualWithGivenCoproduct,
-                    "CocartesianEvaluationForCocartesianDualWithGivenCoproduct using the coexponential-coproduct adjunction && IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject",
+                    "CocartesianEvaluationForCocartesianDualWithGivenCoproduct using the coexponential-coproduct adjunction and IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject",
                     [ [ CoexponentialToCoproductAdjunctionMap, 1 ],
                       [ IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject, 1 ] ],
                     
@@ -283,7 +283,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CocartesianLambdaIntroduction,
-                    "CocartesianLambdaIntroduction using the coexponential-coproduct adjunction && the left unitor inverse",
+                    "CocartesianLambdaIntroduction using the coexponential-coproduct adjunction and the left unitor inverse",
                     [ [ PreCompose, 1 ],
                       [ CocartesianLeftUnitorInverse, 1 ],
                       [ CoproductToCoexponentialAdjunctionMap, 1 ],
@@ -317,7 +317,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CocartesianLambdaElimination,
-                    "CocartesianLambdaElimination using the coexponential-coproduct adjunction && the left unitor",
+                    "CocartesianLambdaElimination using the coexponential-coproduct adjunction and the left unitor",
                     [ [ CoexponentialToCoproductAdjunctionMap, 1 ],
                       [ PreCompose, 1 ],
                       [ CocartesianLeftUnitor, 1 ] ],
@@ -346,7 +346,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CoexponentialCoproductCompatibilityMorphismWithGivenObjects,
-                    "CoexponentialCoproductCompatibilityMorphismWithGivenObjects using associator, braiding && the cocartesian evaluation morphism",
+                    "CoexponentialCoproductCompatibilityMorphismWithGivenObjects using associator, braiding and the cocartesian evaluation morphism",
                     [ [ CoexponentialOnObjects, 2 ],
                       [ IdentityMorphism, 4 ],
                       [ Coproduct, 2 ],
@@ -449,7 +449,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects,
-                    "CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects using left unitor, && compatibility of coexponential && coproduct",
+                    "CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects using left unitor, and compatibility of coexponential and coproduct",
                     [ [ InitialObject, 1 ],
                       [ Coproduct, 1 ],
                       [ PreComposeList, 1 ],
@@ -696,7 +696,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CocartesianPreCoComposeMorphismWithGivenObjects,
-                    "CocartesianPreCoComposeMorphismWithGivenObjects using associator, braiding, cocartesian evaluation, && coexponential-coproduct adjunction",
+                    "CocartesianPreCoComposeMorphismWithGivenObjects using associator, braiding, cocartesian evaluation, and coexponential-coproduct adjunction",
                     [ [ CoexponentialOnObjects, 2 ],
                       [ PreComposeList, 1 ],
                       [ CocartesianEvaluationMorphism, 2 ],
@@ -771,7 +771,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CocartesianPostCoComposeMorphismWithGivenObjects,
-                    "CocartesianPostCoComposeMorphismWithGivenObjects using associator, cocartesian evaluation, && coexponential-coproduct adjunction",
+                    "CocartesianPostCoComposeMorphismWithGivenObjects using associator, cocartesian evaluation, and coexponential-coproduct adjunction",
                     [ [ CoexponentialOnObjects, 2 ],
                       [ PreComposeList, 1 ],
                       [ CocartesianEvaluationMorphism, 2 ],
@@ -825,7 +825,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CocartesianPostCoComposeMorphismWithGivenObjects,
-                    "CocartesianPostCoComposeMorphismWithGivenObjects using CocartesianPreCoComposeMorphism && braiding",
+                    "CocartesianPostCoComposeMorphismWithGivenObjects using CocartesianPreCoComposeMorphism and braiding",
                     [ [ CocartesianBraiding, 1 ],
                       [ CoexponentialOnObjects, 2 ],
                       [ PreCompose, 1 ],
@@ -852,7 +852,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CocartesianPreCoComposeMorphismWithGivenObjects,
-                    "CocartesianPreCoComposeMorphismWithGivenObjects using CocartesianPostCoComposeMorphism && braiding",
+                    "CocartesianPreCoComposeMorphismWithGivenObjects using CocartesianPostCoComposeMorphism and braiding",
                     [ [ CocartesianBraiding, 1 ],
                       [ CoexponentialOnObjects, 2 ],
                       [ PreCompose, 1 ],
@@ -879,7 +879,7 @@ end; CategoryFilter = IsCocartesianCoclosedCategory );
 
 ##
 AddDerivationToCAP( CoexponentialCoproductCompatibilityMorphismWithGivenObjects,
-                    "CoexponentialCoproductCompatibilityMorphismWithGivenObjects using braiding && the cocartesian evaluation morphism",
+                    "CoexponentialCoproductCompatibilityMorphismWithGivenObjects using braiding and the cocartesian evaluation morphism",
                     [ [ CoexponentialOnObjects, 2 ],
                       [ IdentityMorphism, 4 ],
                       [ Coproduct, 2 ],
@@ -950,7 +950,7 @@ end; CategoryFilter = cat -> HasIsCocartesianCoclosedCategory( cat ) && IsCocart
 
 ##
 AddDerivationToCAP( CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects,
-                    "CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects using compatibility of coexponential && coproduct",
+                    "CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects using compatibility of coexponential and coproduct",
                     [ [ InitialObject, 1 ],
                       [ Coproduct, 1 ],
                       [ PreComposeList, 1 ],
@@ -994,7 +994,7 @@ end; CategoryFilter = cat -> HasIsCocartesianCoclosedCategory( cat ) && IsCocart
 
 ##
 AddDerivationToCAP( CocartesianPreCoComposeMorphismWithGivenObjects,
-                    "CocartesianPreCoComposeMorphismWithGivenObjects using braiding, cocartesian evaluation, && coexponential-coproduct adjunction",
+                    "CocartesianPreCoComposeMorphismWithGivenObjects using braiding, cocartesian evaluation, and coexponential-coproduct adjunction",
                     [ [ CoexponentialOnObjects, 2 ],
                       [ PreComposeList, 1 ],
                       [ CocartesianEvaluationMorphism, 2 ],
@@ -1055,7 +1055,7 @@ end; CategoryFilter = cat -> HasIsCocartesianCoclosedCategory( cat ) && IsCocart
 
 ##
 AddDerivationToCAP( CocartesianPostCoComposeMorphismWithGivenObjects,
-                    "CocartesianPostCoComposeMorphismWithGivenObjects using cocartesian evaluation, && coexponential-coproduct adjunction",
+                    "CocartesianPostCoComposeMorphismWithGivenObjects using cocartesian evaluation, and coexponential-coproduct adjunction",
                     [ [ CoexponentialOnObjects, 2 ],
                       [ PreComposeList, 1 ],
                       [ CocartesianEvaluationMorphism, 2 ],

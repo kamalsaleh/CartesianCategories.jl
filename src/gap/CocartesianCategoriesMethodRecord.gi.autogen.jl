@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -170,7 +170,7 @@ CocartesianRightUnitorInverseWithGivenCoproduct = @rec(
 
 ) );
 
-# collect cartesian && cocartesian operations
+# collect cartesian and cocartesian operations
 @BindGlobal( "CARTESIAN_AND_COCARTESIAN_CATEGORIES_METHOD_NAME_RECORD", @rec( ) );
 
 Perform( RecNames( CARTESIAN_CATEGORIES_METHOD_NAME_RECORD ), function ( name )

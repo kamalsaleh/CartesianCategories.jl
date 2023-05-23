@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Declarations
 #
@@ -10,7 +10,7 @@
 #! @Section Add-methods
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianAssociatorLeftToRight`.
 #! $F: ( a, b, c ) \mapsto \mathtt[CartesianAssociatorLeftToRight](a, b, c)$.
@@ -29,7 +29,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianAssociatorLeftToRightWithGivenDirectProducts`.
 #! $F: ( s, a, b, c, r ) \mapsto \mathtt[CartesianAssociatorLeftToRightWithGivenDirectProducts](s, a, b, c, r)$.
@@ -48,7 +48,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianAssociatorRightToLeft`.
 #! $F: ( a, b, c ) \mapsto \mathtt[CartesianAssociatorRightToLeft](a, b, c)$.
@@ -67,7 +67,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianAssociatorRightToLeftWithGivenDirectProducts`.
 #! $F: ( s, a, b, c, r ) \mapsto \mathtt[CartesianAssociatorRightToLeftWithGivenDirectProducts](s, a, b, c, r)$.
@@ -86,7 +86,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianDiagonal`.
 #! $F: ( a, n ) \mapsto \mathtt[CartesianDiagonal](a, n)$.
@@ -105,7 +105,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianDiagonalWithGivenCartesianPower`.
 #! $F: ( a, n, cartesian_power ) \mapsto \mathtt[CartesianDiagonalWithGivenCartesianPower](a, n, cartesian_power)$.
@@ -124,7 +124,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianLeftUnitor`.
 #! $F: ( a ) \mapsto \mathtt[CartesianLeftUnitor](a)$.
@@ -143,7 +143,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianLeftUnitorInverse`.
 #! $F: ( a ) \mapsto \mathtt[CartesianLeftUnitorInverse](a)$.
@@ -162,7 +162,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianLeftUnitorInverseWithGivenDirectProduct`.
 #! $F: ( a, r ) \mapsto \mathtt[CartesianLeftUnitorInverseWithGivenDirectProduct](a, r)$.
@@ -181,7 +181,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianLeftUnitorWithGivenDirectProduct`.
 #! $F: ( a, s ) \mapsto \mathtt[CartesianLeftUnitorWithGivenDirectProduct](a, s)$.
@@ -200,7 +200,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianRightUnitor`.
 #! $F: ( a ) \mapsto \mathtt[CartesianRightUnitor](a)$.
@@ -219,7 +219,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianRightUnitorInverse`.
 #! $F: ( a ) \mapsto \mathtt[CartesianRightUnitorInverse](a)$.
@@ -238,7 +238,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianRightUnitorInverseWithGivenDirectProduct`.
 #! $F: ( a, r ) \mapsto \mathtt[CartesianRightUnitorInverseWithGivenDirectProduct](a, r)$.
@@ -257,7 +257,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianRightUnitorWithGivenDirectProduct`.
 #! $F: ( a, s ) \mapsto \mathtt[CartesianRightUnitorWithGivenDirectProduct](a, s)$.
@@ -276,7 +276,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `DirectProductOnMorphisms`.
 #! $F: ( alpha, beta ) \mapsto \mathtt[DirectProductOnMorphisms](alpha, beta)$.
@@ -295,7 +295,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `DirectProductOnMorphismsWithGivenDirectProducts`.
 #! $F: ( s, alpha, beta, r ) \mapsto \mathtt[DirectProductOnMorphismsWithGivenDirectProducts](s, alpha, beta, r)$.

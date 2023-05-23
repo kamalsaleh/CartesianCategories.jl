@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Declarations
 #
@@ -29,7 +29,7 @@ CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianCategory  = @Concatenatio
 ## For internal use only:
 ## we need an operation name different from `DirectProduct`, since CompilerForCAP
 ## seems to be unable to compile the CAP operation `DirectProduct`
-## if declared ⥉ a way different from that ⥉ the method record
+## if declared in a way different from that in the method record
 @DeclareOperation( "BinaryDirectProduct",
         [ IsCapCategory, IsCapCategoryObject, IsCapCategoryObject ] );
 

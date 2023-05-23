@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Declarations
 #
@@ -10,7 +10,7 @@
 #! @Section Add-methods
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `LeftCocartesianCodistributivityExpanding`.
 #! $F: ( a, L ) \mapsto \mathtt[LeftCocartesianCodistributivityExpanding](a, L)$.
@@ -29,7 +29,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `LeftCocartesianCodistributivityExpandingWithGivenObjects`.
 #! $F: ( s, a, L, r ) \mapsto \mathtt[LeftCocartesianCodistributivityExpandingWithGivenObjects](s, a, L, r)$.
@@ -48,7 +48,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `LeftCocartesianCodistributivityFactoring`.
 #! $F: ( a, L ) \mapsto \mathtt[LeftCocartesianCodistributivityFactoring](a, L)$.
@@ -67,7 +67,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `LeftCocartesianCodistributivityFactoringWithGivenObjects`.
 #! $F: ( s, a, L, r ) \mapsto \mathtt[LeftCocartesianCodistributivityFactoringWithGivenObjects](s, a, L, r)$.
@@ -86,7 +86,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `RightCocartesianCodistributivityExpanding`.
 #! $F: ( L, a ) \mapsto \mathtt[RightCocartesianCodistributivityExpanding](L, a)$.
@@ -105,7 +105,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `RightCocartesianCodistributivityExpandingWithGivenObjects`.
 #! $F: ( s, L, a, r ) \mapsto \mathtt[RightCocartesianCodistributivityExpandingWithGivenObjects](s, L, a, r)$.
@@ -124,7 +124,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `RightCocartesianCodistributivityFactoring`.
 #! $F: ( L, a ) \mapsto \mathtt[RightCocartesianCodistributivityFactoring](L, a)$.
@@ -143,7 +143,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `RightCocartesianCodistributivityFactoringWithGivenObjects`.
 #! $F: ( s, L, a, r ) \mapsto \mathtt[RightCocartesianCodistributivityFactoringWithGivenObjects](s, L, a, r)$.

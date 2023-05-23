@@ -16,7 +16,7 @@ julia> InfoOfInstalledOperationsOfCategory( distributive )
 19 primitive operations were used to derive 110 operations for this category which algorithmically
 * IsBicartesianClosedCategory
 and furthermore mathematically
-* IsDistributiveCategory (but !yet algorithmically)
+* IsDistributiveCategory (but not yet algorithmically)
 * IsSkeletalCategory
 
 ```
@@ -34,7 +34,7 @@ julia> Display( I )
 A CAP category with name InitialCategory( ):
 
 5 primitive operations were used to derive 13 operations for this category which mathematically
-* IsEquippedWithHomomorphismStructure (but !yet algorithmically)
+* IsEquippedWithHomomorphismStructure (but not yet algorithmically)
 * IsInitialCategory
 
 julia> OI = Opposite( I )
@@ -47,7 +47,7 @@ julia> Display( OI )
 A CAP category with name Opposite( InitialCategory( ) ):
 
 17 primitive operations were used to derive 17 operations for this category which mathematically
-* IsEquippedWithHomomorphismStructure (but !yet algorithmically)
+* IsEquippedWithHomomorphismStructure (but not yet algorithmically)
 * IsInitialCategory
 
 ```

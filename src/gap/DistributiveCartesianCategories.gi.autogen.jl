@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -9,7 +9,7 @@
 
 ##
 AddDerivationToCAP( LeftCartesianDistributivityExpanding,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ DirectProduct, 1 ],
                       [ Coproduct, 1 ],
                       [ LeftCartesianDistributivityExpandingWithGivenObjects, 1 ] ],
@@ -29,7 +29,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( LeftCartesianDistributivityFactoring,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ DirectProduct, 1 ],
                       [ Coproduct, 1 ],
                       [ LeftCartesianDistributivityFactoringWithGivenObjects, 1 ] ],
@@ -49,7 +49,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( RightCartesianDistributivityExpanding,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ DirectProduct, 1 ],
                       [ Coproduct, 1 ],
                       [ RightCartesianDistributivityExpandingWithGivenObjects, 1 ] ],
@@ -69,7 +69,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( RightCartesianDistributivityFactoring,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ DirectProduct, 1 ],
                       [ Coproduct, 1 ],
                       [ RightCartesianDistributivityFactoringWithGivenObjects, 1 ] ],

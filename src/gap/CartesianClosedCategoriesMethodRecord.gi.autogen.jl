@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -15,7 +15,7 @@ ExponentialOnObjects = @rec(
   return_type = "object",
   dual_operation = "CoexponentialOnObjects",
   dual_arguments_reversed = true,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 ExponentialOnMorphisms = @rec(
@@ -29,7 +29,7 @@ ExponentialOnMorphisms = @rec(
   return_type = "morphism",
   dual_operation = "CoexponentialOnMorphisms",
   dual_arguments_reversed = true,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 ExponentialOnMorphismsWithGivenExponentials = @rec(
@@ -50,7 +50,7 @@ CartesianEvaluationMorphism = @rec(
   return_type = "morphism",
   dual_operation = "CocartesianEvaluationMorphism",
   dual_arguments_reversed = true,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 CartesianEvaluationMorphismWithGivenSource = @rec(
@@ -72,7 +72,7 @@ CartesianCoevaluationMorphism = @rec(
   return_type = "morphism",
   dual_operation = "CocartesianCoevaluationMorphism",
   dual_arguments_reversed = false,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 CartesianCoevaluationMorphismWithGivenRange = @rec(
@@ -89,7 +89,7 @@ DirectProductToExponentialAdjunctionMap = @rec(
   return_type = "morphism",
   dual_operation = "CoproductToCoexponentialAdjunctionMap",
   dual_arguments_reversed = false,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 DirectProductToExponentialAdjunctionMapWithGivenExponential = @rec(
@@ -107,7 +107,7 @@ ExponentialToDirectProductAdjunctionMap = @rec(
   dual_operation = "CoexponentialToCoproductAdjunctionMap",
   dual_preprocessor_func = ( cat, a, b, g ) -> NTupleGAP( 4, Opposite( cat ), Opposite( b ), Opposite( a ), Opposite( g ) ),
   dual_arguments_reversed = false,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 ExponentialToDirectProductAdjunctionMapWithGivenDirectProduct = @rec(
@@ -130,7 +130,7 @@ CartesianPreComposeMorphism = @rec(
   return_type = "morphism",
   dual_operation = "CocartesianPreCoComposeMorphism",
   dual_arguments_reversed = true,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 CartesianPreComposeMorphismWithGivenObjects = @rec(
@@ -152,7 +152,7 @@ CartesianPostComposeMorphism = @rec(
   return_type = "morphism",
   dual_operation = "CocartesianPostCoComposeMorphism",
   dual_arguments_reversed = true,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 CartesianPostComposeMorphismWithGivenObjects = @rec(
@@ -168,7 +168,7 @@ CartesianDualOnObjects = @rec(
   input_arguments_names = [ "cat", "a" ],
   return_type = "object",
   dual_operation = "CocartesianDualOnObjects",
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 CartesianDualOnMorphisms = @rec(
@@ -181,7 +181,7 @@ CartesianDualOnMorphisms = @rec(
   with_given_object_position = "both",
   return_type = "morphism",
   dual_operation = "CocartesianDualOnMorphisms",
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 CartesianDualOnMorphismsWithGivenCartesianDuals = @rec(
@@ -202,7 +202,7 @@ CartesianEvaluationForCartesianDual = @rec(
   with_given_object_position = "both",
   return_type = "morphism",
   dual_operation = "CocartesianEvaluationForCocartesianDual",
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 CartesianEvaluationForCartesianDualWithGivenDirectProduct = @rec(
@@ -222,7 +222,7 @@ MorphismToCartesianBidual = @rec(
   with_given_object_position = "Range",
   return_type = "morphism",
   dual_operation = "MorphismFromCocartesianBidual",
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 MorphismToCartesianBidualWithGivenCartesianBidual = @rec(
@@ -245,7 +245,7 @@ DirectProductExponentialCompatibilityMorphism = @rec(
   dual_operation = "CoexponentialCoproductCompatibilityMorphism",
   dual_preprocessor_func = ( cat, list ) -> PairGAP( Opposite( cat ), [ Opposite( list[2] ), Opposite( list[4] ), Opposite( list[1] ), Opposite( list[3] ) ] ),
   dual_arguments_reversed = false,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 DirectProductExponentialCompatibilityMorphismWithGivenObjects = @rec(
@@ -271,7 +271,7 @@ DirectProductCartesianDualityCompatibilityMorphism = @rec(
   return_type = "morphism",
   dual_operation = "CocartesianDualityCoproductCompatibilityMorphism",
   dual_arguments_reversed = false,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects = @rec(
@@ -293,7 +293,7 @@ MorphismFromDirectProductToExponential = @rec(
   return_type = "morphism",
   dual_operation = "MorphismFromCoexponentialToCoproduct",
   dual_arguments_reversed = true,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 MorphismFromDirectProductToExponentialWithGivenObjects = @rec(
@@ -313,7 +313,7 @@ IsomorphismFromExponentialIntoTerminalObjectToCartesianDualObject = @rec(
   output_range_getter_preconditions = [ [ "CartesianDualOnObjects", 1 ] ],
   return_type = "morphism",
   dual_operation = "IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject",
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject = @rec(
@@ -325,7 +325,7 @@ IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject = @rec(
   output_range_getter_preconditions = [ [ "ExponentialOnObjects", 1 ], [ "TerminalObject", 1 ] ],
   return_type = "morphism",
   dual_operation = "IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject",
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 UniversalPropertyOfCartesianDual = @rec(
@@ -334,7 +334,7 @@ UniversalPropertyOfCartesianDual = @rec(
   return_type = "morphism",
   dual_operation = "UniversalPropertyOfCocartesianDual",
   dual_arguments_reversed = false,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 CartesianLambdaIntroduction = @rec(
@@ -342,7 +342,7 @@ CartesianLambdaIntroduction = @rec(
   io_type = [ [ "alpha" ], [ "u", "i" ] ],
   return_type = "morphism",
   dual_operation = "CocartesianLambdaIntroduction",
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 CartesianLambdaElimination = @rec(
@@ -352,7 +352,7 @@ CartesianLambdaElimination = @rec(
   dual_operation = "CocartesianLambdaElimination",
   dual_preprocessor_func = ( cat, a, b, alpha ) -> NTupleGAP( 4, Opposite( cat ), Opposite( b ), Opposite( a ), Opposite( alpha ) ),
   dual_arguments_reversed = false,
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 IsomorphismFromObjectToExponential = @rec(
@@ -364,7 +364,7 @@ IsomorphismFromObjectToExponential = @rec(
   with_given_object_position = "Range",
   return_type = "morphism",
   dual_operation = "IsomorphismFromCoexponentialToObject",
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 IsomorphismFromObjectToExponentialWithGivenExponential = @rec(
@@ -384,7 +384,7 @@ IsomorphismFromExponentialToObject = @rec(
   with_given_object_position = "Source",
   return_type = "morphism",
   dual_operation = "IsomorphismFromObjectToCoexponential",
-  # Test ⥉ CartesianClosedCategoriesTest
+  # Test in CartesianClosedCategoriesTest
 ),
 
 IsomorphismFromExponentialToObjectWithGivenExponential = @rec(

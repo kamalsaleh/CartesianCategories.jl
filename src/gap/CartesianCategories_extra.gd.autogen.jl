@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Declarations
 #
@@ -13,18 +13,18 @@
 ####################################
 
 #! @Description
-#!  The arguments are an object $a$ && an integer $n \geq 0$.
+#!  The arguments are an object $a$ and an integer $n \geq 0$.
 #!  The output is the diagonal morphism from $a$ to the $n$-fold cartesian power $a^[\times n]$.
-#!  If the category does !support empty limits, $n$ must be !be 0.
-#! @Returns a morphism ⥉ $\mathrm[Hom](a, a^[\times n])$.
+#!  If the category does not support empty limits, $n$ must be not be 0.
+#! @Returns a morphism in $\mathrm[Hom](a, a^[\times n])$.
 #! @Arguments a, n
 @DeclareOperation( "CartesianDiagonal",
                   [ IsCapCategoryObject, IsInt ] );
 
 #! @Description
-#!  The arguments are an object $a$, an integer $n$, && an object $b$ equal to the $n$-fold cartesian power $a^[\times n]$ of $a$.
+#!  The arguments are an object $a$, an integer $n$, and an object $b$ equal to the $n$-fold cartesian power $a^[\times n]$ of $a$.
 #!  The output is the diagonal morphism from $a$ to $b$.
-#! @Returns a morphism ⥉ $\mathrm[Hom](a, b)$
+#! @Returns a morphism in $\mathrm[Hom](a, b)$
 #! @Arguments a, n, b
 @DeclareOperation( "CartesianDiagonalWithGivenCartesianPower",
                   [ IsCapCategoryObject, IsInt, IsCapCategoryObject ] );

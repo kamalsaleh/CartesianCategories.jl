@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Declarations
 #
@@ -10,7 +10,7 @@
 #! @Section Add-methods
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianBraiding`.
 #! $F: ( a, b ) \mapsto \mathtt[CartesianBraiding](a, b)$.
@@ -29,7 +29,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianBraidingInverse`.
 #! $F: ( a, b ) \mapsto \mathtt[CartesianBraidingInverse](a, b)$.
@@ -48,7 +48,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianBraidingInverseWithGivenDirectProducts`.
 #! $F: ( s, a, b, r ) \mapsto \mathtt[CartesianBraidingInverseWithGivenDirectProducts](s, a, b, r)$.
@@ -67,7 +67,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianBraidingWithGivenDirectProducts`.
 #! $F: ( s, a, b, r ) \mapsto \mathtt[CartesianBraidingWithGivenDirectProducts](s, a, b, r)$.

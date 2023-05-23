@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Declarations
 #
@@ -10,7 +10,7 @@
 #! @Section Add-methods
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianCoevaluationMorphism`.
 #! $F: ( a, b ) \mapsto \mathtt[CocartesianCoevaluationMorphism](a, b)$.
@@ -29,7 +29,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianCoevaluationMorphismWithGivenSource`.
 #! $F: ( a, b, s ) \mapsto \mathtt[CocartesianCoevaluationMorphismWithGivenSource](a, b, s)$.
@@ -48,7 +48,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianDualOnMorphisms`.
 #! $F: ( alpha ) \mapsto \mathtt[CocartesianDualOnMorphisms](alpha)$.
@@ -67,7 +67,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianDualOnMorphismsWithGivenCocartesianDuals`.
 #! $F: ( s, alpha, r ) \mapsto \mathtt[CocartesianDualOnMorphismsWithGivenCocartesianDuals](s, alpha, r)$.
@@ -86,7 +86,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianDualOnObjects`.
 #! $F: ( a ) \mapsto \mathtt[CocartesianDualOnObjects](a)$.
@@ -105,7 +105,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianDualityCoproductCompatibilityMorphism`.
 #! $F: ( a, b ) \mapsto \mathtt[CocartesianDualityCoproductCompatibilityMorphism](a, b)$.
@@ -124,7 +124,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects`.
 #! $F: ( s, a, b, r ) \mapsto \mathtt[CocartesianDualityCoproductCompatibilityMorphismWithGivenObjects](s, a, b, r)$.
@@ -143,7 +143,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianEvaluationForCocartesianDual`.
 #! $F: ( a ) \mapsto \mathtt[CocartesianEvaluationForCocartesianDual](a)$.
@@ -162,7 +162,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianEvaluationForCocartesianDualWithGivenCoproduct`.
 #! $F: ( s, a, r ) \mapsto \mathtt[CocartesianEvaluationForCocartesianDualWithGivenCoproduct](s, a, r)$.
@@ -181,7 +181,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianEvaluationMorphism`.
 #! $F: ( a, b ) \mapsto \mathtt[CocartesianEvaluationMorphism](a, b)$.
@@ -200,7 +200,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianEvaluationMorphismWithGivenRange`.
 #! $F: ( a, b, r ) \mapsto \mathtt[CocartesianEvaluationMorphismWithGivenRange](a, b, r)$.
@@ -219,7 +219,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianLambdaElimination`.
 #! $F: ( a, b, alpha ) \mapsto \mathtt[CocartesianLambdaElimination](a, b, alpha)$.
@@ -238,7 +238,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianLambdaIntroduction`.
 #! $F: ( alpha ) \mapsto \mathtt[CocartesianLambdaIntroduction](alpha)$.
@@ -257,7 +257,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianPostCoComposeMorphism`.
 #! $F: ( a, b, c ) \mapsto \mathtt[CocartesianPostCoComposeMorphism](a, b, c)$.
@@ -276,7 +276,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianPostCoComposeMorphismWithGivenObjects`.
 #! $F: ( s, a, b, c, r ) \mapsto \mathtt[CocartesianPostCoComposeMorphismWithGivenObjects](s, a, b, c, r)$.
@@ -295,7 +295,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianPreCoComposeMorphism`.
 #! $F: ( a, b, c ) \mapsto \mathtt[CocartesianPreCoComposeMorphism](a, b, c)$.
@@ -314,7 +314,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianPreCoComposeMorphismWithGivenObjects`.
 #! $F: ( s, a, b, c, r ) \mapsto \mathtt[CocartesianPreCoComposeMorphismWithGivenObjects](s, a, b, c, r)$.
@@ -333,7 +333,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoexponentialCoproductCompatibilityMorphism`.
 #! $F: ( list ) \mapsto \mathtt[CoexponentialCoproductCompatibilityMorphism](list)$.
@@ -352,7 +352,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoexponentialCoproductCompatibilityMorphismWithGivenObjects`.
 #! $F: ( source, list, range ) \mapsto \mathtt[CoexponentialCoproductCompatibilityMorphismWithGivenObjects](source, list, range)$.
@@ -371,7 +371,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoexponentialOnMorphisms`.
 #! $F: ( alpha, beta ) \mapsto \mathtt[CoexponentialOnMorphisms](alpha, beta)$.
@@ -390,7 +390,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoexponentialOnMorphismsWithGivenCoexponentials`.
 #! $F: ( s, alpha, beta, r ) \mapsto \mathtt[CoexponentialOnMorphismsWithGivenCoexponentials](s, alpha, beta, r)$.
@@ -409,7 +409,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoexponentialOnObjects`.
 #! $F: ( a, b ) \mapsto \mathtt[CoexponentialOnObjects](a, b)$.
@@ -428,7 +428,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoexponentialToCoproductAdjunctionMap`.
 #! $F: ( a, b, f ) \mapsto \mathtt[CoexponentialToCoproductAdjunctionMap](a, b, f)$.
@@ -447,7 +447,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoexponentialToCoproductAdjunctionMapWithGivenCoproduct`.
 #! $F: ( a, b, f, t ) \mapsto \mathtt[CoexponentialToCoproductAdjunctionMapWithGivenCoproduct](a, b, f, t)$.
@@ -466,7 +466,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoproductToCoexponentialAdjunctionMap`.
 #! $F: ( c, b, g ) \mapsto \mathtt[CoproductToCoexponentialAdjunctionMap](c, b, g)$.
@@ -485,7 +485,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoproductToCoexponentialAdjunctionMapWithGivenCoexponential`.
 #! $F: ( c, b, g, i ) \mapsto \mathtt[CoproductToCoexponentialAdjunctionMapWithGivenCoexponential](c, b, g, i)$.
@@ -504,7 +504,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject`.
 #! $F: ( a ) \mapsto \mathtt[IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject](a)$.
@@ -523,7 +523,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject`.
 #! $F: ( a ) \mapsto \mathtt[IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject](a)$.
@@ -542,7 +542,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromCoexponentialToObject`.
 #! $F: ( a ) \mapsto \mathtt[IsomorphismFromCoexponentialToObject](a)$.
@@ -561,7 +561,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromCoexponentialToObjectWithGivenCoexponential`.
 #! $F: ( a, s ) \mapsto \mathtt[IsomorphismFromCoexponentialToObjectWithGivenCoexponential](a, s)$.
@@ -580,7 +580,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromObjectToCoexponential`.
 #! $F: ( a ) \mapsto \mathtt[IsomorphismFromObjectToCoexponential](a)$.
@@ -599,7 +599,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromObjectToCoexponentialWithGivenCoexponential`.
 #! $F: ( a, r ) \mapsto \mathtt[IsomorphismFromObjectToCoexponentialWithGivenCoexponential](a, r)$.
@@ -618,7 +618,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `MorphismFromCocartesianBidual`.
 #! $F: ( a ) \mapsto \mathtt[MorphismFromCocartesianBidual](a)$.
@@ -637,7 +637,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `MorphismFromCocartesianBidualWithGivenCocartesianBidual`.
 #! $F: ( a, s ) \mapsto \mathtt[MorphismFromCocartesianBidualWithGivenCocartesianBidual](a, s)$.
@@ -656,7 +656,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `MorphismFromCoexponentialToCoproduct`.
 #! $F: ( a, b ) \mapsto \mathtt[MorphismFromCoexponentialToCoproduct](a, b)$.
@@ -675,7 +675,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `MorphismFromCoexponentialToCoproductWithGivenObjects`.
 #! $F: ( s, a, b, r ) \mapsto \mathtt[MorphismFromCoexponentialToCoproductWithGivenObjects](s, a, b, r)$.
@@ -694,7 +694,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `UniversalPropertyOfCocartesianDual`.
 #! $F: ( t, a, alpha ) \mapsto \mathtt[UniversalPropertyOfCocartesianDual](t, a, alpha)$.

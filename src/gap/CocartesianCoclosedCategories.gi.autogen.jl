@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -9,7 +9,7 @@
 
 ##
 AddDerivationToCAP( IsomorphismFromCoexponentialToObject,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ IsomorphismFromCoexponentialToObjectWithGivenCoexponential, 1 ] ],
                     
   function( cat, object )
@@ -20,7 +20,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( IsomorphismFromObjectToCoexponential,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ IsomorphismFromObjectToCoexponentialWithGivenCoexponential, 1 ] ],
                     
   function( cat, object )

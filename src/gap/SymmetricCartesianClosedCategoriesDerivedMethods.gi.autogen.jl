@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -9,7 +9,7 @@
 
 ##
 AddDerivationToCAP( DirectProductToExponentialAdjunctionMap,
-                    "DirectProductToExponentialAdjunctionMap using CartesianCoevaluationMorphism && Exponential",
+                    "DirectProductToExponentialAdjunctionMap using CartesianCoevaluationMorphism and Exponential",
                     [ [ PreCompose, 1 ],
                       [ CartesianCoevaluationMorphism, 1 ],
                       [ ExponentialOnMorphisms, 1 ],
@@ -37,7 +37,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( DirectProductToExponentialAdjunctionMapWithGivenExponential,
-                    "DirectProductToExponentialAdjunctionMapWithGivenExponential using CartesianCoevaluationMorphism && Exponential",
+                    "DirectProductToExponentialAdjunctionMapWithGivenExponential using CartesianCoevaluationMorphism and Exponential",
                     [ [ CartesianCoevaluationMorphism, 1 ],
                       [ PreCompose, 1 ],
                       [ ExponentialOnMorphismsWithGivenExponentials, 1 ],
@@ -68,7 +68,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( ExponentialToDirectProductAdjunctionMap,
-                    "ExponentialToDirectProductAdjunctionMap using DirectProductOnMorphisms && CartesianEvaluationMorphism",
+                    "ExponentialToDirectProductAdjunctionMap using DirectProductOnMorphisms and CartesianEvaluationMorphism",
                     [ [ PreCompose, 1 ],
                       [ DirectProductOnMorphisms, 1 ],
                       [ IdentityMorphism, 1 ],
@@ -115,7 +115,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( MorphismToCartesianBidualWithGivenCartesianBidual,
-                    "MorphismToCartesianBidualWithGivenCartesianBidual using the braiding && the universal property of the dual",
+                    "MorphismToCartesianBidualWithGivenCartesianBidual using the braiding and the universal property of the dual",
                     [ [ PreCompose, 1 ],
                       [ CartesianBraiding, 1 ],
                       [ CartesianDualOnObjects, 2 ],
@@ -146,7 +146,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( MorphismToCartesianBidualWithGivenCartesianBidual,
-                    "MorphismToCartesianBidualWithGivenCartesianBidual using CartesianCoevaluation, Exponential, && CartesianEvaluation",
+                    "MorphismToCartesianBidualWithGivenCartesianBidual using CartesianCoevaluation, Exponential, and CartesianEvaluation",
                     [ [ CartesianDualOnObjects, 1 ],
                       [ TerminalObject, 1 ],
                       [ PreComposeList, 1 ],
@@ -221,7 +221,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( CartesianDualOnMorphismsWithGivenCartesianDuals,
-                    "CartesianDualOnMorphismsWithGivenCartesianDuals using ExponentialOnMorphisms && IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject",
+                    "CartesianDualOnMorphismsWithGivenCartesianDuals using ExponentialOnMorphisms and IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject",
                     [ [ PreComposeList, 1 ],
                       [ IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject, 1 ],
                       [ ExponentialOnMorphisms, 1 ],
@@ -259,7 +259,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( CartesianEvaluationForCartesianDualWithGivenDirectProduct,
-                    "CartesianEvaluationForCartesianDualWithGivenDirectProduct using the direct product-exponential adjunction && IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject",
+                    "CartesianEvaluationForCartesianDualWithGivenDirectProduct using the direct product-exponential adjunction and IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject",
                     [ [ ExponentialToDirectProductAdjunctionMap, 1 ],
                       [ IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject, 1 ] ],
                     
@@ -276,7 +276,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( CartesianLambdaIntroduction,
-                    "CartesianLambdaIntroduction using the direct product-exponential adjunction && left unitor",
+                    "CartesianLambdaIntroduction using the direct product-exponential adjunction and left unitor",
                     [ [ PreCompose, 1 ],
                       [ CartesianLeftUnitor, 1 ],
                       [ DirectProductToExponentialAdjunctionMap, 1 ],
@@ -307,7 +307,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( CartesianLambdaElimination,
-                    "CartesianLambdaElimination using the direct product-exponential adjunction && left unitor inverse",
+                    "CartesianLambdaElimination using the direct product-exponential adjunction and left unitor inverse",
                     [ [ ExponentialToDirectProductAdjunctionMap, 1 ],
                       [ PreCompose, 1 ],
                       [ CartesianLeftUnitorInverse, 1 ] ],
@@ -336,7 +336,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( DirectProductExponentialCompatibilityMorphismWithGivenObjects,
-                    "DirectProductExponentialCompatibilityMorphismWithGivenObjects using associator, braiding && the evaluation morphism",
+                    "DirectProductExponentialCompatibilityMorphismWithGivenObjects using associator, braiding and the evaluation morphism",
                     [ [ ExponentialOnObjects, 2 ],
                       [ IdentityMorphism, 4 ],
                       [ DirectProduct, 2 ],
@@ -439,7 +439,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects,
-                    "DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects using left unitor, && compatibility of direct product && exponential",
+                    "DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects using left unitor, and compatibility of direct product and exponential",
                     [ [ TerminalObject, 1 ],
                       [ DirectProduct, 1 ],
                       [ PreComposeList, 1 ],
@@ -685,7 +685,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( CartesianPreComposeMorphismWithGivenObjects,
-                    "CartesianPreComposeMorphismWithGivenObjects using associator, braiding, evaluation, && direct product-exponential adjunction",
+                    "CartesianPreComposeMorphismWithGivenObjects using associator, braiding, evaluation, and direct product-exponential adjunction",
                     [ [ ExponentialOnObjects, 2 ],
                       [ PreComposeList, 1 ],
                       [ CartesianAssociatorLeftToRight, 1 ],
@@ -760,7 +760,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( CartesianPostComposeMorphismWithGivenObjects,
-                    "CartesianPostComposeMorphismWithGivenObjects using associator, evaluation, && direct product-exponential adjunction",
+                    "CartesianPostComposeMorphismWithGivenObjects using associator, evaluation, and direct product-exponential adjunction",
                     [ [ ExponentialOnObjects, 2 ],
                       [ PreComposeList, 1 ],
                       [ CartesianAssociatorLeftToRight, 1 ],
@@ -813,7 +813,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( CartesianPostComposeMorphismWithGivenObjects,
-                    "CartesianPostComposeMorphismWithGivenObjects using CartesianPreComposeMorphism && braiding",
+                    "CartesianPostComposeMorphismWithGivenObjects using CartesianPreComposeMorphism and braiding",
                     [ [ CartesianBraiding, 1 ],
                       [ ExponentialOnObjects, 2 ],
                       [ PreCompose, 1 ],
@@ -840,7 +840,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( CartesianPreComposeMorphismWithGivenObjects,
-                    "CartesianPreComposeMorphismWithGivenObjects using CartesianPostComposeMorphism && braiding",
+                    "CartesianPreComposeMorphismWithGivenObjects using CartesianPostComposeMorphism and braiding",
                     [ [ CartesianBraiding, 1 ],
                       [ ExponentialOnObjects, 2 ],
                       [ PreCompose, 1 ],
@@ -867,7 +867,7 @@ end; CategoryFilter = IsCartesianClosedCategory );
 
 ##
 AddDerivationToCAP( DirectProductExponentialCompatibilityMorphismWithGivenObjects,
-                    "DirectProductExponentialCompatibilityMorphismWithGivenObjects using braiding && the evaluation morphism",
+                    "DirectProductExponentialCompatibilityMorphismWithGivenObjects using braiding and the evaluation morphism",
                     [ [ ExponentialOnObjects, 2 ],
                       [ IdentityMorphism, 4 ],
                       [ DirectProduct, 2 ],
@@ -938,7 +938,7 @@ end; CategoryFilter = cat -> HasIsCartesianClosedCategory( cat ) && IsCartesianC
 
 ##
 AddDerivationToCAP( DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects,
-                    "DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects using compatibility of direct product && exponential",
+                    "DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects using compatibility of direct product and exponential",
                     [ [ TerminalObject, 1 ],
                       [ DirectProduct, 1 ],
                       [ PreComposeList, 1 ],
@@ -982,7 +982,7 @@ end; CategoryFilter = cat -> HasIsCartesianClosedCategory( cat ) && IsCartesianC
 
 ##
 AddDerivationToCAP( CartesianPreComposeMorphismWithGivenObjects,
-                    "CartesianPreComposeMorphismWithGivenObjects using, braiding, evaluation, && direct product-exponential adjunction",
+                    "CartesianPreComposeMorphismWithGivenObjects using, braiding, evaluation, and direct product-exponential adjunction",
                     [ [ ExponentialOnObjects, 2 ],
                       [ PreComposeList, 1 ],
                       [ DirectProductOnMorphisms, 2 ],
@@ -1043,7 +1043,7 @@ end; CategoryFilter = cat -> HasIsCartesianClosedCategory( cat ) && IsCartesianC
 
 ##
 AddDerivationToCAP( CartesianPostComposeMorphismWithGivenObjects,
-                    "CartesianPostComposeMorphismWithGivenObjects using evaluation, && direct product-exponential adjunction",
+                    "CartesianPostComposeMorphismWithGivenObjects using evaluation, and direct product-exponential adjunction",
                     [ [ ExponentialOnObjects, 2 ],
                       [ PreComposeList, 1 ],
                       [ DirectProductOnMorphisms, 1 ],

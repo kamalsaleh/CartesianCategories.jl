@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Declarations
 #
@@ -10,7 +10,7 @@
 #! @Section Add-methods
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianAssociatorLeftToRight`.
 #! $F: ( a, b, c ) \mapsto \mathtt[CocartesianAssociatorLeftToRight](a, b, c)$.
@@ -29,7 +29,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianAssociatorLeftToRightWithGivenCoproducts`.
 #! $F: ( s, a, b, c, r ) \mapsto \mathtt[CocartesianAssociatorLeftToRightWithGivenCoproducts](s, a, b, c, r)$.
@@ -48,7 +48,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianAssociatorRightToLeft`.
 #! $F: ( a, b, c ) \mapsto \mathtt[CocartesianAssociatorRightToLeft](a, b, c)$.
@@ -67,7 +67,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianAssociatorRightToLeftWithGivenCoproducts`.
 #! $F: ( s, a, b, c, r ) \mapsto \mathtt[CocartesianAssociatorRightToLeftWithGivenCoproducts](s, a, b, c, r)$.
@@ -86,7 +86,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianCodiagonal`.
 #! $F: ( a, n ) \mapsto \mathtt[CocartesianCodiagonal](a, n)$.
@@ -105,7 +105,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianCodiagonalWithGivenCocartesianMultiple`.
 #! $F: ( a, n, cocartesian_multiple ) \mapsto \mathtt[CocartesianCodiagonalWithGivenCocartesianMultiple](a, n, cocartesian_multiple)$.
@@ -124,7 +124,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianLeftUnitor`.
 #! $F: ( a ) \mapsto \mathtt[CocartesianLeftUnitor](a)$.
@@ -143,7 +143,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianLeftUnitorInverse`.
 #! $F: ( a ) \mapsto \mathtt[CocartesianLeftUnitorInverse](a)$.
@@ -162,7 +162,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianLeftUnitorInverseWithGivenCoproduct`.
 #! $F: ( a, r ) \mapsto \mathtt[CocartesianLeftUnitorInverseWithGivenCoproduct](a, r)$.
@@ -181,7 +181,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianLeftUnitorWithGivenCoproduct`.
 #! $F: ( a, s ) \mapsto \mathtt[CocartesianLeftUnitorWithGivenCoproduct](a, s)$.
@@ -200,7 +200,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianRightUnitor`.
 #! $F: ( a ) \mapsto \mathtt[CocartesianRightUnitor](a)$.
@@ -219,7 +219,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianRightUnitorInverse`.
 #! $F: ( a ) \mapsto \mathtt[CocartesianRightUnitorInverse](a)$.
@@ -238,7 +238,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianRightUnitorInverseWithGivenCoproduct`.
 #! $F: ( a, r ) \mapsto \mathtt[CocartesianRightUnitorInverseWithGivenCoproduct](a, r)$.
@@ -257,7 +257,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CocartesianRightUnitorWithGivenCoproduct`.
 #! $F: ( a, s ) \mapsto \mathtt[CocartesianRightUnitorWithGivenCoproduct](a, s)$.
@@ -276,7 +276,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoproductOnMorphisms`.
 #! $F: ( alpha, beta ) \mapsto \mathtt[CoproductOnMorphisms](alpha, beta)$.
@@ -295,7 +295,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CoproductOnMorphismsWithGivenCoproducts`.
 #! $F: ( s, alpha, beta, r ) \mapsto \mathtt[CoproductOnMorphismsWithGivenCoproducts](s, alpha, beta, r)$.

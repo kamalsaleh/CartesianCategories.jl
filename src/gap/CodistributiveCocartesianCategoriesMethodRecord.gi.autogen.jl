@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -20,7 +20,7 @@ LeftCocartesianCodistributivityExpanding = @rec(
   return_type = "morphism",
   dual_operation = "LeftCartesianDistributivityFactoring",
   dual_arguments_reversed = false,
-  # Test ⥉ CodistributiveCocartesianCategoriesTest
+  # Test in CodistributiveCocartesianCategoriesTest
 ),
 
 LeftCocartesianCodistributivityExpandingWithGivenObjects = @rec(
@@ -29,7 +29,7 @@ LeftCocartesianCodistributivityExpandingWithGivenObjects = @rec(
   return_type = "morphism",
   dual_operation = "LeftCartesianDistributivityFactoringWithGivenObjects",
   dual_with_given_objects_reversed = true,
-  # Test ⥉ CodistributiveCocartesianCategoriesTest
+  # Test in CodistributiveCocartesianCategoriesTest
 ),
 
 LeftCocartesianCodistributivityFactoring = @rec(
@@ -43,7 +43,7 @@ LeftCocartesianCodistributivityFactoring = @rec(
   return_type = "morphism",
   dual_operation = "LeftCartesianDistributivityExpanding",
   dual_arguments_reversed = false,
-  # Test ⥉ CodistributiveCocartesianCategoriesTest
+  # Test in CodistributiveCocartesianCategoriesTest
 ),
 
 LeftCocartesianCodistributivityFactoringWithGivenObjects = @rec(
@@ -52,7 +52,7 @@ LeftCocartesianCodistributivityFactoringWithGivenObjects = @rec(
   return_type = "morphism",
   dual_operation = "LeftCartesianDistributivityExpandingWithGivenObjects",
   dual_with_given_objects_reversed = true,
-  # Test ⥉ CodistributiveCocartesianCategoriesTest
+  # Test in CodistributiveCocartesianCategoriesTest
 ),
 
 RightCocartesianCodistributivityExpanding = @rec(
@@ -66,7 +66,7 @@ RightCocartesianCodistributivityExpanding = @rec(
   return_type = "morphism",
   dual_operation = "RightCartesianDistributivityFactoring",
   dual_arguments_reversed = false,
-  # Test ⥉ CodistributiveCocartesianCategoriesTest
+  # Test in CodistributiveCocartesianCategoriesTest
 ),
 
 RightCocartesianCodistributivityExpandingWithGivenObjects = @rec(
@@ -75,7 +75,7 @@ RightCocartesianCodistributivityExpandingWithGivenObjects = @rec(
   return_type = "morphism",
   dual_operation = "RightCartesianDistributivityFactoringWithGivenObjects",
   dual_with_given_objects_reversed = true,
-  # Test ⥉ CodistributiveCocartesianCategoriesTest
+  # Test in CodistributiveCocartesianCategoriesTest
 ),
 
 RightCocartesianCodistributivityFactoring = @rec(
@@ -89,7 +89,7 @@ RightCocartesianCodistributivityFactoring = @rec(
   return_type = "morphism",
   dual_operation = "RightCartesianDistributivityExpanding",
   dual_arguments_reversed = false,
-  # Test ⥉ CodistributiveCocartesianCategoriesTest
+  # Test in CodistributiveCocartesianCategoriesTest
 ),
 
 RightCocartesianCodistributivityFactoringWithGivenObjects = @rec(
@@ -98,12 +98,12 @@ RightCocartesianCodistributivityFactoringWithGivenObjects = @rec(
   return_type = "morphism",
   dual_operation = "RightCartesianDistributivityExpandingWithGivenObjects",
   dual_with_given_objects_reversed = true,
-  # Test ⥉ CodistributiveCocartesianCategoriesTest
+  # Test in CodistributiveCocartesianCategoriesTest
 ),
 
 ) );
 
-# collect distributive && codistributive operations
+# collect distributive and codistributive operations
 @BindGlobal( "DISTRIBUTIVE_CARTESIAN_AND_CODISTRIBUTIVE_COCARTESIAN_CATEGORIES_METHOD_NAME_RECORD", @rec( ) );
 
 Perform( RecNames( DISTRIBUTIVE_CARTESIAN_CATEGORIES_METHOD_NAME_RECORD ), function ( name )

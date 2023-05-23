@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -12,7 +12,7 @@
 ####################################
 
 ## Final methods for CartesianDual
-AddFinalDerivationBundle( "IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject && its inverse as the identity of Exp(a,1)",
+AddFinalDerivationBundle( "IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject and its inverse as the identity of Exp(a,1)",
                     [ [ IdentityMorphism, 1 ],
                       [ ExponentialOnObjects, 1 ],
                       [ TerminalObject, 1 ] ],

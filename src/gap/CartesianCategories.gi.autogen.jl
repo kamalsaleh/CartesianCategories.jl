@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -11,7 +11,7 @@ InstallTrueMethod( IsCartesianCategory, IsStrictCartesianCategory );
 
 ##
 AddDerivationToCAP( CartesianAssociatorRightToLeft,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ DirectProduct, 2 ],
                       [ CartesianAssociatorRightToLeftWithGivenDirectProducts, 1 ] ],
                     
@@ -30,7 +30,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( CartesianAssociatorLeftToRight,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ DirectProduct, 2 ],
                       [ CartesianAssociatorLeftToRightWithGivenDirectProducts, 1 ] ],
                     
@@ -49,7 +49,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( CartesianLeftUnitor,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ CartesianLeftUnitorWithGivenDirectProduct, 1 ] ],
                     
   function( cat, object )
@@ -60,7 +60,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( CartesianLeftUnitorInverse,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ CartesianLeftUnitorInverseWithGivenDirectProduct, 1 ] ],
                     
   function( cat, object )
@@ -71,7 +71,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( CartesianRightUnitor,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ CartesianRightUnitorWithGivenDirectProduct, 1 ] ],
                     
   function( cat, object )
@@ -82,7 +82,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( CartesianRightUnitorInverse,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ CartesianRightUnitorInverseWithGivenDirectProduct, 1 ] ],
                     
   function( cat, object )

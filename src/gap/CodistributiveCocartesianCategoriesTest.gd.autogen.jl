@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Declarations
 #
@@ -7,7 +7,7 @@
 
 
 
-#! @Chapter Examples && Tests
+#! @Chapter Examples and Tests
 
 #! @Section Test functions
 
@@ -17,10 +17,10 @@
 #! * an object $a$
 #! * a list $L$ of objects
 #! This function checks for every operation
-#! declared ⥉ CodistributiveCocartesianCategories.gd
-#! if it is computable ⥉ the CAP category $cat$.
+#! declared in CodistributiveCocartesianCategories.gd
+#! if it is computable in the CAP category $cat$.
 #! If yes, then the operation is executed
-#! with the parameters given above &&
+#! with the parameters given above and
 #! compared to the equivalent computation in
 #! the opposite category of $cat$.
 #! Pass the options
@@ -29,7 +29,7 @@
 #!    which is passed on to Opposite(),
 #!    to only primitively install
 #!    dual operations for primitively
-#!    installed operations ⥉ $cat$.
+#!    installed operations in $cat$.
 #!    The advantage is, that more derivations might be tested.
 #!    On the downside, this might test fewer dual_pre/postprocessor_funcs.
 #! @Arguments cat, a, L

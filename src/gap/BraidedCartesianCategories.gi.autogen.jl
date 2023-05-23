@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -9,7 +9,7 @@
 
 ##
 AddDerivationToCAP( CartesianBraiding,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ DirectProduct, 1 ],
                       [ CartesianBraidingWithGivenDirectProducts, 1 ] ],
                     
@@ -24,7 +24,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( CartesianBraidingInverse,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ DirectProduct, 1 ],
                       [ CartesianBraidingInverseWithGivenDirectProducts, 1 ] ],
                     

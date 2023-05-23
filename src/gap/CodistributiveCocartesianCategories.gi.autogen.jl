@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -9,7 +9,7 @@
 
 ##
 AddDerivationToCAP( LeftCocartesianCodistributivityExpanding,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ Coproduct, 1 ],
                       [ DirectProduct, 1 ],
                       [ LeftCocartesianCodistributivityExpandingWithGivenObjects, 1 ] ],
@@ -29,7 +29,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( LeftCocartesianCodistributivityFactoring,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ Coproduct, 1 ],
                       [ DirectProduct, 1 ],
                       [ LeftCocartesianCodistributivityFactoringWithGivenObjects, 1 ] ],
@@ -49,7 +49,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( RightCocartesianCodistributivityExpanding,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ Coproduct, 1 ],
                       [ DirectProduct, 1 ],
                       [ RightCocartesianCodistributivityExpandingWithGivenObjects, 1 ] ],
@@ -69,7 +69,7 @@ end; CategoryFilter = IsSkeletalCategory );
 
 ##
 AddDerivationToCAP( RightCocartesianCodistributivityFactoring,
-                    "calling the WithGiven operation ⥉ a skeletal setting",
+                    "calling the WithGiven operation in a skeletal setting",
                     [ [ Coproduct, 1 ],
                       [ DirectProduct, 1 ],
                       [ RightCocartesianCodistributivityFactoringWithGivenObjects, 1 ] ],

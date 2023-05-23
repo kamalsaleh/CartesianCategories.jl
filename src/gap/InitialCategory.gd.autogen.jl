@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Declarations
 #
@@ -19,13 +19,13 @@
         IsCapCategory );
 
 #! @Description
-#!  The &GAP; type of an object ⥉ an initial category.
+#!  The &GAP; type of an object in an initial category.
 #! @Arguments T
 @DeclareFilter( "IsObjectInInitialCapCategory",
         IsCapCategoryObject );
 
 #! @Description
-#!  The &GAP; type of a morphism ⥉ an initial category.
+#!  The &GAP; type of a morphism in an initial category.
 #! @Arguments T
 @DeclareFilter( "IsMorphismInInitialCapCategory",
         IsCapCategoryMorphism );

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Declarations
 #
@@ -10,7 +10,7 @@
 #! @Section Add-methods
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianCoevaluationMorphism`.
 #! $F: ( a, b ) \mapsto \mathtt[CartesianCoevaluationMorphism](a, b)$.
@@ -29,7 +29,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianCoevaluationMorphismWithGivenRange`.
 #! $F: ( a, b, r ) \mapsto \mathtt[CartesianCoevaluationMorphismWithGivenRange](a, b, r)$.
@@ -48,7 +48,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianDualOnMorphisms`.
 #! $F: ( alpha ) \mapsto \mathtt[CartesianDualOnMorphisms](alpha)$.
@@ -67,7 +67,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianDualOnMorphismsWithGivenCartesianDuals`.
 #! $F: ( s, alpha, r ) \mapsto \mathtt[CartesianDualOnMorphismsWithGivenCartesianDuals](s, alpha, r)$.
@@ -86,7 +86,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianDualOnObjects`.
 #! $F: ( a ) \mapsto \mathtt[CartesianDualOnObjects](a)$.
@@ -105,7 +105,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianEvaluationForCartesianDual`.
 #! $F: ( a ) \mapsto \mathtt[CartesianEvaluationForCartesianDual](a)$.
@@ -124,7 +124,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianEvaluationForCartesianDualWithGivenDirectProduct`.
 #! $F: ( s, a, r ) \mapsto \mathtt[CartesianEvaluationForCartesianDualWithGivenDirectProduct](s, a, r)$.
@@ -143,7 +143,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianEvaluationMorphism`.
 #! $F: ( a, b ) \mapsto \mathtt[CartesianEvaluationMorphism](a, b)$.
@@ -162,7 +162,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianEvaluationMorphismWithGivenSource`.
 #! $F: ( a, b, s ) \mapsto \mathtt[CartesianEvaluationMorphismWithGivenSource](a, b, s)$.
@@ -181,7 +181,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianLambdaElimination`.
 #! $F: ( a, b, alpha ) \mapsto \mathtt[CartesianLambdaElimination](a, b, alpha)$.
@@ -200,7 +200,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianLambdaIntroduction`.
 #! $F: ( alpha ) \mapsto \mathtt[CartesianLambdaIntroduction](alpha)$.
@@ -219,7 +219,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianPostComposeMorphism`.
 #! $F: ( a, b, c ) \mapsto \mathtt[CartesianPostComposeMorphism](a, b, c)$.
@@ -238,7 +238,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianPostComposeMorphismWithGivenObjects`.
 #! $F: ( s, a, b, c, r ) \mapsto \mathtt[CartesianPostComposeMorphismWithGivenObjects](s, a, b, c, r)$.
@@ -257,7 +257,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianPreComposeMorphism`.
 #! $F: ( a, b, c ) \mapsto \mathtt[CartesianPreComposeMorphism](a, b, c)$.
@@ -276,7 +276,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `CartesianPreComposeMorphismWithGivenObjects`.
 #! $F: ( s, a, b, c, r ) \mapsto \mathtt[CartesianPreComposeMorphismWithGivenObjects](s, a, b, c, r)$.
@@ -295,7 +295,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `DirectProductCartesianDualityCompatibilityMorphism`.
 #! $F: ( a, b ) \mapsto \mathtt[DirectProductCartesianDualityCompatibilityMorphism](a, b)$.
@@ -314,7 +314,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects`.
 #! $F: ( s, a, b, r ) \mapsto \mathtt[DirectProductCartesianDualityCompatibilityMorphismWithGivenObjects](s, a, b, r)$.
@@ -333,7 +333,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `DirectProductExponentialCompatibilityMorphism`.
 #! $F: ( list ) \mapsto \mathtt[DirectProductExponentialCompatibilityMorphism](list)$.
@@ -352,7 +352,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `DirectProductExponentialCompatibilityMorphismWithGivenObjects`.
 #! $F: ( source, list, range ) \mapsto \mathtt[DirectProductExponentialCompatibilityMorphismWithGivenObjects](source, list, range)$.
@@ -371,7 +371,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `DirectProductToExponentialAdjunctionMap`.
 #! $F: ( a, b, f ) \mapsto \mathtt[DirectProductToExponentialAdjunctionMap](a, b, f)$.
@@ -390,7 +390,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `DirectProductToExponentialAdjunctionMapWithGivenExponential`.
 #! $F: ( a, b, f, i ) \mapsto \mathtt[DirectProductToExponentialAdjunctionMapWithGivenExponential](a, b, f, i)$.
@@ -409,7 +409,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `ExponentialOnMorphisms`.
 #! $F: ( alpha, beta ) \mapsto \mathtt[ExponentialOnMorphisms](alpha, beta)$.
@@ -428,7 +428,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `ExponentialOnMorphismsWithGivenExponentials`.
 #! $F: ( s, alpha, beta, r ) \mapsto \mathtt[ExponentialOnMorphismsWithGivenExponentials](s, alpha, beta, r)$.
@@ -447,7 +447,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `ExponentialOnObjects`.
 #! $F: ( a, b ) \mapsto \mathtt[ExponentialOnObjects](a, b)$.
@@ -466,7 +466,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `ExponentialToDirectProductAdjunctionMap`.
 #! $F: ( b, c, g ) \mapsto \mathtt[ExponentialToDirectProductAdjunctionMap](b, c, g)$.
@@ -485,7 +485,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `ExponentialToDirectProductAdjunctionMapWithGivenDirectProduct`.
 #! $F: ( b, c, g, t ) \mapsto \mathtt[ExponentialToDirectProductAdjunctionMapWithGivenDirectProduct](b, c, g, t)$.
@@ -504,7 +504,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject`.
 #! $F: ( a ) \mapsto \mathtt[IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject](a)$.
@@ -523,7 +523,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromExponentialIntoTerminalObjectToCartesianDualObject`.
 #! $F: ( a ) \mapsto \mathtt[IsomorphismFromExponentialIntoTerminalObjectToCartesianDualObject](a)$.
@@ -542,7 +542,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromExponentialToObject`.
 #! $F: ( a ) \mapsto \mathtt[IsomorphismFromExponentialToObject](a)$.
@@ -561,7 +561,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromExponentialToObjectWithGivenExponential`.
 #! $F: ( a, s ) \mapsto \mathtt[IsomorphismFromExponentialToObjectWithGivenExponential](a, s)$.
@@ -580,7 +580,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromObjectToExponential`.
 #! $F: ( a ) \mapsto \mathtt[IsomorphismFromObjectToExponential](a)$.
@@ -599,7 +599,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `IsomorphismFromObjectToExponentialWithGivenExponential`.
 #! $F: ( a, r ) \mapsto \mathtt[IsomorphismFromObjectToExponentialWithGivenExponential](a, r)$.
@@ -618,7 +618,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `MorphismFromDirectProductToExponential`.
 #! $F: ( a, b ) \mapsto \mathtt[MorphismFromDirectProductToExponential](a, b)$.
@@ -637,7 +637,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `MorphismFromDirectProductToExponentialWithGivenObjects`.
 #! $F: ( s, a, b, r ) \mapsto \mathtt[MorphismFromDirectProductToExponentialWithGivenObjects](s, a, b, r)$.
@@ -656,7 +656,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `MorphismToCartesianBidual`.
 #! $F: ( a ) \mapsto \mathtt[MorphismToCartesianBidual](a)$.
@@ -675,7 +675,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `MorphismToCartesianBidualWithGivenCartesianBidual`.
 #! $F: ( a, r ) \mapsto \mathtt[MorphismToCartesianBidualWithGivenCartesianBidual](a, r)$.
@@ -694,7 +694,7 @@
                   [ IsCapCategory, IsList ] );
 
 #! @Description
-#! The arguments are a category $C$ && a function $F$.
+#! The arguments are a category $C$ and a function $F$.
 #! This operation adds the given function $F$
 #! to the category for the basic operation `UniversalPropertyOfCartesianDual`.
 #! $F: ( t, a, alpha ) \mapsto \mathtt[UniversalPropertyOfCartesianDual](t, a, alpha)$.

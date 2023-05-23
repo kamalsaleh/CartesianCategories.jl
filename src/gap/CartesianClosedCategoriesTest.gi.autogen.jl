@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -111,7 +111,7 @@
             @Assert( 0, IsEqualForObjects( exp_ab, Opposite( coexp_ba_op ) ) );
             @Assert( 0, IsEqualForObjects( exp_ba, Opposite( coexp_ab_op ) ) );
             
-            # Convenience methods ⥉ the opposite category
+            # Convenience methods in the opposite category
             
             @Assert( 0, IsEqualForObjects( coexp_ab_op, Coexponential( a_op, b_op ) ) );
             @Assert( 0, IsEqualForObjects( coexp_ba_op, Coexponential( b_op, a_op ) ) );
@@ -141,7 +141,7 @@
             @Assert( 0, IsCongruentForMorphisms( exp_alpha_beta, Opposite( coexp_beta_alpha_op ) ) );
             @Assert( 0, IsCongruentForMorphisms( exp_beta_alpha, Opposite( coexp_alpha_beta_op ) ) );
             
-            # Convenience methods ⥉ the opposite category
+            # Convenience methods in the opposite category
             
             @Assert( 0, IsCongruentForMorphisms( coexp_alpha_beta_op, Coexponential( alpha_op, beta_op ) ) );
             @Assert( 0, IsCongruentForMorphisms( coexp_beta_alpha_op, Coexponential( beta_op, alpha_op ) ) );
@@ -641,7 +641,7 @@
             if verbose
                 
                 # COVERAGE_IGNORE_NEXT_LINE
-                Display( "Consistency between 'EvalutionMorphism' && 'AdjunctionMap' ..." );
+                Display( "Consistency between 'EvalutionMorphism' and 'AdjunctionMap' ..." );
                 
             end;
             
@@ -671,7 +671,7 @@
             if verbose
                 
                 # COVERAGE_IGNORE_NEXT_LINE
-                Display( "Consistency between 'CoevalutionMorphism' && 'AdjunctionMap' ..." );
+                Display( "Consistency between 'CoevalutionMorphism' and 'AdjunctionMap' ..." );
                 
             end;
             

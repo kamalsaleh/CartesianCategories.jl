@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
-# CartesianCategories: Cartesian && cocartesian categories && various subdoctrines
+# CartesianCategories: Cartesian and cocartesian categories and various subdoctrines
 #
 # Implementations
 #
@@ -152,7 +152,7 @@ end );
 
 ##
 AddDerivationToCAP( CocartesianBraidingWithGivenCoproducts,
-                    "CocartesianBraidingWithGivenCoproducts using the coproduct injections && the universal morphism into the coproduct",
+                    "CocartesianBraidingWithGivenCoproducts using the coproduct injections and the universal morphism into the coproduct",
                     [ [ InjectionOfCofactorOfCoproductWithGivenCoproduct, 2 ],
                       [ UniversalMorphismFromCoproductWithGivenCoproduct, 1 ] ],
                     
@@ -168,7 +168,7 @@ end );
 
 ##
 AddDerivationToCAP( LeftCocartesianCodistributivityExpandingWithGivenObjects,
-                    "LeftCocartesianCodistributivityExpandingWithGivenObjects using the direct product projections, the functoriality of the coproduct, && the universal morphism of direct products",
+                    "LeftCocartesianCodistributivityExpandingWithGivenObjects using the direct product projections, the functoriality of the coproduct, and the universal morphism of direct products",
                     [ [ ProjectionInFactorOfDirectProduct, 2 ],
                       [ CoproductOnMorphisms, 2 ],
                       [ IdentityMorphism, 2 ],
@@ -193,7 +193,7 @@ end );
 
 ##
 AddDerivationToCAP( RightCocartesianCodistributivityExpandingWithGivenObjects,
-                    "RightCocartesianCodistributivityExpandingWithGivenObjects using the direct product projections, the functoriality of the coproduct, && the universal morphism of direct product",
+                    "RightCocartesianCodistributivityExpandingWithGivenObjects using the direct product projections, the functoriality of the coproduct, and the universal morphism of direct product",
                     [ [ ProjectionInFactorOfDirectProduct, 2 ],
                       [ CoproductOnMorphisms, 2 ],
                       [ IdentityMorphism, 2 ],
