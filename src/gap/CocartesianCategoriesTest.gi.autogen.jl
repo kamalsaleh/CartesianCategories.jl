@@ -42,9 +42,9 @@
         
         verbose = ValueOption( "verbose" ) == true;
         
-        if CanCompute( cat, "CoproductOnMorphisms" )
+        if (CanCompute( cat, "CoproductOnMorphisms" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CoproductOnMorphisms' ..." );
@@ -67,9 +67,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianLeftUnitor" )
+        if (CanCompute( cat, "CocartesianLeftUnitor" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianLeftUnitor' ..." );
@@ -87,9 +87,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianRightUnitor" )
+        if (CanCompute( cat, "CocartesianRightUnitor" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianRightUnitor' ..." );
@@ -107,9 +107,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianLeftUnitorInverse" )
+        if (CanCompute( cat, "CocartesianLeftUnitorInverse" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianLeftUnitorInverse' ..." );
@@ -127,9 +127,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianRightUnitorInverse" )
+        if (CanCompute( cat, "CocartesianRightUnitorInverse" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianRightUnitorInverse' ..." );
@@ -147,9 +147,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianAssociatorLeftToRight" )
+        if (CanCompute( cat, "CocartesianAssociatorLeftToRight" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianAssociatorLeftToRight' ..." );
@@ -167,9 +167,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianAssociatorRightToLeft" )
+        if (CanCompute( cat, "CocartesianAssociatorRightToLeft" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianAssociatorRightToLeft' ..." );

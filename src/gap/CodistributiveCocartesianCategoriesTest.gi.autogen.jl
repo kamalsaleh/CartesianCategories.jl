@@ -21,9 +21,9 @@
         
         verbose = ValueOption( "verbose" ) == true;
         
-        if CanCompute( cat, "LeftCocartesianCodistributivityExpanding" )
+        if (CanCompute( cat, "LeftCocartesianCodistributivityExpanding" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'LeftCocartesianCodistributivityExpanding' ..." );
@@ -37,9 +37,9 @@
             
         end;
         
-        if CanCompute( cat, "LeftCocartesianCodistributivityFactoring" )
+        if (CanCompute( cat, "LeftCocartesianCodistributivityFactoring" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'LeftCocartesianCodistributivityFactoring' ..." );
@@ -53,9 +53,9 @@
             
         end;
         
-        if CanCompute( cat, "RightCocartesianCodistributivityExpanding" )
+        if (CanCompute( cat, "RightCocartesianCodistributivityExpanding" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'RightCocartesianCodistributivityExpanding' ..." );
@@ -69,9 +69,9 @@
             
         end;
         
-        if CanCompute( cat, "RightCocartesianCodistributivityFactoring" )
+        if (CanCompute( cat, "RightCocartesianCodistributivityFactoring" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'RightCocartesianCodistributivityFactoring' ..." );

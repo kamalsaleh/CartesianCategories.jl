@@ -42,9 +42,9 @@
         
         verbose = ValueOption( "verbose" ) == true;
         
-        if CanCompute( cat, "DirectProductOnMorphisms" )
+        if (CanCompute( cat, "DirectProductOnMorphisms" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'DirectProductOnMorphisms' ..." );
@@ -67,9 +67,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianLeftUnitor" )
+        if (CanCompute( cat, "CartesianLeftUnitor" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianLeftUnitor' ..." );
@@ -87,9 +87,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianRightUnitor" )
+        if (CanCompute( cat, "CartesianRightUnitor" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianRightUnitor' ..." );
@@ -107,9 +107,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianLeftUnitorInverse" )
+        if (CanCompute( cat, "CartesianLeftUnitorInverse" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianLeftUnitorInverse' ..." );
@@ -127,9 +127,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianRightUnitorInverse" )
+        if (CanCompute( cat, "CartesianRightUnitorInverse" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianRightUnitorInverse' ..." );
@@ -147,9 +147,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianAssociatorLeftToRight" )
+        if (CanCompute( cat, "CartesianAssociatorLeftToRight" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianAssociatorLeftToRight' ..." );
@@ -167,9 +167,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianAssociatorRightToLeft" )
+        if (CanCompute( cat, "CartesianAssociatorRightToLeft" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianAssociatorRightToLeft' ..." );

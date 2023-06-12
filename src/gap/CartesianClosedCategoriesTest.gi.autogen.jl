@@ -88,9 +88,9 @@
         
         verbose = ValueOption( "verbose" ) == true;
         
-        if CanCompute( cat, "ExponentialOnObjects" )
+        if (CanCompute( cat, "ExponentialOnObjects" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'ExponentialOnObjects' ..." );
@@ -118,9 +118,9 @@
             
         end;
         
-        if CanCompute( cat, "ExponentialOnMorphisms" )
+        if (CanCompute( cat, "ExponentialOnMorphisms" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'ExponentialOnMorphisms' ..." );
@@ -148,9 +148,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianEvaluationMorphism" )
+        if (CanCompute( cat, "CartesianEvaluationMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianEvaluationMorphism' ..." );
@@ -169,9 +169,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianCoevaluationMorphism" )
+        if (CanCompute( cat, "CartesianCoevaluationMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianCoevaluationMorphism' ..." );
@@ -189,9 +189,9 @@
             
         end;
         
-        if CanCompute( cat, "DirectProductToExponentialAdjunctionMap" )
+        if (CanCompute( cat, "DirectProductToExponentialAdjunctionMap" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'DirectProductToExponentialAdjunctionMap' ..." );
@@ -241,9 +241,9 @@
             
         end;
         
-        if CanCompute( cat, "ExponentialToDirectProductAdjunctionMap" )
+        if (CanCompute( cat, "ExponentialToDirectProductAdjunctionMap" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'ExponentialToDirectProductAdjunctionMap' ..." );
@@ -288,9 +288,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianPreComposeMorphism" )
+        if (CanCompute( cat, "CartesianPreComposeMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianPreComposeMorphism' ..." );
@@ -308,9 +308,9 @@
 
         end;
             
-        if CanCompute( cat, "CartesianPostComposeMorphism" )
+        if (CanCompute( cat, "CartesianPostComposeMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianPostComposeMorphism' ..." );
@@ -328,9 +328,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianDualOnObjects" )
+        if (CanCompute( cat, "CartesianDualOnObjects" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianDualOnObjects' ..." );
@@ -348,9 +348,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianDualOnMorphisms" )
+        if (CanCompute( cat, "CartesianDualOnMorphisms" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianDualOnMorphisms' ..." );
@@ -368,9 +368,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianEvaluationForCartesianDual" )
+        if (CanCompute( cat, "CartesianEvaluationForCartesianDual" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianEvaluationForCartesianDual' ..." );
@@ -388,9 +388,9 @@
             
         end;
         
-        if CanCompute( cat, "MorphismToCartesianBidual" )
+        if (CanCompute( cat, "MorphismToCartesianBidual" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'MorphismToCartesianBidual' ..." );
@@ -408,9 +408,9 @@
             
         end;
         
-        if CanCompute( cat, "DirectProductExponentialCompatibilityMorphism" )
+        if (CanCompute( cat, "DirectProductExponentialCompatibilityMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'DirectProductExponentialCompatibilityMorphism' ..." );
@@ -437,9 +437,9 @@
             
         end;
         
-        if CanCompute( cat, "DirectProductCartesianDualityCompatibilityMorphism" )
+        if (CanCompute( cat, "DirectProductCartesianDualityCompatibilityMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'DirectProductCartesianDualityCompatibilityMorphism' ..." );
@@ -466,9 +466,9 @@
             
         end;
         
-        if CanCompute( cat, "MorphismFromDirectProductToExponential" )
+        if (CanCompute( cat, "MorphismFromDirectProductToExponential" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'MorphismFromDirectProductToExponential' ..." );
@@ -486,9 +486,9 @@
             
         end;
         
-        if CanCompute( cat, "IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject" )
+        if (CanCompute( cat, "IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject' ..." );
@@ -506,9 +506,9 @@
             
         end;
         
-        if CanCompute( cat, "IsomorphismFromExponentialIntoTerminalObjectToCartesianDualObject" )
+        if (CanCompute( cat, "IsomorphismFromExponentialIntoTerminalObjectToCartesianDualObject" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'IsomorphismFromExponentialIntoTerminalObjectToCartesianDualObject' ..." );
@@ -526,9 +526,9 @@
             
         end;
         
-        if CanCompute( cat, "UniversalPropertyOfCartesianDual" )
+        if (CanCompute( cat, "UniversalPropertyOfCartesianDual" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'UniversalPropertyOfCartesianDual' ..." );
@@ -549,9 +549,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianLambdaIntroduction" )
+        if (CanCompute( cat, "CartesianLambdaIntroduction" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianLambdaIntroduction' ..." );
@@ -569,9 +569,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianLambdaElimination" )
+        if (CanCompute( cat, "CartesianLambdaElimination" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianLambdaElimination' ..." );
@@ -592,9 +592,9 @@
             
         end;
         
-        if CanCompute( cat, "IsomorphismFromObjectToExponential" )
+        if (CanCompute( cat, "IsomorphismFromObjectToExponential" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'IsomorphismFromObjectToExponential' ..." );
@@ -612,9 +612,9 @@
             
         end;
         
-        if CanCompute( cat, "IsomorphismFromExponentialToObject" )
+        if (CanCompute( cat, "IsomorphismFromExponentialToObject" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'IsomorphismFromExponentialToObject' ..." );
@@ -632,13 +632,13 @@
             
         end;
         
-        if CanCompute( cat, "ExponentialOnObjects" ) &&
+        if (CanCompute( cat, "ExponentialOnObjects" ) &&
            CanCompute( cat, "CartesianEvaluationMorphism" ) &&
            CanCompute( cat, "ExponentialToDirectProductAdjunctionMap" )
         
-       
+       )
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Consistency between 'EvalutionMorphism' and 'AdjunctionMap' ..." );
@@ -662,13 +662,13 @@
             
         end;
         
-        if CanCompute( cat, "DirectProduct" ) &&
+        if (CanCompute( cat, "DirectProduct" ) &&
            CanCompute( cat, "CartesianCoevaluationMorphism" ) &&
            CanCompute( cat, "DirectProductToExponentialAdjunctionMap" )
         
-       
+       )
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Consistency between 'CoevalutionMorphism' and 'AdjunctionMap' ..." );

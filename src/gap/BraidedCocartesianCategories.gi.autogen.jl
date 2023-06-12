@@ -56,7 +56,7 @@ InstallMethod( @__MODULE__,  CheckCocartesianBraiding,
                     CoproductOnMorphisms( IdentityMorphism( A ), CocartesianBraiding( B, C ) ),
                     CocartesianAssociatorRightToLeft( A, C, B ) ] );
     
-    if !IsCongruentForMorphisms( mor1, mor2 )
+    if (@not IsCongruentForMorphisms( mor1, mor2 ))
        return false;
     end;
     

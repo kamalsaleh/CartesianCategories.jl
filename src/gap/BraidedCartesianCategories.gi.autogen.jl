@@ -56,7 +56,7 @@ InstallMethod( @__MODULE__,  CheckCartesianBraiding,
                     DirectProductOnMorphisms( IdentityMorphism( A ), CartesianBraiding( B, C ) ),
                     CartesianAssociatorRightToLeft( A, C, B ) ] );
     
-    if !IsCongruentForMorphisms( mor1, mor2 )
+    if (@not IsCongruentForMorphisms( mor1, mor2 ))
        return false;
     end;
     

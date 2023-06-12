@@ -88,9 +88,9 @@
         
         verbose = ValueOption( "verbose" ) == true;
         
-        if CanCompute( cat, "CoexponentialOnObjects" )
+        if (CanCompute( cat, "CoexponentialOnObjects" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CoexponentialOnObjects' ..." );
@@ -118,9 +118,9 @@
             
         end;
         
-        if CanCompute( cat, "CoexponentialOnMorphisms" )
+        if (CanCompute( cat, "CoexponentialOnMorphisms" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CoexponentialOnMorphisms' ..." );
@@ -148,9 +148,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianEvaluationMorphism" )
+        if (CanCompute( cat, "CocartesianEvaluationMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianEvaluationMorphism' ..." );
@@ -169,9 +169,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianCoevaluationMorphism" )
+        if (CanCompute( cat, "CocartesianCoevaluationMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianCoevaluationMorphism' ..." );
@@ -189,9 +189,9 @@
             
         end;
         
-        if CanCompute( cat, "CoproductToCoexponentialAdjunctionMap" )
+        if (CanCompute( cat, "CoproductToCoexponentialAdjunctionMap" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CoproductToCoexponentialAdjunctionMap' ..." );
@@ -241,9 +241,9 @@
             
         end;
         
-        if CanCompute( cat, "CoexponentialToCoproductAdjunctionMap" )
+        if (CanCompute( cat, "CoexponentialToCoproductAdjunctionMap" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CoexponentialToCoproductAdjunctionMap' ..." );
@@ -288,9 +288,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianPreCoComposeMorphism" )
+        if (CanCompute( cat, "CocartesianPreCoComposeMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianPreCoComposeMorphism' ..." );
@@ -308,9 +308,9 @@
         
         end;
         
-        if CanCompute( cat, "CocartesianPostCoComposeMorphism" )
+        if (CanCompute( cat, "CocartesianPostCoComposeMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianPostCoComposeMorphism' ..." );
@@ -328,9 +328,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianDualOnObjects" )
+        if (CanCompute( cat, "CocartesianDualOnObjects" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianDualOnObjects' ..." );
@@ -348,9 +348,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianDualOnMorphisms" )
+        if (CanCompute( cat, "CocartesianDualOnMorphisms" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianDualOnMorphisms' ..." );
@@ -368,9 +368,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianEvaluationForCocartesianDual" )
+        if (CanCompute( cat, "CocartesianEvaluationForCocartesianDual" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianEvaluationForCocartesianDual' ..." );
@@ -388,9 +388,9 @@
             
         end;
         
-        if CanCompute( cat, "MorphismFromCocartesianBidual" )
+        if (CanCompute( cat, "MorphismFromCocartesianBidual" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'MorphismFromCocartesianBidual' ..." );
@@ -408,9 +408,9 @@
             
         end;
         
-        if CanCompute( cat, "CoexponentialCoproductCompatibilityMorphism" )
+        if (CanCompute( cat, "CoexponentialCoproductCompatibilityMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CoexponentialCoproductCompatibilityMorphism' ..." );
@@ -437,9 +437,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianDualityCoproductCompatibilityMorphism" )
+        if (CanCompute( cat, "CocartesianDualityCoproductCompatibilityMorphism" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianDualityCoproductCompatibilityMorphism' ..." );
@@ -466,9 +466,9 @@
             
         end;
         
-        if CanCompute( cat, "MorphismFromCoexponentialToCoproduct" )
+        if (CanCompute( cat, "MorphismFromCoexponentialToCoproduct" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'MorphismFromCoexponentialToCoproduct' ..." );
@@ -486,9 +486,9 @@
             
         end;
         
-        if CanCompute( cat, "IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject" )
+        if (CanCompute( cat, "IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject' ..." );
@@ -506,9 +506,9 @@
             
         end;
         
-        if CanCompute( cat, "IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject" )
+        if (CanCompute( cat, "IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'IsomorphismFromCocartesianDualObjectToCoexponentialFromInitialObject' ..." );
@@ -526,9 +526,9 @@
             
         end;
         
-        if CanCompute( cat, "UniversalPropertyOfCocartesianDual" )
+        if (CanCompute( cat, "UniversalPropertyOfCocartesianDual" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'UniversalPropertyOfCocartesianDual' ..." );
@@ -549,9 +549,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianLambdaIntroduction" )
+        if (CanCompute( cat, "CocartesianLambdaIntroduction" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianLambdaIntroduction' ..." );
@@ -569,9 +569,9 @@
             
         end;
         
-        if CanCompute( cat, "CocartesianLambdaElimination" )
+        if (CanCompute( cat, "CocartesianLambdaElimination" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CocartesianLambdaElimination' ..." );
@@ -592,9 +592,9 @@
             
         end;
         
-        if CanCompute( cat, "IsomorphismFromObjectToCoexponential" )
+        if (CanCompute( cat, "IsomorphismFromObjectToCoexponential" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'IsomorphismFromObjectToCoexponential' ..." );
@@ -612,9 +612,9 @@
             
         end;
         
-        if CanCompute( cat, "IsomorphismFromCoexponentialToObject" )
+        if (CanCompute( cat, "IsomorphismFromCoexponentialToObject" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'IsomorphismFromCoexponentialToObject' ..." );
@@ -632,13 +632,13 @@
             
         end;
         
-        if CanCompute( cat, "CoexponentialOnObjects" ) &&
+        if (CanCompute( cat, "CoexponentialOnObjects" ) &&
            CanCompute( cat, "CocartesianEvaluationMorphism" ) &&
            CanCompute( cat, "CoexponentialToCoproductAdjunctionMap" )
         
-       
+       )
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Consistency between 'CoclosedEvalutionMorphism' and 'AdjunctionMap' ..." );
@@ -662,13 +662,13 @@
             
         end;
         
-        if CanCompute( cat, "Coproduct" ) &&
+        if (CanCompute( cat, "Coproduct" ) &&
            CanCompute( cat, "CocartesianCoevaluationMorphism" ) &&
            CanCompute( cat, "CoproductToCoexponentialAdjunctionMap" )
         
-       
+       )
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Consistency between 'CoevalutionMorphism' and 'AdjunctionMap' ..." );

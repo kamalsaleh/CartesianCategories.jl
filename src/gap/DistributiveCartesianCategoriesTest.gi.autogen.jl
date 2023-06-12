@@ -21,9 +21,9 @@
         
         verbose = ValueOption( "verbose" ) == true;
         
-        if CanCompute( cat, "LeftCartesianDistributivityExpanding" )
+        if (CanCompute( cat, "LeftCartesianDistributivityExpanding" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'LeftCartesianDistributivityExpanding' ..." );
@@ -37,9 +37,9 @@
             
         end;
         
-        if CanCompute( cat, "LeftCartesianDistributivityFactoring" )
+        if (CanCompute( cat, "LeftCartesianDistributivityFactoring" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'LeftCartesianDistributivityFactoring' ..." );
@@ -53,9 +53,9 @@
             
         end;
         
-        if CanCompute( cat, "RightCartesianDistributivityExpanding" )
+        if (CanCompute( cat, "RightCartesianDistributivityExpanding" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'RightCartesianDistributivityExpanding' ..." );
@@ -69,9 +69,9 @@
             
         end;
         
-        if CanCompute( cat, "RightCartesianDistributivityFactoring" )
+        if (CanCompute( cat, "RightCartesianDistributivityFactoring" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'RightCartesianDistributivityFactoring' ..." );

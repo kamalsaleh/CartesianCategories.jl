@@ -21,9 +21,9 @@
         
         verbose = ValueOption( "verbose" ) == true;
         
-        if CanCompute( cat, "CartesianBraiding" )
+        if (CanCompute( cat, "CartesianBraiding" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianBraiding' ..." );
@@ -41,9 +41,9 @@
             
         end;
         
-        if CanCompute( cat, "CartesianBraidingInverse" )
+        if (CanCompute( cat, "CartesianBraidingInverse" ))
             
-            if verbose
+            if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
                 Display( "Testing 'CartesianBraidingInverse' ..." );
