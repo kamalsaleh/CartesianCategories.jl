@@ -11,10 +11,12 @@ fi;
 # =#
 
 ## Initial category
+
 include( "gap/InitialCategory.gd.autogen.jl" );
 include( "gap/InitialCategoryProperties.gd.autogen.jl" );
 
 ## Cartesian and Cocartesian
+
 include( "gap/CartesianCategories.gd.autogen.jl" );
 include( "gap/CocartesianCategories.gd.autogen.jl" );
 
@@ -43,6 +45,7 @@ include( "gap/BraidedCartesianCategories.autogen.gd.autogen.jl" );
 include( "gap/BraidedCocartesianCategories.autogen.gd.autogen.jl" );
 
 ## Cartesian Closed and Cocartesian Coclosed
+
 include( "gap/CartesianClosedCategoriesProperties.gd.autogen.jl" );
 include( "gap/CocartesianCoclosedCategoriesProperties.gd.autogen.jl" );
 
@@ -53,9 +56,17 @@ include( "gap/CartesianClosedCategories.autogen.gd.autogen.jl" );
 include( "gap/CocartesianCoclosedCategories.autogen.gd.autogen.jl" );
 
 ## Bicartesian and finite (co)complete categories
+
 include( "gap/BicartesianCategories.gd.autogen.jl" );
 
+## Synonyms
+
+#= comment for Julia
+include( "gap/Synonyms.gd.autogen.jl" );
+# =#
+
 ## Test methods
+
 include( "gap/CartesianCategoriesTest.gd.autogen.jl" );
 include( "gap/CocartesianCategoriesTest.gd.autogen.jl" );
 

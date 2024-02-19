@@ -11,9 +11,11 @@ fi;
 # =#
 
 ## Initial category
+
 include( "gap/InitialCategory.gi.autogen.jl" );
 
 ## Cartesian and Cocartesian
+
 include( "gap/CartesianCategoriesMethodRecord.gi.autogen.jl" );
 include( "gap/CocartesianCategoriesMethodRecord.gi.autogen.jl" );
 
@@ -44,6 +46,7 @@ include( "gap/CartesianClosedCategories.gi.autogen.jl" );
 include( "gap/CocartesianCoclosedCategories.gi.autogen.jl" );
 
 ## Derived methods
+
 include( "gap/CartesianCategoriesDerivedMethods.gi.autogen.jl" );
 include( "gap/CocartesianCategoriesDerivedMethods.gi.autogen.jl" );
 
@@ -63,9 +66,17 @@ include( "gap/CartesianCategoriesDerivedMethods_extra.gi.autogen.jl" );
 include( "gap/CocartesianCategoriesDerivedMethods_extra.gi.autogen.jl" );
 
 ## Bicartesian and finite (co)complete categories
+
 include( "gap/BicartesianCategories.gi.autogen.jl" );
 
+## Synonyms
+
+#= comment for Julia
+include( "gap/Synonyms.gi.autogen.jl" );
+# =#
+
 ## Test methods
+
 include( "gap/CartesianCategoriesTest.gi.autogen.jl" );
 include( "gap/CocartesianCategoriesTest.gi.autogen.jl" );
 
@@ -79,4 +90,5 @@ include( "gap/CartesianClosedCategoriesTest.gi.autogen.jl" );
 include( "gap/CocartesianCoclosedCategoriesTest.gi.autogen.jl" );
 
 ## Homomorphism structure
+
 include( "gap/HomomorphismStructureDerivedMethods.gi.autogen.jl" );

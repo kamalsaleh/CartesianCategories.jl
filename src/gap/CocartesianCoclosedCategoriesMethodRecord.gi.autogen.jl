@@ -44,103 +44,100 @@ CoexponentialOnMorphismsWithGivenCoexponentials = @rec(
   dual_arguments_reversed = true,
 ),
 
-CocartesianEvaluationMorphism = @rec(
+CocartesianRightEvaluationMorphism = @rec(
   filter_list = [ "category", "object", "object" ],
   return_type = "morphism",
   input_arguments_names = [ "cat", "a", "b" ],
-  output_source_getter_string = "a",
+  output_source_getter_string = "b",
   output_source_getter_preconditions = [ ],
-  output_source_getter_string = "a",
-  output_range_getter_string = "BinaryCoproduct( cat, CoexponentialOnObjects( cat, a, b ), b )",
+  output_range_getter_string = "BinaryCoproduct( cat, a, CoexponentialOnObjects( cat, b, a ) )",
   output_range_getter_preconditions = [ [ "Coproduct", 1 ], [ "CoexponentialOnObjects", 1 ] ],
   with_given_object_position = "Range",
-  dual_operation = "CartesianEvaluationMorphism",
-  dual_arguments_reversed = true,
+  dual_operation = "CartesianRightEvaluationMorphism",
+  dual_arguments_reversed = false,
   # Test in CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianEvaluationMorphismWithGivenRange = @rec(
+CocartesianRightEvaluationMorphismWithGivenRange = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   return_type = "morphism",
   input_arguments_names = [ "cat", "a", "b", "r" ],
-  output_source_getter_string = "a",
+  output_source_getter_string = "b",
   output_source_getter_preconditions = [ ],
   output_range_getter_string = "r",
   output_range_getter_preconditions = [ ],
-  dual_operation = "CartesianEvaluationMorphismWithGivenSource",
-  dual_preprocessor_func = ( cat, a, b, r ) -> NTupleGAP( 4, Opposite( cat ), Opposite( b ), Opposite( a ), Opposite( r ) ),
+  dual_operation = "CartesianRightEvaluationMorphismWithGivenSource",
   dual_arguments_reversed = false,
 ),
 
-CocartesianCoevaluationMorphism = @rec(
+CocartesianRightCoevaluationMorphism = @rec(
   filter_list = [ "category", "object", "object" ],
   return_type = "morphism",
   input_arguments_names = [ "cat", "a", "b" ],
-  output_range_getter_string = "a",
-  output_range_getter_preconditions = [ ],
-  output_source_getter_string = "CoexponentialOnObjects( cat, BinaryCoproduct( cat, a, b ), b )",
+  output_source_getter_string = "CoexponentialOnObjects( cat, BinaryCoproduct( cat, a, b ), a )",
   output_source_getter_preconditions = [ [ "CoexponentialOnObjects", 1 ], [ "Coproduct", 1 ] ],
-  output_range_getter_string = "a",
+  output_range_getter_string = "b",
+  output_range_getter_preconditions = [ ],
   with_given_object_position = "Source",
-  dual_operation = "CartesianCoevaluationMorphism",
+  dual_operation = "CartesianRightCoevaluationMorphism",
   dual_arguments_reversed = false,
   # Test in CocartesianCoclosedCategoriesTest
 ),
 
-CocartesianCoevaluationMorphismWithGivenSource = @rec(
+CocartesianRightCoevaluationMorphismWithGivenSource = @rec(
   filter_list = [ "category", "object", "object", "object" ],
   return_type = "morphism",
   input_arguments_names = [ "cat", "a", "b", "s" ],
   output_source_getter_string = "s",
   output_source_getter_preconditions = [ ],
-  output_range_getter_string = "a",
+  output_range_getter_string = "b",
   output_range_getter_preconditions = [ ],
-  dual_operation = "CartesianCoevaluationMorphismWithGivenRange",
+  dual_operation = "CartesianRightCoevaluationMorphismWithGivenRange",
   dual_arguments_reversed = false,
 ),
 
-CoproductToCoexponentialAdjunctionMap = @rec(
+CoproductToCoexponentialRightAdjunctMorphism = @rec(
   filter_list = [ "category", "object", "object", "morphism" ],
   return_type = "morphism",
-  input_arguments_names = [ "cat", "c", "b", "g" ],
+  input_arguments_names = [ "cat", "b", "c", "g" ],
   output_source_getter_string = "CoexponentialOnObjects( cat, Source( g ), b )",
   output_source_getter_preconditions = [ [ "CoexponentialOnObjects", 1 ] ],
   output_range_getter_string = "c",
   output_range_getter_preconditions = [ ],
   with_given_object_position = "Source",
-  dual_operation = "DirectProductToExponentialAdjunctionMap",
+  dual_operation = "DirectProductToExponentialRightAdjunctMorphism",
   dual_arguments_reversed = false,
   # Test in CocartesianCoclosedCategoriesTest
 ),
 
-CoproductToCoexponentialAdjunctionMapWithGivenCoexponential = @rec(
+CoproductToCoexponentialRightAdjunctMorphismWithGivenCoexponential = @rec(
   filter_list = [ "category", "object", "object", "morphism", "object" ],
   return_type = "morphism",
-  input_arguments_names = [ "cat", "c", "b", "g", "i" ],
+  input_arguments_names = [ "cat", "b", "c", "g", "i" ],
   output_source_getter_string = "i",
   output_source_getter_preconditions = [ ],
   output_range_getter_string = "c",
   output_range_getter_preconditions = [ ],
-  dual_operation = "DirectProductToExponentialAdjunctionMapWithGivenExponential",
+  dual_operation = "DirectProductToExponentialRightAdjunctMorphismWithGivenExponential",
   dual_arguments_reversed = false,
 ),
 
-CoexponentialToCoproductAdjunctionMap = @rec(
+CoexponentialToCoproductRightAdjunctMorphism = @rec(
   filter_list = [ "category", "object", "object", "morphism" ],
   return_type = "morphism",
   input_arguments_names = [ "cat", "a", "b", "f" ],
   output_source_getter_string = "a",
   output_source_getter_preconditions = [ ],
-  output_range_getter_string = "BinaryCoproduct( cat, Range( f ), b )",
+  output_range_getter_string = "BinaryCoproduct( cat, b, Range( f ) )",
   output_range_getter_preconditions = [ [ "Coproduct", 1 ] ],
   with_given_object_position = "Range",
-  dual_operation = "ExponentialToDirectProductAdjunctionMap",
-  dual_preprocessor_func = ( cat, a, b, f ) -> NTupleGAP( 4, Opposite( cat ), Opposite( b ), Opposite( a ), Opposite( f ) ),
+  dual_operation = "ExponentialToDirectProductRightAdjunctMorphism",
+  dual_preprocessor_func = ( cat, a, b, f ) -> @NTupleGAP( 4, Opposite( cat ), Opposite( b ), Opposite( a ), Opposite( f ) ),
   dual_arguments_reversed = false,
   # Test in CocartesianCoclosedCategoriesTest
 ),
 
-CoexponentialToCoproductAdjunctionMapWithGivenCoproduct = @rec(
+CoexponentialToCoproductRightAdjunctMorphismWithGivenCoproduct = @rec(
   filter_list = [ "category", "object", "object", "morphism", "object" ],
   return_type = "morphism",
   input_arguments_names = [ "cat", "a", "b", "f", "t" ],
@@ -148,8 +145,114 @@ CoexponentialToCoproductAdjunctionMapWithGivenCoproduct = @rec(
   output_source_getter_preconditions = [ ],
   output_range_getter_string = "t",
   output_range_getter_preconditions = [ ],
-  dual_operation = "ExponentialToDirectProductAdjunctionMapWithGivenDirectProduct",
-  dual_preprocessor_func = ( cat, a, b, f, t ) -> NTupleGAP( 4, Opposite( cat ), Opposite( b ), Opposite( a ), Opposite( f ), Opposite( t ) ),
+  dual_operation = "ExponentialToDirectProductRightAdjunctMorphismWithGivenDirectProduct",
+  dual_preprocessor_func = ( cat, a, b, f, t ) -> @NTupleGAP( 5, Opposite( cat ), Opposite( b ), Opposite( a ), Opposite( f ), Opposite( t ) ),
+  dual_arguments_reversed = false,
+),
+
+CocartesianLeftEvaluationMorphism = @rec(
+  filter_list = [ "category", "object", "object" ],
+  return_type = "morphism",
+  input_arguments_names = [ "cat", "a", "b" ],
+  output_source_getter_string = "b",
+  output_source_getter_preconditions = [ ],
+  output_range_getter_string = "BinaryCoproduct( cat, CoexponentialOnObjects( cat, b, a ), a )",
+  output_range_getter_preconditions = [ [ "Coproduct", 1 ], [ "CoexponentialOnObjects", 1 ] ],
+  with_given_object_position = "Range",
+  dual_operation = "CartesianLeftEvaluationMorphism",
+  dual_arguments_reversed = false,
+  # Test in CocartesianCoclosedCategoriesTest
+),
+
+CocartesianLeftEvaluationMorphismWithGivenRange = @rec(
+  filter_list = [ "category", "object", "object", "object" ],
+  return_type = "morphism",
+  input_arguments_names = [ "cat", "a", "b", "r" ],
+  output_source_getter_string = "b",
+  output_source_getter_preconditions = [ ],
+  output_range_getter_string = "r",
+  output_range_getter_preconditions = [ ],
+  dual_operation = "CartesianLeftEvaluationMorphismWithGivenSource",
+  dual_arguments_reversed = false,
+),
+
+CocartesianLeftCoevaluationMorphism = @rec(
+  filter_list = [ "category", "object", "object" ],
+  return_type = "morphism",
+  input_arguments_names = [ "cat", "a", "b" ],
+  output_source_getter_string = "CoexponentialOnObjects( cat, BinaryCoproduct( cat, b, a ), a )",
+  output_source_getter_preconditions = [ [ "CoexponentialOnObjects", 1 ], [ "Coproduct", 1 ] ],
+  output_range_getter_string = "b",
+  output_range_getter_preconditions = [ ],
+  with_given_object_position = "Source",
+  dual_operation = "CartesianLeftCoevaluationMorphism",
+  dual_arguments_reversed = false,
+  # Test in CocartesianCoclosedCategoriesTest
+),
+
+CocartesianLeftCoevaluationMorphismWithGivenSource = @rec(
+  filter_list = [ "category", "object", "object", "object" ],
+  return_type = "morphism",
+  input_arguments_names = [ "cat", "a", "b", "s" ],
+  output_source_getter_string = "s",
+  output_source_getter_preconditions = [ ],
+  output_range_getter_string = "b",
+  output_range_getter_preconditions = [ ],
+  dual_operation = "CartesianLeftCoevaluationMorphismWithGivenRange",
+  dual_arguments_reversed = false,
+),
+
+CoproductToCoexponentialLeftAdjunctMorphism = @rec(
+  filter_list = [ "category", "object", "object", "morphism" ],
+  return_type = "morphism",
+  input_arguments_names = [ "cat", "b", "c", "g" ],
+  output_source_getter_string = "CoexponentialOnObjects( cat, Source( g ), c )",
+  output_source_getter_preconditions = [ [ "CoexponentialOnObjects", 1 ] ],
+  output_range_getter_string = "b",
+  output_range_getter_preconditions = [ ],
+  with_given_object_position = "Source",
+  dual_operation = "DirectProductToExponentialLeftAdjunctMorphism",
+  dual_arguments_reversed = false,
+  # Test in CocartesianCoclosedCategoriesTest
+),
+
+CoproductToCoexponentialLeftAdjunctMorphismWithGivenCoexponential = @rec(
+  filter_list = [ "category", "object", "object", "morphism", "object" ],
+  return_type = "morphism",
+  input_arguments_names = [ "cat", "b", "c", "g", "i" ],
+  output_source_getter_string = "i",
+  output_source_getter_preconditions = [ ],
+  output_range_getter_string = "b",
+  output_range_getter_preconditions = [ ],
+  dual_operation = "DirectProductToExponentialLeftAdjunctMorphismWithGivenExponential",
+  dual_arguments_reversed = false,
+),
+
+CoexponentialToCoproductLeftAdjunctMorphism = @rec(
+  filter_list = [ "category", "object", "object", "morphism" ],
+  return_type = "morphism",
+  input_arguments_names = [ "cat", "a", "c", "f" ],
+  output_source_getter_string = "a",
+  output_source_getter_preconditions = [ ],
+  output_range_getter_string = "BinaryCoproduct( cat, Range( f ), c )",
+  output_range_getter_preconditions = [ [ "Coproduct", 1 ] ],
+  with_given_object_position = "Range",
+  dual_operation = "ExponentialToDirectProductLeftAdjunctMorphism",
+  dual_preprocessor_func = ( cat, a, c, f ) -> @NTupleGAP( 4, Opposite( cat ), Opposite( c ), Opposite( a ), Opposite( f ) ),
+  dual_arguments_reversed = false,
+  # Test in CocartesianCoclosedCategoriesTest
+),
+
+CoexponentialToCoproductLeftAdjunctMorphismWithGivenCoproduct = @rec(
+  filter_list = [ "category", "object", "object", "morphism", "object" ],
+  return_type = "morphism",
+  input_arguments_names = [ "cat", "a", "c", "f", "t" ],
+  output_source_getter_string = "a",
+  output_source_getter_preconditions = [ ],
+  output_range_getter_string = "t",
+  output_range_getter_preconditions = [ ],
+  dual_operation = "ExponentialToDirectProductLeftAdjunctMorphismWithGivenDirectProduct",
+  dual_preprocessor_func = ( cat, a, c, f, t ) -> @NTupleGAP( 5, Opposite( cat ), Opposite( c ), Opposite( a ), Opposite( f ), Opposite( t ) ),
   dual_arguments_reversed = false,
 ),
 
@@ -312,7 +415,7 @@ CoexponentialCoproductCompatibilityMorphismWithGivenObjects = @rec(
   output_range_getter_string = "range",
   dual_operation = "DirectProductExponentialCompatibilityMorphismWithGivenObjects",
   dual_preprocessor_func =
-    ( cat, s, list, r ) -> NTupleGAP( 4, Opposite( cat ), Opposite( r ), [ Opposite( list[3] ), Opposite( list[1] ), Opposite( list[4] ), Opposite( list[2] ) ], Opposite( s ) ),
+    ( cat, s, list, r ) -> @NTupleGAP( 4, Opposite( cat ), Opposite( r ), [ Opposite( list[3] ), Opposite( list[1] ), Opposite( list[4] ), Opposite( list[2] ) ], Opposite( s ) ),
   dual_arguments_reversed = false,
 ),
 
@@ -420,7 +523,7 @@ CocartesianLambdaElimination = @rec(
   output_range_getter_string = "b",
   output_range_getter_preconditions = [ ],
   dual_operation = "CartesianLambdaElimination",
-  dual_preprocessor_func = ( cat, a, b, alpha ) -> NTupleGAP( 4, Opposite( cat ), Opposite( b ), Opposite( a ), Opposite( alpha ) ),
+  dual_preprocessor_func = ( cat, a, b, alpha ) -> @NTupleGAP( 4, Opposite( cat ), Opposite( b ), Opposite( a ), Opposite( alpha ) ),
   dual_arguments_reversed = false,
   # Test in CocartesianCoclosedCategoriesTest
 ),

@@ -13,7 +13,7 @@ julia> distributive = DummyCategory( @rec(
           properties = [ "IsBicartesianClosedCategory", "IsSkeletalCategory" ] ) );
 
 julia> InfoOfInstalledOperationsOfCategory( distributive )
-19 primitive operations were used to derive 112 operations for this category which algorithmically
+21 primitive operations were used to derive 121 operations for this category which algorithmically
 * IsBicartesianClosedCategory
 and not yet algorithmically
 * IsDistributiveCategory

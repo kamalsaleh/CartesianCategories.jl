@@ -148,53 +148,94 @@
             
         end;
         
-        if (CanCompute( cat, "CartesianEvaluationMorphism" ))
+        if (CanCompute( cat, "CartesianRightEvaluationMorphism" ))
             
             if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
-                Display( "Testing 'CartesianEvaluationMorphism' ..." );
+                Display( "Testing 'CartesianRightEvaluationMorphism' ..." );
                 
             end;
             
-            ev_ab = CartesianEvaluationMorphism( a, b );
-            ev_ba = CartesianEvaluationMorphism( b, a );
+            ev_ab = CartesianRightEvaluationMorphism( a, b );
+            ev_ba = CartesianRightEvaluationMorphism( b, a );
             
-            coca_ev_ab_op = CocartesianEvaluationMorphism( a_op, b_op );
-            coca_ev_ba_op = CocartesianEvaluationMorphism( b_op, a_op );
+            coca_ev_ab_op = CocartesianRightEvaluationMorphism( a_op, b_op );
+            coca_ev_ba_op = CocartesianRightEvaluationMorphism( b_op, a_op );
             
             # Arguments must be reversed for evaluations
-            @Assert( 0, IsCongruentForMorphisms( coca_ev_ab_op, Opposite( opposite, ev_ba ) ) );
-            @Assert( 0, IsCongruentForMorphisms( coca_ev_ba_op, Opposite( opposite, ev_ab ) ) );
+            @Assert( 0, IsCongruentForMorphisms( coca_ev_ab_op, Opposite( opposite, ev_ab ) ) );
+            @Assert( 0, IsCongruentForMorphisms( coca_ev_ba_op, Opposite( opposite, ev_ba ) ) );
             
         end;
         
-        if (CanCompute( cat, "CartesianCoevaluationMorphism" ))
+        if (CanCompute( cat, "CartesianRightCoevaluationMorphism" ))
             
             if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
-                Display( "Testing 'CartesianCoevaluationMorphism' ..." );
+                Display( "Testing 'CartesianRightEvaluationMorphism' ..." );
                 
             end;
             
-            coev_ab = CartesianCoevaluationMorphism( a, b );
-            coev_ba = CartesianCoevaluationMorphism( b, a );
+            coev_ab = CartesianRightCoevaluationMorphism( a, b );
+            coev_ba = CartesianRightCoevaluationMorphism( b, a );
             
-            coca_coev_ab_op = CocartesianCoevaluationMorphism( a_op, b_op );
-            coca_coev_ba_op = CocartesianCoevaluationMorphism( b_op, a_op );
+            coca_coev_ab_op = CocartesianRightCoevaluationMorphism( a_op, b_op );
+            coca_coev_ba_op = CocartesianRightCoevaluationMorphism( b_op, a_op );
             
             @Assert( 0, IsCongruentForMorphisms( coca_coev_ab_op, Opposite( opposite, coev_ab ) ) );
             @Assert( 0, IsCongruentForMorphisms( coca_coev_ba_op, Opposite( opposite, coev_ba ) ) );
             
         end;
         
-        if (CanCompute( cat, "DirectProductToExponentialAdjunctionMap" ))
+        if (CanCompute( cat, "CartesianLeftEvaluationMorphism" ))
             
             if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
-                Display( "Testing 'DirectProductToExponentialAdjunctionMap' ..." );
+                Display( "Testing 'CartesianLeftEvaluationMorphism' ..." );
+                
+            end;
+            
+            ev_ab = CartesianLeftEvaluationMorphism( a, b );
+            ev_ba = CartesianLeftEvaluationMorphism( b, a );
+            
+            coca_ev_ab_op = CocartesianLeftEvaluationMorphism( a_op, b_op );
+            coca_ev_ba_op = CocartesianLeftEvaluationMorphism( b_op, a_op );
+            
+            # Arguments must be reversed for evaluations
+            @Assert( 0, IsCongruentForMorphisms( coca_ev_ab_op, Opposite( opposite, ev_ab ) ) );
+            @Assert( 0, IsCongruentForMorphisms( coca_ev_ba_op, Opposite( opposite, ev_ba ) ) );
+            
+        end;
+        
+        if (CanCompute( cat, "CartesianLeftCoevaluationMorphism" ))
+            
+            if (verbose)
+                
+                # COVERAGE_IGNORE_NEXT_LINE
+                Display( "Testing 'CartesianLeftEvaluationMorphism' ..." );
+                
+            end;
+            
+            coev_ab = CartesianLeftCoevaluationMorphism( a, b );
+            coev_ba = CartesianLeftCoevaluationMorphism( b, a );
+            
+            coca_coev_ab_op = CocartesianLeftCoevaluationMorphism( a_op, b_op );
+            coca_coev_ba_op = CocartesianLeftCoevaluationMorphism( b_op, a_op );
+            
+            @Assert( 0, IsCongruentForMorphisms( coca_coev_ab_op, Opposite( opposite, coev_ab ) ) );
+            @Assert( 0, IsCongruentForMorphisms( coca_coev_ba_op, Opposite( opposite, coev_ba ) ) );
+            
+        end;
+        
+        if (CanCompute( cat, "DirectProductToExponentialLeftAdjunctMorphism" ))
+            
+            if (verbose)
+                
+                # COVERAGE_IGNORE_NEXT_LINE
+                Display( "Testing 'DirectProductToExponentialLeftAdjunctMorphism' ..." );
                 
             end;
             
@@ -222,16 +263,16 @@
             beta_tensor_alpha_op = CoproductOnMorphisms( opposite, beta_op, alpha_op );
             
             # Adjoint( a × c → b × d )  ==  a → Exp( c, b × d )
-            tensor_to_exp_adjunction_on_alpha_tensor_beta = DirectProductToExponentialAdjunctionMap( a, c, alpha_tensor_beta );
+            tensor_to_exp_adjunction_on_alpha_tensor_beta = DirectProductToExponentialLeftAdjunctMorphism( a, c, alpha_tensor_beta );
             
             # Adjoint( c × a → d × b )  ==  c → Exp( a, d × b )
-            tensor_to_exp_adjunction_on_beta_tensor_alpha = DirectProductToExponentialAdjunctionMap( c, a, beta_tensor_alpha );
+            tensor_to_exp_adjunction_on_beta_tensor_alpha = DirectProductToExponentialLeftAdjunctMorphism( c, a, beta_tensor_alpha );
             
             # Adjoint( b × d → a × c )  ==  Coexp( b × d, c ) → a
-            tensor_to_coexp_adjunction_on_alpha_tensor_beta_op = CoproductToCoexponentialAdjunctionMap( a_op, c_op, alpha_tensor_beta_op );
+            tensor_to_coexp_adjunction_on_alpha_tensor_beta_op = CoproductToCoexponentialLeftAdjunctMorphism( a_op, c_op, alpha_tensor_beta_op );
             
             # Adjoint( d × b → c × a )  ==  Coexp( d × b, a ) → c
-            tensor_to_coexp_adjunction_on_beta_tensor_alpha_op = CoproductToCoexponentialAdjunctionMap( c_op, a_op, beta_tensor_alpha_op );
+            tensor_to_coexp_adjunction_on_beta_tensor_alpha_op = CoproductToCoexponentialLeftAdjunctMorphism( c_op, a_op, beta_tensor_alpha_op );
             
             # Coexp( b × d, c ) → a  ==  op( a → Exp( c, b × d ) )
             @Assert( 0, IsCongruentForMorphisms( tensor_to_coexp_adjunction_on_alpha_tensor_beta_op, Opposite( opposite, tensor_to_exp_adjunction_on_alpha_tensor_beta ) ) );
@@ -241,12 +282,12 @@
             
         end;
         
-        if (CanCompute( cat, "ExponentialToDirectProductAdjunctionMap" ))
+        if (CanCompute( cat, "ExponentialToDirectProductLeftAdjunctMorphism" ))
             
             if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
-                Display( "Testing 'ExponentialToDirectProductAdjunctionMap' ..." );
+                Display( "Testing 'ExponentialToDirectProductLeftAdjunctMorphism' ..." );
                 
             end;
             
@@ -269,16 +310,16 @@
             #####################################################
             
             # Adjoint( Exp( b, c ) → Exp( a, d ) )  ==  Exp( b, c ) × a → d
-            exp_to_tensor_adjunction_on_exp_alpha_beta = ExponentialToDirectProductAdjunctionMap( a, d, exp_alpha_beta );
+            exp_to_tensor_adjunction_on_exp_alpha_beta = ExponentialToDirectProductLeftAdjunctMorphism( a, d, exp_alpha_beta );
             
             # Adjoint( Exp( d, a ) → Exp( c, b ) )  ==  Exp( d, a ) × c → b
-            exp_to_tensor_adjunction_on_exp_beta_alpha = ExponentialToDirectProductAdjunctionMap( c, b, exp_beta_alpha );
+            exp_to_tensor_adjunction_on_exp_beta_alpha = ExponentialToDirectProductLeftAdjunctMorphism( c, b, exp_beta_alpha );
             
             # Adjoint( Coexp( b, c ) → Coexp( a, d ) )  ==  b → Coexp( a, d ) × c
-            coexp_to_tensor_adjunction_on_coexp_alpha_beta_op = CoexponentialToCoproductAdjunctionMap( b_op, c_op, coexp_alpha_beta_op );
+            coexp_to_tensor_adjunction_on_coexp_alpha_beta_op = CoexponentialToCoproductLeftAdjunctMorphism( b_op, c_op, coexp_alpha_beta_op );
             
             # Adjoint( Coexp( d, a ) → Coexp( c, b ) )  ==  d → Coexp( c, b ) × a
-            coexp_to_tensor_adjunction_on_coexp_beta_alpha_op = CoexponentialToCoproductAdjunctionMap( d_op, a_op, coexp_beta_alpha_op );
+            coexp_to_tensor_adjunction_on_coexp_beta_alpha_op = CoexponentialToCoproductLeftAdjunctMorphism( d_op, a_op, coexp_beta_alpha_op );
             
             # b → Coexp( a, d ) × c  ==  op( Exp( d, a ) × c → b )
             @Assert( 0, IsCongruentForMorphisms( coexp_to_tensor_adjunction_on_coexp_alpha_beta_op, Opposite( opposite, exp_to_tensor_adjunction_on_exp_beta_alpha ) ) );
@@ -633,29 +674,29 @@
         end;
         
         if (CanCompute( cat, "ExponentialOnObjects" ) &&
-           CanCompute( cat, "CartesianEvaluationMorphism" ) &&
-           CanCompute( cat, "ExponentialToDirectProductAdjunctionMap" )
+           CanCompute( cat, "CartesianLeftEvaluationMorphism" ) &&
+           CanCompute( cat, "ExponentialToDirectProductLeftAdjunctMorphism" )
         
        )
             
             if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
-                Display( "Consistency between 'EvalutionMorphism' and 'AdjunctionMap' ..." );
+                Display( "Consistency between 'EvalutionMorphism' and 'AdjunctMorphism' ..." );
                 
             end;
             
-            ev_ab = CartesianEvaluationMorphism( a, b );
-            ev_ba = CartesianEvaluationMorphism( b, a );
+            ev_ab = CartesianLeftEvaluationMorphism( a, b );
+            ev_ba = CartesianLeftEvaluationMorphism( b, a );
             
             id_exp_ab = IdentityMorphism( ExponentialOnObjects( a, b ) );
             id_exp_ba = IdentityMorphism( ExponentialOnObjects( b, a ) );
             
-            # Adjoint( Exp( a. b ) → Exp( a, b ) )  ==  Exp( a, b ) × a → b
-            exp_to_tensor_adjunction_on_id_exp_ab = ExponentialToDirectProductAdjunctionMap( a, b, id_exp_ab );
+            # Adjoint( Exp( a, b ) → Exp( a, b ) )  ==  Exp( a, b ) × a → b
+            exp_to_tensor_adjunction_on_id_exp_ab = ExponentialToDirectProductLeftAdjunctMorphism( a, b, id_exp_ab );
             
             # Adjoint( Exp( b, a ) → Exp( b, a ) )  ==  Exp( b, a ) × b → a
-            exp_to_tensor_adjunction_on_id_exp_ba = ExponentialToDirectProductAdjunctionMap( b, a, id_exp_ba );
+            exp_to_tensor_adjunction_on_id_exp_ba = ExponentialToDirectProductLeftAdjunctMorphism( b, a, id_exp_ba );
             
             @Assert( 0, IsCongruentForMorphisms( ev_ab, exp_to_tensor_adjunction_on_id_exp_ab ) );
             @Assert( 0, IsCongruentForMorphisms( ev_ba, exp_to_tensor_adjunction_on_id_exp_ba ) );
@@ -663,32 +704,32 @@
         end;
         
         if (CanCompute( cat, "DirectProduct" ) &&
-           CanCompute( cat, "CartesianCoevaluationMorphism" ) &&
-           CanCompute( cat, "DirectProductToExponentialAdjunctionMap" )
+           CanCompute( cat, "CartesianLeftCoevaluationMorphism" ) &&
+           CanCompute( cat, "DirectProductToExponentialLeftAdjunctMorphism" )
         
        )
             
             if (verbose)
                 
                 # COVERAGE_IGNORE_NEXT_LINE
-                Display( "Consistency between 'CoevalutionMorphism' and 'AdjunctionMap' ..." );
+                Display( "Consistency between 'CoevalutionMorphism' and 'AdjunctMorphism' ..." );
                 
             end;
             
-            coev_ab = CartesianCoevaluationMorphism( a, b );
-            coev_ba = CartesianCoevaluationMorphism( b, a );
+            coev_ab = CartesianLeftCoevaluationMorphism( a, b );
+            coev_ba = CartesianLeftCoevaluationMorphism( b, a );
             
             id_a_tensor_b = IdentityMorphism( DirectProduct( a, b ) );
             id_b_tensor_a = IdentityMorphism( DirectProduct( b, a ) );
             
             # Adjoint( a × b → a × b )  ==  a → Exp( b, a × b )
-            tensor_to_exp_adjunction_on_id_a_tensor_b = DirectProductToExponentialAdjunctionMap( a, b, id_a_tensor_b );
+            tensor_to_exp_adjunction_on_id_a_tensor_b = DirectProductToExponentialLeftAdjunctMorphism( a, b, id_a_tensor_b );
             
             # Adjoint( b × a → b × a )  ==  b → Exp( a, b × a )
-            tensor_to_exp_adjunction_on_id_b_tensor_a = DirectProductToExponentialAdjunctionMap( b, a, id_b_tensor_a );
+            tensor_to_exp_adjunction_on_id_b_tensor_a = DirectProductToExponentialLeftAdjunctMorphism( b, a, id_b_tensor_a );
             
-            @Assert( 0, IsCongruentForMorphisms( coev_ab, tensor_to_exp_adjunction_on_id_a_tensor_b ) );
-            @Assert( 0, IsCongruentForMorphisms( coev_ba, tensor_to_exp_adjunction_on_id_b_tensor_a ) );
+            @Assert( 0, IsCongruentForMorphisms( coev_ba, tensor_to_exp_adjunction_on_id_a_tensor_b ) );
+            @Assert( 0, IsCongruentForMorphisms( coev_ab, tensor_to_exp_adjunction_on_id_b_tensor_a ) );
             
         end;
 

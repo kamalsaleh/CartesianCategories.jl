@@ -25,9 +25,6 @@ WriteFileForMonoidalStructure(
              Distributivity = "CartesianDistributivity",
              DirectSum = "Coproduct",
              Braiding = "CartesianBraiding",
-             Lambda = "CartesianLambda",
-             Evaluation = "CartesianEvaluation",
-             Coevaluation = "CartesianCoevaluation",
              MONOIDAL = "CARTESIAN",
              Monoidal = "Cartesian",
              monoidal = "cartesian",
@@ -140,8 +137,10 @@ WriteFileForClosedMonoidalStructure(
              DirectSum = "Coproduct",
              Braiding = "CartesianBraiding",
              Lambda = "CartesianLambda",
-             Evaluation = "CartesianEvaluation",
-             Coevaluation = "CartesianCoevaluation",
+             ClosedMonoidalLeftEvaluation = "CartesianLeftEvaluation",
+             ClosedMonoidalLeftCoevaluation = "CartesianLeftCoevaluation",
+             ClosedMonoidalRightEvaluation = "CartesianRightEvaluation",
+             ClosedMonoidalRightCoevaluation = "CartesianRightCoevaluation",
              InternalHom = "Exponential",
              ClosedMonoidalCategories = "CartesianClosedCategories",
              CLOSED_MONOIDAL = "CARTESIAN_CLOSED",
@@ -150,6 +149,7 @@ WriteFileForClosedMonoidalStructure(
              Monoidal = "Cartesian",
              monoidal = "cartesian",
              Dual = "CartesianDual",
+             EvaluationFor = "CartesianEvaluationFor",
              Bidual = "CartesianBidual",
              tensor_object = "direct_product_object",
              tensored = "x",
@@ -200,12 +200,18 @@ WriteFileForClosedMonoidalStructure(
                                ## BraidingInverse
                                [ "dual_operation = \"Braiding\"",
                                  "dual_operation = \"CocartesianBraiding\"" ],
-                               ## CoevaluationMorphismWithGivenRange
-                               [ "dual_operation = \"CoclosedCoevaluationMorphismWithGivenSource\"",
-                                 "dual_operation = \"CocartesianCoevaluationMorphismWithGivenSource\"" ],
-                               ## CoevaluationMorphism
-                               [ "dual_operation = \"CoclosedCoevaluationMorphism\"",
-                                 "dual_operation = \"CocartesianCoevaluationMorphism\"" ],
+                               ## ClosedMonoidalLeftCoevaluationMorphismWithGivenRange
+                               [ "dual_operation = \"CoclosedMonoidalLeftCoevaluationMorphismWithGivenSource\"",
+                                 "dual_operation = \"CocartesianLeftCoevaluationMorphismWithGivenSource\"" ],
+                               ## ClosedMonoidalLeftCoevaluationMorphism
+                               [ "dual_operation = \"CoclosedMonoidalLeftCoevaluationMorphism\"",
+                                 "dual_operation = \"CocartesianLeftCoevaluationMorphism\"" ],
+                               ## ClosedMonoidalRightCoevaluationMorphismWithGivenRange
+                               [ "dual_operation = \"CoclosedMonoidalRightCoevaluationMorphismWithGivenSource\"",
+                                 "dual_operation = \"CocartesianRightCoevaluationMorphismWithGivenSource\"" ],
+                               ## ClosedMonoidalRightCoevaluationMorphism
+                               [ "dual_operation = \"CoclosedMonoidalRightCoevaluationMorphism\"",
+                                 "dual_operation = \"CocartesianRightCoevaluationMorphism\"" ],
                                ## DualOnMorphismsWithGivenDuals
                                [ "dual_operation = \"CoDualOnMorphismsWithGivenCoDuals\"",
                                  "dual_operation = \"CocartesianDualOnMorphismsWithGivenCocartesianDuals\"" ],
@@ -221,12 +227,18 @@ WriteFileForClosedMonoidalStructure(
                                ## EvaluationForDual
                                [ "dual_operation = \"CoclosedEvaluationForCoDual\"",
                                  "dual_operation = \"CocartesianEvaluationForCocartesianDual\"" ],
-                               ## EvaluationMorphismWithGivenSource
-                               [ "dual_operation = \"CoclosedEvaluationMorphismWithGivenRange\"",
-                                 "dual_operation = \"CocartesianEvaluationMorphismWithGivenRange\"" ],
-                               ## EvaluationMorphism
-                               [ "dual_operation = \"CoclosedEvaluationMorphism\"",
-                                 "dual_operation = \"CocartesianEvaluationMorphism\"" ],
+                               ## ClosedMonoidalLeftEvaluationMorphismWithGivenSource
+                               [ "dual_operation = \"CoclosedMonoidalLeftEvaluationMorphismWithGivenRange\"",
+                                 "dual_operation = \"CocartesianLeftEvaluationMorphismWithGivenRange\"" ],
+                               ## ClosedMonoidalLeftEvaluationMorphism
+                               [ "dual_operation = \"CoclosedMonoidalLeftEvaluationMorphism\"",
+                                 "dual_operation = \"CocartesianLeftEvaluationMorphism\"" ],
+                               ## ClosedMonoidalRightEvaluationMorphismWithGivenSource
+                               [ "dual_operation = \"CoclosedMonoidalRightEvaluationMorphismWithGivenRange\"",
+                                 "dual_operation = \"CocartesianRightEvaluationMorphismWithGivenRange\"" ],
+                               ## ClosedMonoidalRightEvaluationMorphism
+                               [ "dual_operation = \"CoclosedMonoidalRightEvaluationMorphism\"",
+                                 "dual_operation = \"CocartesianRightEvaluationMorphism\"" ],
                                ## InternalHomOnMorphismsWithGivenInternalHoms
                                [ "dual_operation = \"InternalCoHomOnMorphismsWithGivenInternalCoHoms\"",
                                  "dual_operation = \"CoexponentialOnMorphismsWithGivenCoexponentials\"" ],
@@ -236,12 +248,18 @@ WriteFileForClosedMonoidalStructure(
                                ## InternalHomOnObjects
                                [ "dual_operation = \"InternalCoHomOnObjects\"",
                                  "dual_operation = \"CoexponentialOnObjects\"" ],
-                               ## InternalHomToTensorProductAdjunctionMap
-                               [ "dual_operation = \"InternalCoHomToTensorProductAdjunctionMap\"",
-                                 "dual_operation = \"CoexponentialToCoproductAdjunctionMap\"" ],
-                               ## InternalHomToTensorProductAdjunctionMapWithGivenTensorProduct
-                               [ "dual_operation = \"InternalCoHomToTensorProductAdjunctionMapWithGivenTensorProduct\"",
-                                 "dual_operation = \"CoexponentialToCoproductAdjunctionMapWithGivenCoproduct\"" ],
+                               ## InternalHomToTensorProductLeftAdjunctMorphism
+                               [ "dual_operation = \"InternalCoHomToTensorProductLeftAdjunctMorphism\"",
+                                 "dual_operation = \"CoexponentialToCoproductLeftAdjunctMorphism\"" ],
+                               ## InternalHomToTensorProductLeftAdjunctMorphismWithGivenTensorProduct
+                               [ "dual_operation = \"InternalCoHomToTensorProductLeftAdjunctMorphismWithGivenTensorProduct\"",
+                                 "dual_operation = \"CoexponentialToCoproductLeftAdjunctMorphismWithGivenCoproduct\"" ],
+                               ## InternalHomToTensorProductRightAdjunctMorphism
+                               [ "dual_operation = \"InternalCoHomToTensorProductRightAdjunctMorphism\"",
+                                 "dual_operation = \"CoexponentialToCoproductRightAdjunctMorphism\"" ],
+                               ## InternalHomToTensorProductRightAdjunctMorphismWithGivenTensorProduct
+                               [ "dual_operation = \"InternalCoHomToTensorProductRightAdjunctMorphismWithGivenTensorProduct\"",
+                                 "dual_operation = \"CoexponentialToCoproductRightAdjunctMorphismWithGivenCoproduct\"" ],
                                ## IsomorphismFromDualObjectToInternalHomIntoTensorUnit
                                [ "dual_operation = \"IsomorphismFromInternalCoHomFromTensorUnitToCoDualObject\"",
                                  "dual_operation = \"IsomorphismFromCoexponentialFromInitialObjectToCocartesianDualObject\"" ],
@@ -302,12 +320,18 @@ WriteFileForClosedMonoidalStructure(
                                ## TensorProductInternalHomCompatibilityMorphism
                                [ "dual_operation = \"InternalCoHomTensorProductCompatibilityMorphism\"",
                                  "dual_operation = \"CoexponentialCoproductCompatibilityMorphism\"" ],
-                               ## TensorProductToInternalHomAdjunctionMap
-                               [ "dual_operation = \"TensorProductToInternalCoHomAdjunctionMap\"",
-                                 "dual_operation = \"CoproductToCoexponentialAdjunctionMap\"" ],
-                               ## TensorProductToInternalHomAdjunctionMapWithGivenInternalHom
-                               [ "dual_operation = \"TensorProductToInternalCoHomAdjunctionMapWithGivenInternalCoHom\"",
-                                 "dual_operation = \"CoproductToCoexponentialAdjunctionMapWithGivenCoexponential\"" ],
+                               ## TensorProductToInternalHomLeftAdjunctMorphism
+                               [ "dual_operation = \"TensorProductToInternalCoHomLeftAdjunctMorphism\"",
+                                 "dual_operation = \"CoproductToCoexponentialLeftAdjunctMorphism\"" ],
+                               ## TensorProductToInternalHomLeftAdjunctMorphismWithGivenInternalHom
+                               [ "dual_operation = \"TensorProductToInternalCoHomLeftAdjunctMorphismWithGivenInternalCoHom\"",
+                                 "dual_operation = \"CoproductToCoexponentialLeftAdjunctMorphismWithGivenCoexponential\"" ],
+                               ## TensorProductToInternalHomRightAdjunctMorphism
+                               [ "dual_operation = \"TensorProductToInternalCoHomRightAdjunctMorphism\"",
+                                 "dual_operation = \"CoproductToCoexponentialRightAdjunctMorphism\"" ],
+                               ## TensorProductToInternalHomRightAdjunctMorphismWithGivenInternalHom
+                               [ "dual_operation = \"TensorProductToInternalCoHomRightAdjunctMorphismWithGivenInternalCoHom\"",
+                                 "dual_operation = \"CoproductToCoexponentialRightAdjunctMorphismWithGivenCoexponential\"" ],
                                ## UniversalPropertyOfDual
                                [ "dual_operation = \"UniversalPropertyOfCoDual\"",
                                  "dual_operation = \"UniversalPropertyOfCocartesianDual\"" ],
@@ -315,15 +339,23 @@ WriteFileForClosedMonoidalStructure(
                                ## Safe replacements for Tests
                                ##############################
                                ## Evalutions
-                               [ "CoclosedEvaluationMorphism",
-                                 "CocartesianEvaluationMorphism" ],
-                               [ "CoclosedCoevaluationMorphism",
-                                 "CocartesianCoevaluationMorphism" ],
-                               ## AdjunctionMaps
-                               [ "TensorProductToInternalCoHomAdjunctionMap",
-                                 "CoproductToCoexponentialAdjunctionMap" ],
-                               [ "InternalCoHomToTensorProductAdjunctionMap",
-                                 "CoexponentialToCoproductAdjunctionMap" ],
+                               [ "CoclosedMonoidalLeftEvaluationMorphism",
+                                 "CocartesianLeftEvaluationMorphism" ],
+                               [ "CoclosedMonoidalLeftCoevaluationMorphism",
+                                 "CocartesianLeftCoevaluationMorphism" ],
+                               [ "CoclosedMonoidalRightEvaluationMorphism",
+                                 "CocartesianRightEvaluationMorphism" ],
+                               [ "CoclosedMonoidalRightCoevaluationMorphism",
+                                 "CocartesianRightCoevaluationMorphism" ],
+                               ## AdjunctMorphisms
+                               [ "TensorProductToInternalCoHomLeftAdjunctMorphism",
+                                 "CoproductToCoexponentialLeftAdjunctMorphism" ],
+                               [ "InternalCoHomToTensorProductLeftAdjunctMorphism",
+                                 "CoexponentialToCoproductLeftAdjunctMorphism" ],
+                               [ "TensorProductToInternalCoHomRightAdjunctMorphism",
+                                 "CoproductToCoexponentialRightAdjunctMorphism" ],
+                               [ "InternalCoHomToTensorProductRightAdjunctMorphism",
+                                 "CoexponentialToCoproductRightAdjunctMorphism" ],
                                ## MonoidalComposeMorphisms
                                [ "MonoidalPreCoComposeMorphism",
                                  "CocartesianPreCoComposeMorphism" ],
@@ -410,9 +442,6 @@ WriteFileForMonoidalStructure(
              Distributivity = "CocartesianCodistributivity",
              DirectSum = "DirectProduct",
              Braiding = "CocartesianBraiding",
-             CoLambda = "CocartesianLambda",
-             CoclosedEvaluation = "CocartesianEvaluation",
-             CoclosedCoevaluation = "CocartesianCoevaluation",
              MONOIDAL = "COCARTESIAN",
              Monoidal = "Cocartesian",
              monoidal = "cocartesian",
@@ -524,8 +553,10 @@ WriteFileForCoclosedMonoidalStructure(
              DirectSum = "DirectProduct",
              Braiding = "CocartesianBraiding",
              CoLambda = "CocartesianLambda",
-             CoclosedEvaluation = "CocartesianEvaluation",
-             CoclosedCoevaluation = "CocartesianCoevaluation",
+             CoclosedMonoidalLeftEvaluation = "CocartesianLeftEvaluation",
+             CoclosedMonoidalLeftCoevaluation = "CocartesianLeftCoevaluation",
+             CoclosedMonoidalRightEvaluation = "CocartesianRightEvaluation",
+             CoclosedMonoidalRightCoevaluation = "CocartesianRightCoevaluation",
              InternalCoHom = "Coexponential",
              CoclosedMonoidalCategories = "CocartesianCoclosedCategories",
              COCLOSED_MONOIDAL = "COCARTESIAN_COCLOSED",
@@ -534,6 +565,7 @@ WriteFileForCoclosedMonoidalStructure(
              Monoidal = "Cocartesian",
              monoidal = "cocartesian",
              CoDual = "CocartesianDual",
+             CoclosedEvaluationFor = "CocartesianEvaluationFor",
              CoBidual = "CocartesianBidual",
              tensor_object = "coproduct_object",
              tensored = "u",
@@ -592,12 +624,18 @@ WriteFileForCoclosedMonoidalStructure(
                                ## BraidingInverse
                                [ "dual_operation = \"Braiding\"",
                                  "dual_operation = \"CartesianBraiding\"" ],
-                               ## CoclosedCoevaluationMorphismWithGivenSource
-                               [ "dual_operation = \"CoevaluationMorphismWithGivenRange\"",
-                                 "dual_operation = \"CartesianCoevaluationMorphismWithGivenRange\"" ],
-                               ## CoclosedCoevaluationMorphism
-                               [ "dual_operation = \"CoevaluationMorphism\"",
-                                 "dual_operation = \"CartesianCoevaluationMorphism\"" ],
+                               ## CoclosedMonoidalLeftCoevaluationMorphismWithGivenSource
+                               [ "dual_operation = \"ClosedMonoidalLeftCoevaluationMorphismWithGivenRange\"",
+                                 "dual_operation = \"CartesianLeftCoevaluationMorphismWithGivenRange\"" ],
+                               ## CoclosedMonoidalLeftCoevaluationMorphism
+                               [ "dual_operation = \"ClosedMonoidalLeftCoevaluationMorphism\"",
+                                 "dual_operation = \"CartesianLeftCoevaluationMorphism\"" ],
+                               ## CoclosedMonoidalRightCoevaluationMorphismWithGivenSource
+                               [ "dual_operation = \"ClosedMonoidalRightCoevaluationMorphismWithGivenRange\"",
+                                 "dual_operation = \"CartesianRightCoevaluationMorphismWithGivenRange\"" ],
+                               ## CoclosedMonoidalRightCoevaluationMorphism
+                               [ "dual_operation = \"ClosedMonoidalRightCoevaluationMorphism\"",
+                                 "dual_operation = \"CartesianRightCoevaluationMorphism\"" ],
                                ## CoDualOnMorphismsWithGivenCoDuals
                                [ "dual_operation = \"DualOnMorphismsWithGivenDuals\"",
                                  "dual_operation = \"CartesianDualOnMorphismsWithGivenCartesianDuals\"" ],
@@ -613,12 +651,18 @@ WriteFileForCoclosedMonoidalStructure(
                                ## CoclosedEvaluationForCoDual
                                [ "dual_operation = \"EvaluationForDual\"",
                                  "dual_operation = \"CartesianEvaluationForCartesianDual\"" ],
-                               ## CoclosedEvaluationMorphismWithGivenRange
-                               [ "dual_operation = \"EvaluationMorphismWithGivenSource\"",
-                                 "dual_operation = \"CartesianEvaluationMorphismWithGivenSource\"" ],
-                               ## CoclosedEvaluationMorphism
-                               [ "dual_operation = \"EvaluationMorphism\"",
-                                 "dual_operation = \"CartesianEvaluationMorphism\"" ],
+                               ## CoclosedMonoidalLeftEvaluationMorphismWithGivenRange
+                               [ "dual_operation = \"ClosedMonoidalLeftEvaluationMorphismWithGivenSource\"",
+                                 "dual_operation = \"CartesianLeftEvaluationMorphismWithGivenSource\"" ],
+                               ## CoclosedMonoidalLeftEvaluationMorphism
+                               [ "dual_operation = \"ClosedMonoidalLeftEvaluationMorphism\"",
+                                 "dual_operation = \"CartesianLeftEvaluationMorphism\"" ],
+                               ## CoclosedMonoidalRightEvaluationMorphismWithGivenRange
+                               [ "dual_operation = \"ClosedMonoidalRightEvaluationMorphismWithGivenSource\"",
+                                 "dual_operation = \"CartesianRightEvaluationMorphismWithGivenSource\"" ],
+                               ## CoclosedMonoidalRightEvaluationMorphism
+                               [ "dual_operation = \"ClosedMonoidalRightEvaluationMorphism\"",
+                                 "dual_operation = \"CartesianRightEvaluationMorphism\"" ],
                                ## InternalCoHomOnMorphismsWithGivenInternalCoHoms
                                [ "dual_operation = \"InternalHomOnMorphismsWithGivenInternalHoms\"",
                                  "dual_operation = \"ExponentialOnMorphismsWithGivenExponentials\"" ],
@@ -628,12 +672,18 @@ WriteFileForCoclosedMonoidalStructure(
                                ## InternalCoHomOnObjects
                                [ "dual_operation = \"InternalHomOnObjects\"",
                                  "dual_operation = \"ExponentialOnObjects\"" ],
-                               ## InternalCoHomToTensorProductAdjunctionMap
-                               [ "dual_operation = \"InternalHomToTensorProductAdjunctionMap\"",
-                                 "dual_operation = \"ExponentialToDirectProductAdjunctionMap\"" ],
-                               ## InternalCoHomToTensorProductAdjunctionMapWithGivenTensorProduct
-                               [ "dual_operation = \"InternalHomToTensorProductAdjunctionMapWithGivenTensorProduct\"",
-                                 "dual_operation = \"ExponentialToDirectProductAdjunctionMapWithGivenDirectProduct\"" ],
+                               ## InternalCoHomToTensorProductLeftAdjunctMorphism
+                               [ "dual_operation = \"InternalHomToTensorProductLeftAdjunctMorphism\"",
+                                 "dual_operation = \"ExponentialToDirectProductLeftAdjunctMorphism\"" ],
+                               ## InternalCoHomToTensorProductLeftAdjunctMorphismWithGivenTensorProduct
+                               [ "dual_operation = \"InternalHomToTensorProductLeftAdjunctMorphismWithGivenTensorProduct\"",
+                                 "dual_operation = \"ExponentialToDirectProductLeftAdjunctMorphismWithGivenDirectProduct\"" ],
+                               ## InternalCoHomToTensorProductRightAdjunctMorphism
+                               [ "dual_operation = \"InternalHomToTensorProductRightAdjunctMorphism\"",
+                                 "dual_operation = \"ExponentialToDirectProductRightAdjunctMorphism\"" ],
+                               ## InternalCoHomToTensorProductRightAdjunctMorphismWithGivenTensorProduct
+                               [ "dual_operation = \"InternalHomToTensorProductRightAdjunctMorphismWithGivenTensorProduct\"",
+                                 "dual_operation = \"ExponentialToDirectProductRightAdjunctMorphismWithGivenDirectProduct\"" ],
                                ## IsomorphismFromInternalCoHomFromTensorUnitToCoDualObject
                                [ "dual_operation = \"IsomorphismFromDualObjectToInternalHomIntoTensorUnit\"",
                                  "dual_operation = \"IsomorphismFromCartesianDualObjectToExponentialIntoTerminalObject\"" ],
@@ -694,12 +744,18 @@ WriteFileForCoclosedMonoidalStructure(
                                ## InternalCoHomTensorProductCompatibilityMorphism
                                [ "dual_operation = \"TensorProductInternalHomCompatibilityMorphism\"",
                                  "dual_operation = \"DirectProductExponentialCompatibilityMorphism\"" ],
-                               ## TensorProductToInternalCoHomAdjunctionMap
-                               [ "dual_operation = \"TensorProductToInternalHomAdjunctionMap\"",
-                                 "dual_operation = \"DirectProductToExponentialAdjunctionMap\"" ],
-                               ## TensorProductToInternalCoHomAdjunctionMapWithGivenInternalCoHom
-                               [ "dual_operation = \"TensorProductToInternalHomAdjunctionMapWithGivenInternalHom\"",
-                                 "dual_operation = \"DirectProductToExponentialAdjunctionMapWithGivenExponential\"" ],
+                               ## TensorProductToInternalCoHomLeftAdjunctMorphism
+                               [ "dual_operation = \"TensorProductToInternalHomLeftAdjunctMorphism\"",
+                                 "dual_operation = \"DirectProductToExponentialLeftAdjunctMorphism\"" ],
+                               ## TensorProductToInternalCoHomLeftAdjunctMorphismWithGivenInternalCoHom
+                               [ "dual_operation = \"TensorProductToInternalHomLeftAdjunctMorphismWithGivenInternalHom\"",
+                                 "dual_operation = \"DirectProductToExponentialLeftAdjunctMorphismWithGivenExponential\"" ],
+                               ## TensorProductToInternalCoHomRightAdjunctMorphism
+                               [ "dual_operation = \"TensorProductToInternalHomRightAdjunctMorphism\"",
+                                 "dual_operation = \"DirectProductToExponentialRightAdjunctMorphism\"" ],
+                               ## TensorProductToInternalCoHomRightAdjunctMorphismWithGivenInternalCoHom
+                               [ "dual_operation = \"TensorProductToInternalHomRightAdjunctMorphismWithGivenInternalHom\"",
+                                 "dual_operation = \"DirectProductToExponentialRightAdjunctMorphismWithGivenExponential\"" ],
                                ## UniversalPropertyOfCoDual
                                [ "dual_operation = \"UniversalPropertyOfDual\"",
                                  "dual_operation = \"UniversalPropertyOfCartesianDual\"" ],
@@ -717,15 +773,23 @@ WriteFileForCoclosedMonoidalStructure(
                                ## Safe replacements for Tests
                                ##############################
                                ## Evalutions
-                               [ " EvaluationMorphism",
-                                 " CartesianEvaluationMorphism" ],
-                               [ " CoevaluationMorphism",
-                                 " CartesianCoevaluationMorphism" ],
-                               ## AdjunctionMaps
-                               [ "TensorProductToInternalHomAdjunctionMap",
-                                 "DirectProductToExponentialAdjunctionMap" ],
-                               [ "InternalHomToTensorProductAdjunctionMap",
-                                 "ExponentialToDirectProductAdjunctionMap" ],
+                               [ " ClosedMonoidalLeftEvaluationMorphism",
+                                 " CartesianLeftEvaluationMorphism" ],
+                               [ " ClosedMonoidalLeftCoevaluationMorphism",
+                                 " CartesianLeftCoevaluationMorphism" ],
+                               [ " ClosedMonoidalRightEvaluationMorphism",
+                                 " CartesianRightEvaluationMorphism" ],
+                               [ " ClosedMonoidalRightCoevaluationMorphism",
+                                 " CartesianRightCoevaluationMorphism" ],
+                               ## AdjunctMorphisms
+                               [ "TensorProductToInternalHomLeftAdjunctMorphism",
+                                 "DirectProductToExponentialLeftAdjunctMorphism" ],
+                               [ "InternalHomToTensorProductLeftAdjunctMorphism",
+                                 "ExponentialToDirectProductLeftAdjunctMorphism" ],
+                               [ "TensorProductToInternalHomRightAdjunctMorphism",
+                                 "DirectProductToExponentialRightAdjunctMorphism" ],
+                               [ "InternalHomToTensorProductRightAdjunctMorphism",
+                                 "ExponentialToDirectProductRightAdjunctMorphism" ],
                                ## MonoidalComposeMorphisms
                                [ "MonoidalPreComposeMorphism",
                                  "CartesianPreComposeMorphism" ],
