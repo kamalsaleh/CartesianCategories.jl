@@ -37,7 +37,7 @@ InstallTrueMethod( IsFiniteCompleteCategory, IsAbelianCategory );
 InstallTrueMethod( IsFiniteCocompleteCategory, IsAbelianCategory );
 
 ##
-InstallMethod( @__MODULE__,  BinaryDirectProduct,
+@InstallMethod( BinaryDirectProduct,
         [ IsCapCategory, IsCapCategoryObject, IsCapCategoryObject ],
         
   function( cat, object_1, object_2 )
@@ -47,7 +47,7 @@ InstallMethod( @__MODULE__,  BinaryDirectProduct,
 end );
 
 ##
-InstallMethod( @__MODULE__,  BinaryCoproduct,
+@InstallMethod( BinaryCoproduct,
         [ IsCapCategory, IsCapCategoryObject, IsCapCategoryObject ],
         
   function( cat, object_1, object_2 )

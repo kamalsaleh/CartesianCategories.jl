@@ -38,7 +38,7 @@ AddDerivationToCAP( CocartesianBraidingInverse,
 end; CategoryFilter = IsSkeletalCategory );
 
 ##
-InstallMethod( @__MODULE__,  CheckCocartesianBraiding,
+@InstallMethod( CheckCocartesianBraiding,
                [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ],
                
   function( A, B, C )

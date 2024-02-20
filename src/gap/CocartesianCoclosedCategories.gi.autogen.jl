@@ -34,19 +34,19 @@ end; CategoryFilter = IsSkeletalCategory );
 ####################################
 
 ##
-InstallMethod( @__MODULE__,  Coexponential,
+@InstallMethod( Coexponential,
         [ IsCapCategoryObject, IsCapCategoryObject ],
         
   CoexponentialOnObjects );
 
 ##
-InstallMethod( @__MODULE__,  Coexponential,
+@InstallMethod( Coexponential,
         [ IsCapCategoryMorphism, IsCapCategoryMorphism ],
         
   CoexponentialOnMorphisms );
 
 ##
-InstallMethod( @__MODULE__,  Coexponential,
+@InstallMethod( Coexponential,
         [ IsCapCategoryObject, IsCapCategoryMorphism ],
         
   function( a, beta )
@@ -56,7 +56,7 @@ InstallMethod( @__MODULE__,  Coexponential,
 end );
 
 ##
-InstallMethod( @__MODULE__,  Coexponential,
+@InstallMethod( Coexponential,
         [ IsCapCategoryMorphism, IsCapCategoryObject ],
         
   function( alpha, b )

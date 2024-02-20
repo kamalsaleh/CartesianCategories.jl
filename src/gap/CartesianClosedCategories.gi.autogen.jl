@@ -34,19 +34,19 @@ end; CategoryFilter = IsSkeletalCategory );
 ####################################
 
 ##
-InstallMethod( @__MODULE__,  Exponential,
+@InstallMethod( Exponential,
         [ IsCapCategoryObject, IsCapCategoryObject ],
         
   ExponentialOnObjects );
 
 ##
-InstallMethod( @__MODULE__,  Exponential,
+@InstallMethod( Exponential,
         [ IsCapCategoryMorphism, IsCapCategoryMorphism ],
         
   ExponentialOnMorphisms );
 
 ##
-InstallMethod( @__MODULE__,  Exponential,
+@InstallMethod( Exponential,
         [ IsCapCategoryObject, IsCapCategoryMorphism ],
         
   function( a, beta )
@@ -56,7 +56,7 @@ InstallMethod( @__MODULE__,  Exponential,
 end );
 
 ##
-InstallMethod( @__MODULE__,  Exponential,
+@InstallMethod( Exponential,
         [ IsCapCategoryMorphism, IsCapCategoryObject ],
         
   function( alpha, b )

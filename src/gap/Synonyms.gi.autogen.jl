@@ -5,7 +5,7 @@
 #
 
 ##
-InstallMethod( @__MODULE__,  CocartesianCoevaluationMorphism,
+@InstallMethod( CocartesianCoevaluationMorphism,
         [ IsCapCategoryObject, IsCapCategoryObject ],
         
   function( a, b )
@@ -15,7 +15,7 @@ InstallMethod( @__MODULE__,  CocartesianCoevaluationMorphism,
 end );
 
 ##
-InstallMethod( @__MODULE__,  CocartesianCoevaluationMorphismWithGivenSource,
+@InstallMethod( CocartesianCoevaluationMorphismWithGivenSource,
         [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ],
         
   function( a, b, s )
@@ -25,7 +25,7 @@ InstallMethod( @__MODULE__,  CocartesianCoevaluationMorphismWithGivenSource,
 end );
 
 ##
-InstallMethod( @__MODULE__,  CocartesianEvaluationMorphism,
+@InstallMethod( CocartesianEvaluationMorphism,
         [ IsCapCategoryObject, IsCapCategoryObject ],
         
   function( a, b )
@@ -35,7 +35,7 @@ InstallMethod( @__MODULE__,  CocartesianEvaluationMorphism,
 end );
 
 ##
-InstallMethod( @__MODULE__,  CocartesianEvaluationMorphismWithGivenRange,
+@InstallMethod( CocartesianEvaluationMorphismWithGivenRange,
         [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ],
         
   function( a, b, r )
@@ -45,7 +45,7 @@ InstallMethod( @__MODULE__,  CocartesianEvaluationMorphismWithGivenRange,
 end );
 
 ##
-InstallMethod( @__MODULE__,  CartesianCoevaluationMorphism,
+@InstallMethod( CartesianCoevaluationMorphism,
         [ IsCapCategoryObject, IsCapCategoryObject ],
         
   function( a, b )
@@ -55,7 +55,7 @@ InstallMethod( @__MODULE__,  CartesianCoevaluationMorphism,
 end );
 
 ##
-InstallMethod( @__MODULE__,  CartesianCoevaluationMorphismWithGivenRange,
+@InstallMethod( CartesianCoevaluationMorphismWithGivenRange,
         [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ],
         
   function( a, b, r )
