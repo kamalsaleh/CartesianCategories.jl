@@ -33,8 +33,13 @@ InstallTrueMethod( IsCocartesianCategory, IsFiniteCocompleteCategory );
 
 InstallTrueMethod( IsBicartesianCategory, IsAdditiveCategory );
 
-InstallTrueMethod( IsFiniteCompleteCategory, IsAbelianCategory );
-InstallTrueMethod( IsFiniteCocompleteCategory, IsAbelianCategory );
+#= comment for Julia
+InstallTrueMethod( IsFiniteBicompleteCategory, IsFiniteCompleteCategory && IsFiniteCocompleteCategory );
+# =#
+InstallTrueMethod( IsFiniteCompleteCategory, IsFiniteBicompleteCategory );
+InstallTrueMethod( IsFiniteCocompleteCategory, IsFiniteBicompleteCategory );
+
+InstallTrueMethod( IsFiniteBicompleteCategory, IsAbelianCategory );
 
 ##
 @InstallMethod( BinaryDirectProduct,
