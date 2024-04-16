@@ -4,12 +4,6 @@
 # Reading the implementation part of the package.
 #
 
-#= comment for Julia
-if IsBound( WriteFileForMonoidalStructure ) then
-include( "gap/Tools.gi.autogen.jl" );
-fi;
-# =#
-
 ## Initial category
 
 include( "gap/InitialCategory.gi.autogen.jl" );
