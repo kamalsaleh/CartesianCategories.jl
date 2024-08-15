@@ -27,6 +27,8 @@
               ev_ab, coev_ab, coca_ev_ab_op, coca_coev_ab_op,
               ev_ba, coev_ba, coca_ev_ba_op, coca_coev_ba_op,
               
+              raiso, laiso, H_ab_ba_c,
+              
               alpha_tensor_beta, alpha_tensor_beta_op,
               beta_tensor_alpha, beta_tensor_alpha_op,
               
@@ -227,6 +229,72 @@
             
             @Assert( 0, IsCongruentForMorphisms( coca_coev_ab_op, Opposite( opposite, coev_ab ) ) );
             @Assert( 0, IsCongruentForMorphisms( coca_coev_ba_op, Opposite( opposite, coev_ba ) ) );
+            
+        end;
+        
+        if (CanCompute( cat, "DirectProductToExponentialRightAdjunctionIsomorphism" ))
+            
+            if (verbose)
+                
+                # COVERAGE_IGNORE_NEXT_LINE
+                Display( "Testing 'DirectProductToExponentialRightAdjunctionIsomorphism' ..." );
+                
+            end;
+            
+            raiso = DirectProductToExponentialRightAdjunctionIsomorphism( a, b, c );
+            
+            @Assert( 0, IsIsomorphism( raiso ) );
+            
+            if (CanCompute( cat, "DirectProductToExponentialLeftAdjunctionIsomorphism" ))
+                
+                laiso = DirectProductToExponentialLeftAdjunctionIsomorphism( b, a, c );
+                
+                @Assert( 0, IsIsomorphism( laiso ) );
+                
+                if (CanCompute( cat, "CartesianBraiding" ))
+                    
+                    H_ab_ba_c = HomStructure( CartesianBraiding( a, b ), c );
+                    
+                    @Assert( 0, IsIsomorphism( H_ab_ba_c ) );
+                    
+                    @Assert( 0, IsEqualForMorphisms( laiso, PreCompose( H_ab_ba_c, raiso ) ) );
+                    
+                end;
+                
+            end;
+            
+        end;
+        
+        if (CanCompute( cat, "ExponentialToDirectProductRightAdjunctionIsomorphism" ))
+            
+            if (verbose)
+                
+                # COVERAGE_IGNORE_NEXT_LINE
+                Display( "Testing 'ExponentialToDirectProductRightAdjunctionIsomorphism' ..." );
+                
+            end;
+            
+            raiso = ExponentialToDirectProductRightAdjunctionIsomorphism( a, b, c );
+            
+            @Assert( 0, IsIsomorphism( raiso ) );
+            
+            if (CanCompute( cat, "ExponentialToDirectProductLeftAdjunctionIsomorphism" ))
+                
+                laiso = ExponentialToDirectProductLeftAdjunctionIsomorphism( b, a, c );
+                
+                @Assert( 0, IsIsomorphism( laiso ) );
+                
+                if (CanCompute( cat, "CartesianBraiding" ))
+                    
+                    H_ab_ba_c = HomStructure( CartesianBraiding( a, b ), c );
+                    
+                    @Assert( 0, IsIsomorphism( H_ab_ba_c ) );
+                    
+                    @Assert( 0, IsEqualForMorphisms( raiso, PreCompose( H_ab_ba_c, laiso ) ) );
+                    
+                end;
+                
+            end;
             
         end;
         

@@ -17,14 +17,16 @@
 
 DeclareGlobalVariable( "CARTESIAN_CLOSED_CATEGORIES_METHOD_NAME_RECORD" );
 
-CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianClosedCategory  = @Concatenation( [
-"ExponentialOnObjects",
-"ExponentialOnMorphismsWithGivenExponentials",
-"CartesianRightEvaluationMorphismWithGivenSource",
-"CartesianRightCoevaluationMorphismWithGivenRange",
-"CartesianLeftEvaluationMorphismWithGivenSource",
-"CartesianLeftCoevaluationMorphismWithGivenRange"
-], CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianCategory );
+CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianClosedCategory =
+  @Concatenation(
+          CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianCategory,
+          [ "ExponentialOnObjects",
+            "ExponentialOnMorphismsWithGivenExponentials",
+            "CartesianRightEvaluationMorphismWithGivenSource",
+            "CartesianRightCoevaluationMorphismWithGivenRange",
+            "CartesianLeftEvaluationMorphismWithGivenSource",
+            "CartesianLeftCoevaluationMorphismWithGivenRange"
+            ] );
 
 #! @Description
 #! The arguments are two objects $a,b$.
@@ -101,12 +103,32 @@ CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianClosedCategory  = @Concat
 
 #! @Description
 #! The arguments are two objects $a,b$, a morphism $f: a \times b \rightarrow c$ and an object $i == \mathrm[Exponential](a,c)$.
-#! The output is a morphism $g: b \rightarrow \mathrm[Exponential](a,c)$
+#! The output is a morphism $g: b \rightarrow i$
 #! corresponding to $f$ under the direct product-exponential adjunction.
 #! @Returns a morphism in $\mathrm[Hom]( b, i )$.
 #! @Arguments a, b, f, i
 @DeclareOperation( "DirectProductToExponentialRightAdjunctMorphismWithGivenExponential",
                   [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryMorphism, IsCapCategoryObject ] );
+
+#! @Description
+#! The arguments are three objects $a,b,c$.
+#! The output is the tri-natural isomorphism
+#! $H(a \times b, c) \to H(b, \mathrm[Exponential](a,c))$
+#! in the range category of the homomorphism structure $H$.
+#! @Returns a morphism in $\mathrm[Hom]( H(a \times b, c), H(b, \mathrm[Exponential](a,c)) )$.
+#! @Arguments a, b, c
+@DeclareOperation( "DirectProductToExponentialRightAdjunctionIsomorphism",
+                  [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ] );
+
+#! @Description
+#! The arguments are fives objects $s,a,b,c,r$
+#! where $s == H(a \times b, c)$ and $r == H(b, \mathrm[Exponential](a,c))$.
+#! The output is the tri-natural isomorphism $s \to r$
+#! in the range category of the homomorphism structure $H$.
+#! @Returns a morphism in $\mathrm[Hom]( s, r )$.
+#! @Arguments s, a, b, c, r
+@DeclareOperation( "DirectProductToExponentialRightAdjunctionIsomorphismWithGivenObjects",
+                  [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ] );
 
 #! @Description
 #! The arguments are two objects $a,c$ and a morphism $g: b \rightarrow \mathrm[Exponential](a,c)$.
@@ -125,6 +147,26 @@ CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianClosedCategory  = @Concat
 #! @Arguments a, c, g, s
 @DeclareOperation( "ExponentialToDirectProductRightAdjunctMorphismWithGivenDirectProduct",
                   [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryMorphism, IsCapCategoryObject ] );
+
+#! @Description
+#! The arguments are three objects $a,b,c$.
+#! The output is the tri-natural isomorphism
+#! $H(b, \mathrm[Exponential](a,c)) \to H(a \times b, c)$
+#! in the range category of the homomorphism structure $H$.
+#! @Returns a morphism in $\mathrm[Hom]( H(b, \mathrm[Exponential](a,c)), H(a \times b, c) )$.
+#! @Arguments a, b, c
+@DeclareOperation( "ExponentialToDirectProductRightAdjunctionIsomorphism",
+                  [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ] );
+
+#! @Description
+#! The arguments are fives objects $s,a,b,c,r$
+#! where $s == H(b, \mathrm[Exponential](a,c))$ and $r == H(a \times b, c)$.
+#! The output is the tri-natural isomorphism $s \to r$
+#! in the range category of the homomorphism structure $H$.
+#! @Returns a morphism in $\mathrm[Hom]( s, r )$.
+#! @Arguments s, a, b, c, r
+@DeclareOperation( "ExponentialToDirectProductRightAdjunctionIsomorphismWithGivenObjects",
+                  [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ] );
 
 #! @Description
 #! The arguments are two objects $a, b$.
@@ -173,12 +215,32 @@ CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianClosedCategory  = @Concat
 
 #! @Description
 #! The arguments are two objects $a,b$, a morphism $f: a \times b \rightarrow c$ and an object $i == \mathrm[Exponential](b,c)$.
-#! The output is a morphism $g: a \rightarrow \mathrm[Exponential](b,c)$
+#! The output is a morphism $g: a \rightarrow i$
 #! corresponding to $f$ under the direct product-exponential adjunction.
 #! @Returns a morphism in $\mathrm[Hom]( a, i )$.
 #! @Arguments a, b, f, i
 @DeclareOperation( "DirectProductToExponentialLeftAdjunctMorphismWithGivenExponential",
                   [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryMorphism, IsCapCategoryObject ] );
+
+#! @Description
+#! The arguments are three objects $a,b,c$.
+#! The output is the tri-natural isomorphism
+#! $H(a \times b, c) \to H(a, \mathrm[Exponential](b,c))$
+#! in the range category of the homomorphism structure $H$.
+#! @Returns a morphism in $\mathrm[Hom]( H(a \times b, c), H(a, \mathrm[Exponential](b,c)) )$.
+#! @Arguments a, b, c
+@DeclareOperation( "DirectProductToExponentialLeftAdjunctionIsomorphism",
+                  [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ] );
+
+#! @Description
+#! The arguments are fives objects $s,a,b,c,r$
+#! where $s == H(a \times b, c)$ and $r == H(a, \mathrm[Exponential](b,c))$.
+#! The output is the tri-natural isomorphism $s \to r$
+#! in the range category of the homomorphism structure $H$.
+#! @Returns a morphism in $\mathrm[Hom]( s, r )$.
+#! @Arguments s, a, b, c, r
+@DeclareOperation( "DirectProductToExponentialLeftAdjunctionIsomorphismWithGivenObjects",
+                  [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ] );
 
 #! @Description
 #! The arguments are two objects $b,c$ and a morphism $g: a \rightarrow \mathrm[Exponential](b,c)$.
@@ -197,6 +259,26 @@ CAP_INTERNAL_CONSTRUCTIVE_CATEGORIES_RECORD.IsCartesianClosedCategory  = @Concat
 #! @Arguments b, c, g, s
 @DeclareOperation( "ExponentialToDirectProductLeftAdjunctMorphismWithGivenDirectProduct",
                   [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryMorphism, IsCapCategoryObject ] );
+
+#! @Description
+#! The arguments are three objects $a,b,c$.
+#! The output is the tri-natural isomorphism
+#! $H(a, \mathrm[Exponential](b,c)) \to H(a \times b, c)$
+#! in the range category of the homomorphism structure $H$.
+#! @Returns a morphism in $\mathrm[Hom]( H(a, \mathrm[Exponential](b,c)), H(a \times b, c) )$.
+#! @Arguments a, b, c
+@DeclareOperation( "ExponentialToDirectProductLeftAdjunctionIsomorphism",
+                  [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ] );
+
+#! @Description
+#! The arguments are fives objects $s,a,b,c,r$
+#! where $s == H(a, \mathrm[Exponential](b,c))$ and $r == H(a \times b, c)$.
+#! The output is the tri-natural isomorphism $s \to r$
+#! in the range category of the homomorphism structure $H$.
+#! @Returns a morphism in $\mathrm[Hom]( s, r )$.
+#! @Arguments s, a, b, c, r
+@DeclareOperation( "ExponentialToDirectProductLeftAdjunctionIsomorphismWithGivenObjects",
+                  [ IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject, IsCapCategoryObject ] );
 
 #! @Description
 #! The arguments are three objects $a,b,c$.

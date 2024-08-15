@@ -51,6 +51,7 @@ include( "gap/SymmetricCartesianCategoriesDerivedMethods.gi.autogen.jl" );
 include( "gap/SymmetricCocartesianCategoriesDerivedMethods.gi.autogen.jl" );
 
 include( "gap/CartesianClosedCategoriesDerivedMethods.gi.autogen.jl" );
+include( "gap/CartesianClosedCategoriesDerivedMethods_extra.gi.autogen.jl" );
 include( "gap/CocartesianCoclosedCategoriesDerivedMethods.gi.autogen.jl" );
 
 include( "gap/SymmetricCartesianClosedCategoriesDerivedMethods.gi.autogen.jl" );
